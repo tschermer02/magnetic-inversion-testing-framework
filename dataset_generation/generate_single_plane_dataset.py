@@ -50,14 +50,26 @@ def generate_dataset(output: Path, counts: tuple[int, int, int], seed: int, over
                               survey.inclination_deg, survey.declination_deg, survey.azimuth_deg)
     rng = np.random.default_rng(seed); rows: list[dict[str, object]] = []
     split_names = ("train", "validation", "test"); boundaries = np.cumsum(counts)
-    for index in range(sum(counts)):
-        susceptibility_zyx, body = sample_susceptibility(rng)
-        tmi = forward.predict(np.transpose(susceptibility_zyx, (2,1,0))).reshape(survey.receiver_map_shape)
-        sample_id = f"sample_{index:06d}"; relative_path = f"samples/{sample_id}.npz"
-        np.savez_compressed(samples_dir/f"{sample_id}.npz", tmi=tmi.astype(np.float32), susceptibility=susceptibility_zyx)
-        split = split_names[int(index >= boundaries[0]) + int(index >= boundaries[1])]
-        rows.append({"sample_id": sample_id, "relative_path": relative_path, "split": split, **body,
-                     "tmi_min_nt": float(tmi.min()), "tmi_max_nt": float(tmi.max())})
+    total = sum(counts)
+    model_batch_size = 16
+    for batch_start in range(0, total, model_batch_size):
+        batch_stop = min(batch_start + model_batch_size, total)
+        sampled = [sample_susceptibility(rng) for _ in range(batch_stop - batch_start)]
+        model_vectors = np.stack([
+            np.transpose(model, (2, 1, 0)).ravel(order="F")
+            for model, _ in sampled
+        ])
+        tmi_batch = forward.predict_many(model_vectors).reshape(
+            -1, *survey.receiver_map_shape
+        )
+        for offset, ((susceptibility_zyx, body), tmi) in enumerate(zip(sampled, tmi_batch)):
+            index = batch_start + offset
+            sample_id = f"sample_{index:06d}"; relative_path = f"samples/{sample_id}.npz"
+            np.savez_compressed(samples_dir/f"{sample_id}.npz", tmi=tmi.astype(np.float32), susceptibility=susceptibility_zyx)
+            split = split_names[int(index >= boundaries[0]) + int(index >= boundaries[1])]
+            rows.append({"sample_id": sample_id, "relative_path": relative_path, "split": split, **body,
+                         "tmi_min_nt": float(tmi.min()), "tmi_max_nt": float(tmi.max())})
+        print(f"Generated {batch_stop}/{total} TMI samples", flush=True)
     for split in split_names: _write_manifest(output/f"{split}_manifest.csv", [r for r in rows if r["split"] == split])
     metadata = {"physics":"scalar induced magnetics", "observed_component":"TMI", "tmi_unit":"nT",
                 "model_property":"magnetic susceptibility", "susceptibility_unit":"dimensionless SI",

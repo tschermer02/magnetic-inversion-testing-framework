@@ -17,7 +17,7 @@ def main() -> None:
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset",type=Path,required=True); parser.add_argument("--output",type=Path,required=True)
     parser.add_argument("--epochs",type=int,default=3); parser.add_argument("--batch-size",type=int,default=2)
-    parser.add_argument("--tmi-scale",type=float,default=1.0); parser.add_argument("--base-filters",type=int,default=8)
+    parser.add_argument("--tmi-scale",type=float,default=100.0); parser.add_argument("--base-filters",type=int,default=8)
     args=parser.parse_args()
     train,validation,_,_=build_training_datasets(dataset_directory=args.dataset,batch_size=args.batch_size,
         tmi_scale=args.tmi_scale,susceptibility_scale=1.0,random_seed=20260727)

@@ -98,7 +98,7 @@ class E01PhysicsTrainingModel(E01CoreTrainingModel):
             self.trackers[name].update_state(value)
 
     def train_step(self, data: Any) -> dict[str, tf.Tensor]:
-        TMI, truth, _ = tf.keras.utils.unpack_x_y_sample_weight(data)
+        tmi, truth, _ = tf.keras.utils.unpack_x_y_sample_weight(data)
         with tf.GradientTape() as tape:
             terms = self.compute_loss_terms(tmi, truth, training=True)
         gradients = tape.gradient(terms[-1], self.inversion_model.trainable_variables)
@@ -107,7 +107,7 @@ class E01PhysicsTrainingModel(E01CoreTrainingModel):
         return {metric.name: metric.result() for metric in self.metrics}
 
     def test_step(self, data: Any) -> dict[str, tf.Tensor]:
-        TMI, truth, _ = tf.keras.utils.unpack_x_y_sample_weight(data)
+        tmi, truth, _ = tf.keras.utils.unpack_x_y_sample_weight(data)
         terms = self.compute_loss_terms(tmi, truth, training=False)
         self._update_extended(tmi, truth, terms)
         return {metric.name: metric.result() for metric in self.metrics}

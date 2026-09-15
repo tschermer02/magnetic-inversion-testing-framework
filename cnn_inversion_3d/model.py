@@ -9,11 +9,13 @@ class ModelConfig:
     base_filters: int = 8
     learning_rate: float = 1.0e-3
     output_activation: str = "sigmoid"
+    maximum_susceptibility_si: float = 0.1
     body_loss_fraction: float = 0.5
     def validate(self) -> None:
         if self.base_filters < 1: raise ValueError("base_filters must be positive.")
         if self.learning_rate <= 0: raise ValueError("learning_rate must be positive.")
         if self.output_activation not in {"sigmoid", "relu", "linear"}: raise ValueError("Invalid output activation.")
+        if self.maximum_susceptibility_si <= 0: raise ValueError("maximum_susceptibility_si must be positive.")
         if not 0 < self.body_loss_fraction < 1: raise ValueError("body_loss_fraction must be in (0,1).")
 
 def _block(inputs: tf.Tensor, filters: int, name: str) -> tf.Tensor:
@@ -42,7 +44,10 @@ def build_e01_model(config: ModelConfig | None = None) -> tf.keras.Model:
     depths = tf.keras.layers.Conv2D(24, 1, activation=cfg.output_activation,
         name="e01_susceptibility_depth_channels")(lateral)
     depth_first = tf.keras.layers.Permute((3,1,2), name="e01_depth_first")(depths)
-    outputs = tf.keras.layers.Reshape(SUSCEPTIBILITY_SHAPE, name="recovered_susceptibility_si")(depth_first)
+    reshaped = tf.keras.layers.Reshape(SUSCEPTIBILITY_SHAPE, name="susceptibility_fraction")(depth_first)
+    outputs = tf.keras.layers.Rescaling(
+        cfg.maximum_susceptibility_si, name="recovered_susceptibility_si"
+    )(reshaped)
     model = tf.keras.Model(inputs, outputs, name="e01_tmi_inversion")
     if model.output_shape != (None, *SUSCEPTIBILITY_SHAPE): raise RuntimeError("Unexpected E01 output shape.")
     return model
