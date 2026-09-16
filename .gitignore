@@ -8,10 +8,6 @@ __pycache__/
 venv/
 
 # Generated datasets and model outputs
-datasets/
-outputs/
-predictions/
-prediction_outputs/
 checkpoints/
 *.keras
 *.h5

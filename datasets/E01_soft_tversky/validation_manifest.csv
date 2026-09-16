@@ -1,0 +1,3 @@
+sample_id,relative_path,split,x_start,x_end,y_start,y_end,z_start,z_end,susceptibility_si,tmi_min_nt,tmi_max_nt
+sample_000010,samples/sample_000010.npz,validation,16,32,37,53,10,17,0.06936337017329094,-17.301363173808816,197.57384418808033
+sample_000011,samples/sample_000011.npz,validation,50,55,13,25,7,15,0.07757687209728543,-10.30571730779256,147.5983474767193

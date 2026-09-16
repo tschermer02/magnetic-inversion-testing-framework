@@ -1,0 +1,22 @@
+{
+  "physics": "scalar induced magnetics",
+  "observed_component": "TMI",
+  "tmi_unit": "nT",
+  "model_property": "magnetic susceptibility",
+  "susceptibility_unit": "dimensionless SI",
+  "model_order": "z,y,x",
+  "field_strength_nt": 50000.0,
+  "inclination_deg": 75.0,
+  "declination_deg": 25.0,
+  "azimuth_deg": 0.0,
+  "model_shape": [
+    24,
+    64,
+    64
+  ],
+  "tmi_shape": [
+    81,
+    81
+  ],
+  "seed": 20260727
+}

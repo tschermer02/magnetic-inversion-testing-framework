@@ -1,0 +1,30 @@
+{
+  "prediction_file": "C:\\Users\\tsche\\Code\\01_magnetic_inversion_cnn_test\\magnetic-inversion-testing-framework\\prediction_outputs\\E01_soft_tversky\\sample_000012_prediction.npz",
+  "units": {
+    "tmi": "nT",
+    "susceptibility": "dimensionless SI"
+  },
+  "susceptibility": {
+    "susceptibility_mae_si": 0.057551871860527355,
+    "susceptibility_rmse_si": 0.06769317818817396,
+    "susceptibility_relative_l2": 9.734352146172,
+    "support_iou": 0.006139503155022455,
+    "true_occupied_cells": 810,
+    "recovered_occupied_cells": 87685
+  },
+  "tmi_fit": {
+    "tmi_mae_nt": 522.5499340339236,
+    "tmi_rmse_nt": 585.7553438685036,
+    "tmi_relative_l2": 28.43240220691905,
+    "tmi_correlation": 0.2567712375696658
+  },
+  "observed_tmi_range_nt": [
+    -10.552083015441895,
+    129.0105743408203
+  ],
+  "recovered_tmi_range_nt": [
+    -499.85323781840333,
+    1119.6197815504233
+  ],
+  "magnetic_comparison_figure": "C:\\Users\\tsche\\Code\\01_magnetic_inversion_cnn_test\\magnetic-inversion-testing-framework\\prediction_outputs\\E01_soft_tversky\\tmi_consistency\\sample_000012\\magnetic_comparison.png"
+}
