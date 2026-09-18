@@ -5,6 +5,7 @@ from cnn_inversion_3d.e01_core_loss import build_e01_sensitivity_weights
 from cnn_inversion_3d.e01_training import E01LossConfig, E01TrainingModel
 from cnn_inversion_3d.model import ModelConfig, build_e01_model
 from cnn_inversion_3d.evaluate import save_susceptibility_comparison
+from cnn_inversion_3d.train import build_training_callbacks
 
 
 def test_e01_train_step_accepts_tmi_batch():
@@ -50,3 +51,20 @@ def test_susceptibility_comparison_figure_is_written(tmp_path):
     output = tmp_path / "comparison.png"
     save_susceptibility_comparison(truth, truth * 0.9, output)
     assert output.exists() and output.stat().st_size > 0
+
+
+def test_training_callbacks_restore_best_validation_weights(tmp_path):
+    callbacks = build_training_callbacks(tmp_path, patience=7, min_delta=2.0e-5)
+    early_stopping = next(
+        callback for callback in callbacks
+        if isinstance(callback, tf.keras.callbacks.EarlyStopping)
+    )
+    checkpoint = next(
+        callback for callback in callbacks
+        if isinstance(callback, tf.keras.callbacks.ModelCheckpoint)
+    )
+    assert early_stopping.monitor == "val_loss"
+    assert early_stopping.patience == 7
+    assert early_stopping.min_delta == 2.0e-5
+    assert early_stopping.restore_best_weights is True
+    assert checkpoint.save_best_only is True
