@@ -197,6 +197,12 @@ class E01CoreTrainingModel(tf.keras.Model):
     def metrics(self) -> list[tf.keras.metrics.Metric]:
         return [*self.trackers.values(), *self.susceptibility_diagnostics]
 
+    def build(self, input_shape: tf.TensorShape) -> None:
+        """Mark the custom training wrapper and its inversion CNN as built."""
+        if not self.inversion_model.built:
+            self.inversion_model.build(input_shape)
+        super().build(input_shape)
+
     def call(self, inputs: tf.Tensor, training: bool = False) -> tf.Tensor:
         return self.inversion_model(inputs, training=training)
 

@@ -7,6 +7,7 @@ from dataset_generation.e02_config import E02_DEFAULT_CONFIG
 from e01_magnetic.config import MagneticSurveyConfig
 from forward_modeling.forward_model import TMIForwardModel, make_tensor_grid
 from evaluation.tmi_metrics import calculate_tmi_fit_metrics, calculate_susceptibility_metrics
+from evaluation.plot_e01_3d import select_representative_samples
 
 def test_sample_is_susceptibility_in_si():
     model, metadata = sample_susceptibility(np.random.default_rng(4))
@@ -71,3 +72,16 @@ def test_tmi_and_susceptibility_metrics_are_exact_for_identity():
     model = np.array([[[0.0, 0.02]]])
     assert calculate_tmi_fit_metrics(tmi, tmi)["tmi_rmse_nt"] == 0.0
     assert calculate_susceptibility_metrics(model, model, 0.001)["support_iou"] == 1.0
+
+def test_representative_results_select_best_average_and_worst(tmp_path):
+    metrics = tmp_path / "combined_test_metrics.csv"
+    metrics.write_text(
+        "sample_id,support_iou\n"
+        "sample_a,0.1\n"
+        "sample_b,0.3\n"
+        "sample_c,0.6\n"
+        "sample_d,0.9\n",
+        encoding="utf-8",
+    )
+    selected = select_representative_samples(metrics)
+    assert [item[1] for item in selected] == ["sample_d", "sample_c", "sample_a"]

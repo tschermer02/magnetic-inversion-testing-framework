@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 import tensorflow as tf
-from cnn_inversion_3d.dataset import build_training_datasets
+from cnn_inversion_3d.dataset import TMI_SHAPE, build_training_datasets
 from cnn_inversion_3d.e01_core_loss import build_e01_sensitivity_weights
 from cnn_inversion_3d.e01_training import E01LossConfig, E01TrainingModel
 from cnn_inversion_3d.model import ModelConfig, build_e01_model
@@ -63,6 +63,9 @@ def main() -> None:
     model=E01TrainingModel(build_e01_model(ModelConfig(base_filters=args.base_filters)),weights,
         DisabledTMIForward(),tmi_scale=args.tmi_scale,loss_config=config)
     model.compile(optimizer=tf.keras.optimizers.Adam(1e-3),jit_compile=False)
+    # Custom train_step invokes the inner CNN directly. Call the wrapper once
+    # so ModelCheckpoint can save it after the first validation epoch.
+    model(tf.zeros((1, *TMI_SHAPE), dtype=tf.float32), training=False)
     callbacks=build_training_callbacks(args.output,patience=args.early_stopping_patience,
         min_delta=args.early_stopping_min_delta)
     model.fit(train,validation_data=validation,epochs=args.epochs,callbacks=callbacks)

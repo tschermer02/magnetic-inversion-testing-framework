@@ -5,7 +5,8 @@ from cnn_inversion_3d.e01_core_loss import build_e01_sensitivity_weights
 from cnn_inversion_3d.e01_training import E01LossConfig, E01TrainingModel
 from cnn_inversion_3d.model import ModelConfig, build_e01_model
 from cnn_inversion_3d.evaluate import save_susceptibility_comparison
-from cnn_inversion_3d.train import build_training_callbacks
+from cnn_inversion_3d.dataset import TMI_SHAPE
+from cnn_inversion_3d.train import DisabledTMIForward, build_training_callbacks
 
 
 def test_e01_train_step_accepts_tmi_batch():
@@ -68,3 +69,18 @@ def test_training_callbacks_restore_best_validation_weights(tmp_path):
     assert early_stopping.min_delta == 2.0e-5
     assert early_stopping.restore_best_weights is True
     assert checkpoint.save_best_only is True
+
+
+def test_built_training_wrapper_can_save_checkpoint(tmp_path):
+    _, weights = build_e01_sensitivity_weights()
+    model = E01TrainingModel(
+        build_e01_model(ModelConfig(base_filters=1)),
+        weights,
+        DisabledTMIForward(),
+        tmi_scale=100.0,
+        loss_config=E01LossConfig(),
+    )
+    model(tf.zeros((1, *TMI_SHAPE), dtype=tf.float32), training=False)
+    checkpoint = tmp_path / "checkpoint.weights.h5"
+    model.save_weights(checkpoint)
+    assert checkpoint.is_file()

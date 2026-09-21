@@ -1,0 +1,26 @@
+{
+  "experiment": "E01",
+  "selection_rule": "best=max, average=closest to arithmetic mean, worst=min",
+  "metric": "support_iou",
+  "threshold_si": 0.001,
+  "samples": [
+    {
+      "selection": "best",
+      "sample_id": "sample_001176",
+      "support_iou": 0.5879120879120879,
+      "figure": "best_sample_001176_susceptibility_3d.html"
+    },
+    {
+      "selection": "average",
+      "sample_id": "sample_001159",
+      "support_iou": 0.31124260355029587,
+      "figure": "average_sample_001159_susceptibility_3d.html"
+    },
+    {
+      "selection": "worst",
+      "sample_id": "sample_001118",
+      "support_iou": 0.052083333333333336,
+      "figure": "worst_sample_001118_susceptibility_3d.html"
+    }
+  ]
+}
