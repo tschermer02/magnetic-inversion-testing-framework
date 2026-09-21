@@ -1,0 +1,24 @@
+{
+  "number_of_samples": 1200,
+  "split_sample_counts": {
+    "train": 1000,
+    "validation": 100,
+    "test": 100
+  },
+  "actual_susceptibility_min_si": 0.00010027514737119752,
+  "actual_susceptibility_max_si": 0.09953530999454362,
+  "susceptibility_decade_counts": {
+    "0.0001_to_below_0.001_si": 366,
+    "0.001_to_below_0.01_si": 414,
+    "0.01_to_0.1_si_inclusive": 420
+  },
+  "global_tmi_min_nt": -118.94351382151726,
+  "global_tmi_max_nt": 676.7821948707821,
+  "peak_absolute_tmi_counts": {
+    "below_1_nt": 336,
+    "1_to_below_10_nt": 426,
+    "10_to_below_100_nt": 330,
+    "100_to_below_1000_nt": 108,
+    "1000_nt_and_above": 0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "prediction_file": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/prediction_outputs/E02/sample_001151_prediction.npz",
+  "units": {
+    "tmi": "nT",
+    "susceptibility": "dimensionless SI"
+  },
+  "susceptibility": {
+    "susceptibility_mae_si": 0.0004985430455043193,
+    "susceptibility_rmse_si": 0.006808010053368495,
+    "susceptibility_relative_l2": 16.8631092176339,
+    "support_iou": 0.053763440860215055,
+    "true_occupied_cells": 416,
+    "recovered_occupied_cells": 662
+  },
+  "tmi_fit": {
+    "tmi_mae_nt": 6.876355556481254,
+    "tmi_rmse_nt": 23.847559785044993,
+    "tmi_relative_l2": 20.398468422600136,
+    "tmi_correlation": 0.8117320929826363
+  },
+  "observed_tmi_range_nt": [
+    -0.753180205821991,
+    7.557262897491455
+  ],
+  "recovered_tmi_range_nt": [
+    -11.027884975891787,
+    287.3730350932178
+  ],
+  "magnetic_comparison_figure": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/prediction_outputs/E02/tmi_consistency/sample_001151/magnetic_comparison.png"
+}

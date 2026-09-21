@@ -1,0 +1,64 @@
+{
+  "experiment_name": "E02",
+  "dataset_version": "E02_loguniform_susceptibility_v1",
+  "physics": "scalar induced magnetics",
+  "observed_component": "TMI anomaly",
+  "tmi_unit": "nT",
+  "model_property": "magnetic susceptibility",
+  "susceptibility_unit": "dimensionless SI",
+  "susceptibility_sampling": {
+    "distribution": "log_uniform_base10",
+    "log10_exponent_min": -4.0,
+    "log10_exponent_max": -1.0,
+    "minimum_si": 0.0001,
+    "maximum_si": 0.1,
+    "one_homogeneous_value_per_body": true
+  },
+  "tmi_input_normalization": {
+    "operation": "divide",
+    "scale_nt": 100.0,
+    "clipping": false,
+    "per_sample_normalization": false
+  },
+  "remanent_magnetization": false,
+  "observational_noise": false,
+  "model_order": "z,y,x",
+  "field_strength_nt": 50000.0,
+  "inclination_deg": 75.0,
+  "declination_deg": 25.0,
+  "azimuth_deg": 0.0,
+  "model_shape": [
+    24,
+    64,
+    64
+  ],
+  "tmi_shape": [
+    81,
+    81
+  ],
+  "seed": 20260727,
+  "generation_summary": {
+    "number_of_samples": 1200,
+    "split_sample_counts": {
+      "train": 1000,
+      "validation": 100,
+      "test": 100
+    },
+    "actual_susceptibility_min_si": 0.00010027514737119752,
+    "actual_susceptibility_max_si": 0.09953530999454362,
+    "susceptibility_decade_counts": {
+      "0.0001_to_below_0.001_si": 366,
+      "0.001_to_below_0.01_si": 414,
+      "0.01_to_0.1_si_inclusive": 420
+    },
+    "global_tmi_min_nt": -118.94351382151726,
+    "global_tmi_max_nt": 676.7821948707821,
+    "peak_absolute_tmi_counts": {
+      "below_1_nt": 336,
+      "1_to_below_10_nt": 426,
+      "10_to_below_100_nt": 330,
+      "100_to_below_1000_nt": 108,
+      "1000_nt_and_above": 0
+    }
+  }
+}
