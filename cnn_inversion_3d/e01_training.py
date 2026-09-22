@@ -23,6 +23,8 @@ class E01LossConfig(E01PhysicsLossConfig):
     tversky_beta: float = 0.3
     occupancy_threshold: float = 0.1
     occupancy_sharpness: float = 10.0
+    occupancy_mode: str = "legacy_threshold_sigmoid"
+    occupancy_tau_si: float = 1.0e-4 / np.log(100.0)
 
     def validate(self) -> None:
         super().validate()
@@ -36,6 +38,28 @@ class E01LossConfig(E01PhysicsLossConfig):
             raise ValueError("occupancy_threshold must be between zero and one.")
         if self.occupancy_sharpness <= 0.0:
             raise ValueError("occupancy_sharpness must be positive.")
+        if self.occupancy_mode not in {"legacy_threshold_sigmoid", "geological_exponential"}:
+            raise ValueError("Unknown occupancy_mode.")
+        if self.occupancy_tau_si <= 0.0 or not np.isfinite(self.occupancy_tau_si):
+            raise ValueError("occupancy_tau_si must be positive and finite.")
+
+
+def geological_support_mask(truth: tf.Tensor, body_mask: tf.Tensor | None = None) -> tf.Tensor:
+    """Use an explicit generated mask, or exact-positive support for synthetic E02."""
+    values = tf.convert_to_tensor(truth)
+    if body_mask is None:
+        return tf.cast(values > 0.0, values.dtype)
+    mask = tf.cast(body_mask, values.dtype)
+    tf.debugging.assert_equal(tf.shape(mask), tf.shape(values), message="Body-mask shape mismatch.")
+    return mask
+
+
+def exponential_soft_occupancy(prediction: tf.Tensor, *, tau_si: float) -> tf.Tensor:
+    """Stable p=1-exp(-chi/tau), exactly zero at chi=0 and bounded in [0,1]."""
+    values = tf.convert_to_tensor(prediction)
+    nonnegative = tf.maximum(values, tf.cast(0.0, values.dtype))
+    occupied = -tf.math.expm1(-nonnegative / tf.cast(tau_si, values.dtype))
+    return tf.clip_by_value(occupied, 0.0, 1.0)
 
 
 def soft_tversky_loss_per_sample(
@@ -47,6 +71,9 @@ def soft_tversky_loss_per_sample(
     alpha: float = 0.7,
     beta: float = 0.3,
     epsilon: float = 1.0e-8,
+    occupancy_mode: str = "legacy_threshold_sigmoid",
+    occupancy_tau_si: float = 1.0e-4 / np.log(100.0),
+    body_mask: tf.Tensor | None = None,
 ) -> tf.Tensor:
     """Return differentiable occupancy Tversky loss for each batch sample.
 
@@ -57,17 +84,17 @@ def soft_tversky_loss_per_sample(
     """
 
     values = tf.convert_to_tensor(prediction)
-    target = tf.cast(truth >= tf.cast(threshold, truth.dtype), values.dtype)
-    raw_occupied = tf.sigmoid(
-        tf.cast(sharpness, values.dtype)
-        * (values - tf.cast(threshold, values.dtype))
-    )
-    floor = tf.sigmoid(
-        -tf.cast(sharpness, values.dtype) * tf.cast(threshold, values.dtype)
-    )
-    occupied = tf.clip_by_value(
-        (raw_occupied - floor) / (1.0 - floor), 0.0, 1.0
-    )
+    if occupancy_mode == "legacy_threshold_sigmoid":
+        target = tf.cast(truth >= tf.cast(threshold, truth.dtype), values.dtype)
+        raw_occupied = tf.sigmoid(tf.cast(sharpness, values.dtype) *
+                                  (values - tf.cast(threshold, values.dtype)))
+        floor = tf.sigmoid(-tf.cast(sharpness, values.dtype) * tf.cast(threshold, values.dtype))
+        occupied = tf.clip_by_value((raw_occupied - floor) / (1.0 - floor), 0.0, 1.0)
+    elif occupancy_mode == "geological_exponential":
+        target = geological_support_mask(truth, body_mask)
+        occupied = exponential_soft_occupancy(values, tau_si=occupancy_tau_si)
+    else:
+        raise ValueError(f"Unknown occupancy_mode: {occupancy_mode}")
     axes = (1, 2, 3, 4)
     true_positive = tf.reduce_sum(target * occupied, axis=axes)
     false_positive = tf.reduce_sum((1.0 - target) * occupied, axis=axes)
@@ -107,6 +134,7 @@ class E01TrainingModel(E01PhysicsTrainingModel):
         self.trackers["weighted_tversky_loss"] = tf.keras.metrics.Mean(
             name="weighted_tversky_loss"
         )
+        self.trackers["global_gradient_norm"] = tf.keras.metrics.Mean(name="global_gradient_norm")
 
     def compute_loss_terms(
         self, tmi: tf.Tensor, truth: tf.Tensor, *, training: bool
@@ -122,6 +150,8 @@ class E01TrainingModel(E01PhysicsTrainingModel):
                 alpha=cfg.tversky_alpha,
                 beta=cfg.tversky_beta,
                 epsilon=cfg.epsilon,
+                occupancy_mode=cfg.occupancy_mode,
+                occupancy_tau_si=cfg.occupancy_tau_si,
             )
         )
         weighted_tversky = cfg.lambda_tversky * tversky
@@ -143,11 +173,21 @@ class E01TrainingModel(E01PhysicsTrainingModel):
         tmi, truth, _ = tf.keras.utils.unpack_x_y_sample_weight(data)
         with tf.GradientTape() as tape:
             terms = self.compute_loss_terms(tmi, truth, training=True)
+            tf.debugging.assert_all_finite(terms[-1], "Nonfinite E01/E02 total loss.")
         gradients = tape.gradient(terms[-1], self.inversion_model.trainable_variables)
-        self.optimizer.apply_gradients(
-            zip(gradients, self.inversion_model.trainable_variables)
-        )
+        finite_gradients = [gradient for gradient in gradients if gradient is not None]
+        if not finite_gradients:
+            raise ValueError("No gradients were produced for the inversion model.")
+        for gradient in finite_gradients:
+            tf.debugging.assert_all_finite(gradient, "Nonfinite E01/E02 gradient.")
+        gradient_norm = tf.linalg.global_norm(finite_gradients)
+        tf.debugging.assert_all_finite(gradient_norm, "Nonfinite global gradient norm.")
+        gradient_pairs = [(gradient, variable) for gradient, variable in
+                          zip(gradients, self.inversion_model.trainable_variables)
+                          if gradient is not None]
+        self.optimizer.apply_gradients(gradient_pairs)
         self._update_e01(tmi, truth, terms)
+        self.trackers["global_gradient_norm"].update_state(gradient_norm)
         return {metric.name: metric.result() for metric in self.metrics}
 
     def test_step(self, data: Any) -> dict[str, tf.Tensor]:

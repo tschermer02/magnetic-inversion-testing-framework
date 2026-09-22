@@ -82,7 +82,7 @@ def _decade(value: float) -> str:
 
 
 def _load_checkpoint_predictions(checkpoint: Path, dataset: Path, manifest: list[dict],
-                                 tmi_scale: float) -> tuple[dict[str, np.ndarray], float]:
+                                 tmi_scale: float, run_metadata: dict | None = None) -> tuple[dict[str, np.ndarray], float]:
     """Explicitly load wrapper weights and evaluate validation before test inference."""
     import tensorflow as tf
     from cnn_inversion_3d.dataset import TMI_SHAPE, build_training_datasets
@@ -92,9 +92,12 @@ def _load_checkpoint_predictions(checkpoint: Path, dataset: Path, manifest: list
     from cnn_inversion_3d.train import DisabledTMIForward
 
     _, weights = build_e01_sensitivity_weights()
+    occupancy = (run_metadata or {}).get("occupancy", {})
     config = E01LossConfig(lambda_depth=2.0, lambda_amplitude=1.0, lambda_tmi=0.0,
         lambda_tversky=0.1, tversky_alpha=0.7, tversky_beta=0.3,
-        occupancy_threshold=0.001, occupancy_sharpness=1000.0)
+        occupancy_threshold=0.001, occupancy_sharpness=1000.0,
+        occupancy_mode=occupancy.get("mode", "legacy_threshold_sigmoid"),
+        occupancy_tau_si=float(occupancy.get("tau_si", 1.0e-4 / np.log(100.0))))
     model = E01TrainingModel(build_e01_model(ModelConfig(base_filters=8)), weights,
         DisabledTMIForward(), tmi_scale=tmi_scale, loss_config=config)
     model(tf.zeros((1, *TMI_SHAPE), tf.float32), training=False)
@@ -111,6 +114,42 @@ def _load_checkpoint_predictions(checkpoint: Path, dataset: Path, manifest: list
             model.inversion_model(tmi[None, ..., None] / tmi_scale, training=False)[0, ..., 0]
         )
     return predictions, validation_loss
+
+
+def validate_checkpoint(checkpoint: Path, dataset: Path, output: Path,
+                        validation_tolerance: float = 1e-3) -> dict:
+    """Evaluate only validation loss, leaving the test split untouched."""
+    if not checkpoint.is_file():
+        raise FileNotFoundError(checkpoint)
+    run_metadata_path = checkpoint.parent / "run_metadata.json"
+    if not run_metadata_path.is_file():
+        raise FileNotFoundError(f"Matching run metadata is required: {run_metadata_path}")
+    run_metadata = json.loads(run_metadata_path.read_text(encoding="utf-8"))
+    dataset_metadata = json.loads((dataset / "metadata.json").read_text(encoding="utf-8"))
+    tmi_scale = float(dataset_metadata["tmi_input_normalization"]["scale_nt"])
+    _, validation_loss = _load_checkpoint_predictions(
+        checkpoint, dataset, [], tmi_scale, run_metadata
+    )
+    recorded = float(run_metadata["best_validation_loss"])
+    difference = abs(validation_loss - recorded)
+    result = {"experiment":run_metadata.get("experiment"),
+              "checkpoint_path":str(checkpoint.resolve()),
+              "checkpoint_sha256":_sha256(checkpoint),
+              "recorded_best_epoch":run_metadata.get("best_epoch"),
+              "recorded_best_validation_loss":recorded,
+              "recomputed_validation_loss":validation_loss,
+              "absolute_difference":difference,
+              "tolerance":validation_tolerance,
+              "within_tolerance":difference <= validation_tolerance,
+              "dataset_version":dataset_metadata["dataset_version"],
+              "test_set_evaluated":False,
+              "timestamp_utc":datetime.now(timezone.utc).isoformat()}
+    output.mkdir(parents=True, exist_ok=True)
+    (output / "validation_checkpoint.json").write_text(json.dumps(result,indent=2),encoding="utf-8")
+    if not result["within_tolerance"]:
+        raise ValueError(f"Recomputed validation loss differs by {difference:g}, exceeding {validation_tolerance:g}.")
+    print(json.dumps(result,indent=2))
+    return result
 
 
 def run_audit(dataset: Path, predictions: Path, output: Path, *,
@@ -135,13 +174,18 @@ def run_audit(dataset: Path, predictions: Path, output: Path, *,
             history = list(csv.DictReader(stream))
         best = min(history, key=lambda row: float(row["val_loss"]))
         best_epoch, best_val = int(best["epoch"]) + 1, float(best["val_loss"])
+    checkpoint_run_metadata = None
+    if checkpoint is not None and (checkpoint.parent / "run_metadata.json").is_file():
+        checkpoint_run_metadata = json.loads((checkpoint.parent / "run_metadata.json").read_text(encoding="utf-8"))
+        best_epoch = checkpoint_run_metadata.get("best_epoch")
+        best_val = checkpoint_run_metadata.get("best_validation_loss")
     regenerated = None
     validation_loss = None
     if checkpoint is not None:
         if not checkpoint.is_file():
             raise FileNotFoundError(checkpoint)
         regenerated, validation_loss = _load_checkpoint_predictions(
-            checkpoint, dataset, manifest, tmi_scale
+            checkpoint, dataset, manifest, tmi_scale, checkpoint_run_metadata
         )
         if best_val is not None and abs(validation_loss - best_val) > validation_tolerance:
             raise ValueError(f"Checkpoint validation loss {validation_loss:.6g} differs from "
@@ -257,7 +301,8 @@ def run_audit(dataset: Path, predictions: Path, output: Path, *,
     provenance = {"status":"verified_explicit_checkpoint" if checkpoint else "unverified_saved_prediction_arrays",
                   "checkpoint_path":str(checkpoint.resolve()) if checkpoint else None,
                   "checkpoint_sha256":_sha256(checkpoint) if checkpoint else None,
-                  "checkpoint_epoch":None, "training_commit":None,
+                  "checkpoint_epoch":best_epoch if checkpoint else None,
+                  "training_commit":(checkpoint_run_metadata or {}).get("git",{}).get("commit"),
                   "recorded_best_validation_epoch":best_epoch,
                   "recorded_best_validation_loss":best_val,
                   "recomputed_validation_loss":validation_loss,
@@ -313,7 +358,14 @@ def main() -> None:
     parser.add_argument("--checkpoint", type=Path,
         help="Explicit E01 wrapper .weights.h5; triggers validation and regenerated test predictions.")
     parser.add_argument("--validation-tolerance", type=float, default=1e-3)
+    parser.add_argument("--validation-only", action="store_true",
+        help="Verify checkpoint validation loss without reading or evaluating the test split.")
     args = parser.parse_args()
+    if args.validation_only:
+        if args.checkpoint is None:
+            parser.error("--validation-only requires --checkpoint")
+        validate_checkpoint(args.checkpoint,args.dataset,args.output,args.validation_tolerance)
+        return
     run_audit(args.dataset,args.predictions,args.output,
         prediction_threshold_si=args.prediction_threshold_si,
         diagnostic_threshold_si=args.diagnostic_threshold_si,

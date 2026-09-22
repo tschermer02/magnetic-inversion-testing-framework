@@ -292,6 +292,52 @@ class PredictionAboveThreshold(tf.keras.metrics.Metric):
         return config
 
 
+class PredictionNearSaturation(tf.keras.metrics.Metric):
+    """Track the fraction of predictions near the 0.1 SI sigmoid ceiling."""
+
+    def __init__(self, threshold: float = 0.099, name: str = "prediction_fraction_near_saturation", **kwargs: Any):
+        super().__init__(name=name, **kwargs)
+        self.threshold = float(threshold)
+        self.saturated_count = self.add_weight(name="saturated_count", initializer="zeros")
+        self.value_count = self.add_weight(name="value_count", initializer="zeros")
+
+    def update_state(self, y_true, y_pred, sample_weight=None):
+        del y_true, sample_weight
+        self.saturated_count.assign_add(tf.reduce_sum(tf.cast(y_pred >= self.threshold, self.dtype)))
+        self.value_count.assign_add(tf.cast(tf.size(y_pred), self.dtype))
+
+    def result(self):
+        return tf.math.divide_no_nan(self.saturated_count, self.value_count)
+
+    def get_config(self):
+        return {**super().get_config(), "threshold": self.threshold}
+
+
+class MaskedPredictionMAE(tf.keras.metrics.Metric):
+    """Track absolute susceptibility error within true body or background."""
+
+    def __init__(self, *, region: Literal["body", "background"], name: str, **kwargs: Any):
+        super().__init__(name=name, **kwargs)
+        if region not in {"body", "background"}:
+            raise ValueError("region must be either 'body' or 'background'.")
+        self.region = region
+        self.error_sum = self.add_weight(name="error_sum", initializer="zeros")
+        self.voxel_count = self.add_weight(name="voxel_count", initializer="zeros")
+
+    def update_state(self, y_true, y_pred, sample_weight=None):
+        del sample_weight
+        body = tf.cast(y_true > 0.0, self.dtype)
+        mask = body if self.region == "body" else 1.0 - body
+        self.error_sum.assign_add(tf.reduce_sum(tf.abs(tf.cast(y_pred, self.dtype) - tf.cast(y_true, self.dtype)) * mask))
+        self.voxel_count.assign_add(tf.reduce_sum(mask))
+
+    def result(self):
+        return tf.math.divide_no_nan(self.error_sum, self.voxel_count)
+
+    def get_config(self):
+        return {**super().get_config(), "region": self.region}
+
+
 class MaskedPredictionMean(tf.keras.metrics.Metric):
     """
     Track mean prediction in true body or background voxels.
@@ -679,6 +725,7 @@ def build_prediction_diagnostics(
         PredictionAboveThreshold(
             threshold=threshold,
         ),
+        PredictionNearSaturation(),
         MaskedPredictionMean(
             region="body",
             name="body_prediction_mean",
@@ -687,6 +734,8 @@ def build_prediction_diagnostics(
             region="background",
             name="background_prediction_mean",
         ),
+        MaskedPredictionMAE(region="body", name="true_body_prediction_mae"),
+        MaskedPredictionMAE(region="background", name="background_prediction_mae"),
         BalancedMSEComponent(
             region="body",
             name="body_mse_component",
