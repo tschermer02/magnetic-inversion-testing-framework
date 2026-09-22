@@ -1,0 +1,52 @@
+{
+  "experiment": "E02_P2_occupancy_lr1e3",
+  "configuration": {
+    "name": "E02_P2_occupancy_lr1e3",
+    "learning_rate": 0.001,
+    "occupancy_mode": "geological_exponential",
+    "occupancy_tau_si": 2.171472409516259e-05,
+    "initialization_seed": 20260727,
+    "data_order_seed": 20260727,
+    "batch_size": 2,
+    "epochs": 50,
+    "early_stopping_patience": 10,
+    "early_stopping_min_delta": 1e-05,
+    "base_filters": 8,
+    "tmi_scale_nt": 100.0,
+    "lambda_depth": 2.0,
+    "lambda_amplitude": 1.0,
+    "lambda_tmi": 0.0,
+    "lambda_tversky": 0.1,
+    "tversky_alpha": 0.7,
+    "tversky_beta": 0.3,
+    "evaluation_prediction_threshold_si": 5e-05
+  },
+  "occupancy": {
+    "mode": "geological_exponential",
+    "tau_si": 2.171472409516259e-05,
+    "mapping": "-expm1(-max(prediction,0)/tau)",
+    "true_support": "true_susceptibility > 0"
+  },
+  "gradient_clipping": false,
+  "best_epoch": 49,
+  "best_validation_loss": 0.05822714418172836,
+  "checkpoint_path": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/outputs/E02_P2_occupancy_lr1e3/best.weights.h5",
+  "checkpoint_sha256": "01d44a09b6874e3e5149fb5ad5c9d47e1eea921edf27daadc65e0f4b3d0f30d2",
+  "export_reloaded_from_best_checkpoint": true,
+  "dataset": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/datasets/E02",
+  "collapse_detection": {
+    "monitor": "val_prediction_maximum",
+    "threshold": 1e-05,
+    "criterion": "val_body_prediction_mean < 1e-4 OR val_prediction_fraction_above_1e_4 < 1e-4 OR (val_prediction_mean < 1e-6 AND val_prediction_maximum < 1e-2)",
+    "patience": 2,
+    "stop_training": false,
+    "detected": false,
+    "collapse_epoch": null,
+    "diagnostics": null
+  },
+  "git": {
+    "commit": "0e1af906c86a85faa19a6da6e8e01254c7f3adf8",
+    "dirty": true
+  },
+  "timestamp_utc": "2026-09-22T18:45:06.768371+00:00"
+}

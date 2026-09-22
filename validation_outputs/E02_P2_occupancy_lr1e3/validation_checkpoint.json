@@ -1,0 +1,14 @@
+{
+  "experiment": "E02_P2_occupancy_lr1e3",
+  "checkpoint_path": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/outputs/E02_P2_occupancy_lr1e3/best.weights.h5",
+  "checkpoint_sha256": "01d44a09b6874e3e5149fb5ad5c9d47e1eea921edf27daadc65e0f4b3d0f30d2",
+  "recorded_best_epoch": 49,
+  "recorded_best_validation_loss": 0.05822714418172836,
+  "recomputed_validation_loss": 0.05822714418172836,
+  "absolute_difference": 0.0,
+  "tolerance": 0.001,
+  "within_tolerance": true,
+  "dataset_version": "E02_loguniform_susceptibility_v1",
+  "test_set_evaluated": false,
+  "timestamp_utc": "2026-09-22T21:32:43.149778+00:00"
+}

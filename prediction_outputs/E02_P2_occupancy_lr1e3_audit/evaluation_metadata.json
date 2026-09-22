@@ -1,0 +1,35 @@
+{
+  "status": "verified_explicit_checkpoint",
+  "checkpoint_path": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/outputs/E02_P2_occupancy_lr1e3/best.weights.h5",
+  "checkpoint_sha256": "01d44a09b6874e3e5149fb5ad5c9d47e1eea921edf27daadc65e0f4b3d0f30d2",
+  "checkpoint_epoch": 49,
+  "training_commit": "0e1af906c86a85faa19a6da6e8e01254c7f3adf8",
+  "recorded_best_validation_epoch": 49,
+  "recorded_best_validation_loss": 0.05822714418172836,
+  "recomputed_validation_loss": 0.05822714418172836,
+  "validation_loss_tolerance": 0.001,
+  "model": "E01 asymmetric 2-D U-Net, base_filters=8, 190592 parameters",
+  "loss": "E01 composite soft-Tversky; depth=2, amplitude=1, TMI=0, Tversky=0.1",
+  "dataset_path": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/datasets/E02",
+  "dataset_version": "E02_loguniform_susceptibility_v1",
+  "dataset_metadata_sha256": "0950dd2cf66ada941c565583ef6826414c0f1a21e8898810932c358c17a54f97",
+  "test_manifest_sha256": "32c850ff9228cbd91e8d370d509a1c603699e03b4545da0255f28e58d3ba0671",
+  "tmi_normalization": {
+    "operation": "divide",
+    "scale_nt": 100.0,
+    "clipping": false,
+    "per_sample_normalization": false
+  },
+  "geological_prediction_threshold_si": 5e-05,
+  "thresholded_diagnostic_si": 0.001,
+  "threshold_policy": "geological truth=manifest body; predictions >= threshold; diagnostic truth and predictions >= threshold",
+  "empty_mask_policy": "both empty scores=1; one empty scores=0; true-empty predicted-nonempty volume ratio=null",
+  "geological_threshold_note": "0.00005 SI is provisional evaluation convention, not validated detection limit",
+  "tmi_source": "fresh forward calculation",
+  "git": {
+    "commit": "22ce388c6d6496822801b36ab8c52326afd8e4d2",
+    "dirty_tracked_files": false,
+    "untracked_files_checked": false
+  },
+  "timestamp_utc": "2026-09-22T21:32:10.711265+00:00"
+}

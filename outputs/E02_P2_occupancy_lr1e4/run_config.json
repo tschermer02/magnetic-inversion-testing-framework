@@ -1,0 +1,36 @@
+{
+  "experiment": "E02_P2_occupancy_lr1e4",
+  "configuration": {
+    "name": "E02_P2_occupancy_lr1e4",
+    "learning_rate": 0.0001,
+    "occupancy_mode": "geological_exponential",
+    "occupancy_tau_si": 2.171472409516259e-05,
+    "initialization_seed": 20260727,
+    "data_order_seed": 20260727,
+    "batch_size": 2,
+    "epochs": 50,
+    "early_stopping_patience": 10,
+    "early_stopping_min_delta": 1e-05,
+    "base_filters": 8,
+    "tmi_scale_nt": 100.0,
+    "lambda_depth": 2.0,
+    "lambda_amplitude": 1.0,
+    "lambda_tmi": 0.0,
+    "lambda_tversky": 0.1,
+    "tversky_alpha": 0.7,
+    "tversky_beta": 0.3,
+    "evaluation_prediction_threshold_si": 5e-05
+  },
+  "initialization_seed": 20260727,
+  "data_order_seed": 20260727,
+  "dataset": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/datasets/E02",
+  "git": {
+    "commit": "0e1af906c86a85faa19a6da6e8e01254c7f3adf8",
+    "dirty": true
+  },
+  "timestamp_utc": "2026-09-22T18:45:30.764101+00:00",
+  "dataset_metadata.json_sha256": "0950dd2cf66ada941c565583ef6826414c0f1a21e8898810932c358c17a54f97",
+  "dataset_train_manifest.csv_sha256": "4c3d8695467b9dcdd56248af3789cfc93a14bb0bf0491ceabdb6344ea3ff235c",
+  "dataset_validation_manifest.csv_sha256": "e83e7f39d08efcc95ed810128ee6cd0161aea1432a3090cbe45ec2120adcc44f",
+  "dataset_test_manifest.csv_sha256": "32c850ff9228cbd91e8d370d509a1c603699e03b4545da0255f28e58d3ba0671"
+}
