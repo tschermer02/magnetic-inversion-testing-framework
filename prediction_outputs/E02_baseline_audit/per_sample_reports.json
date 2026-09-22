@@ -1,0 +1,3202 @@
+[
+  {
+    "sample_id": "sample_001100",
+    "geological_support": {
+      "iou": 0.006159014557670772,
+      "dice": 0.012242626599888704,
+      "precision": 0.006638503319251659,
+      "recall": 0.07857142857142857,
+      "true_occupied_cells": 140,
+      "predicted_occupied_cells": 1657,
+      "predicted_to_true_volume_ratio": 11.835714285714285
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.005988023952095809,
+      "dice": 0.011904761904761904,
+      "precision": 0.006559766763848397,
+      "recall": 0.06428571428571428,
+      "true_occupied_cells": 140,
+      "predicted_occupied_cells": 1372,
+      "predicted_to_true_volume_ratio": 9.8
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0012380390566816065,
+      "susceptibility_rmse_si": 0.01095634139993092,
+      "susceptibility_relative_l2": 78.51161801846415
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 30.61623891980921,
+      "tmi_rmse_nt": 94.6253827833486,
+      "tmi_relative_l2": 230.60931444500855,
+      "tmi_correlation": 0.3869552690461251
+    }
+  },
+  {
+    "sample_id": "sample_001101",
+    "geological_support": {
+      "iou": 0.1382667964946446,
+      "dice": 0.24294268605645852,
+      "precision": 0.18275418275418276,
+      "recall": 0.3622448979591837,
+      "true_occupied_cells": 392,
+      "predicted_occupied_cells": 777,
+      "predicted_to_true_volume_ratio": 1.9821428571428572
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.13877952755905512,
+      "dice": 0.24373379429559205,
+      "precision": 0.1843137254901961,
+      "recall": 0.3596938775510204,
+      "true_occupied_cells": 392,
+      "predicted_occupied_cells": 765,
+      "predicted_to_true_volume_ratio": 1.9515306122448979
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.000827440626367752,
+      "susceptibility_rmse_si": 0.008527805998700932,
+      "susceptibility_relative_l2": 2.7452304907790257
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 10.64468832265175,
+      "tmi_rmse_nt": 32.682159191541984,
+      "tmi_relative_l2": 3.880776013256599,
+      "tmi_correlation": 0.7626199588395978
+    }
+  },
+  {
+    "sample_id": "sample_001102",
+    "geological_support": {
+      "iou": 0.036458333333333336,
+      "dice": 0.07035175879396985,
+      "precision": 0.041916167664670656,
+      "recall": 0.21875,
+      "true_occupied_cells": 224,
+      "predicted_occupied_cells": 1169,
+      "predicted_to_true_volume_ratio": 5.21875
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.04242424242424243,
+      "dice": 0.08139534883720931,
+      "precision": 0.05,
+      "recall": 0.21875,
+      "true_occupied_cells": 224,
+      "predicted_occupied_cells": 980,
+      "predicted_to_true_volume_ratio": 4.375
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0008410672579371885,
+      "susceptibility_rmse_si": 0.008888066579862073,
+      "susceptibility_relative_l2": 8.158316383839548
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 14.789964223480656,
+      "tmi_rmse_nt": 40.169044002128985,
+      "tmi_relative_l2": 13.32708622101302,
+      "tmi_correlation": 0.5884859756185788
+    }
+  },
+  {
+    "sample_id": "sample_001103",
+    "geological_support": {
+      "iou": 0.0576307363927428,
+      "dice": 0.10898082744702321,
+      "precision": 0.10567514677103718,
+      "recall": 0.1125,
+      "true_occupied_cells": 960,
+      "predicted_occupied_cells": 1022,
+      "predicted_to_true_volume_ratio": 1.0645833333333334
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.057971014492753624,
+      "dice": 0.1095890410958904,
+      "precision": 0.10682492581602374,
+      "recall": 0.1125,
+      "true_occupied_cells": 960,
+      "predicted_occupied_cells": 1011,
+      "predicted_to_true_volume_ratio": 1.053125
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0010358646750171499,
+      "susceptibility_rmse_si": 0.010043658558929285,
+      "susceptibility_relative_l2": 39.79701162187963
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 24.720377824135095,
+      "tmi_rmse_nt": 78.47049434225742,
+      "tmi_relative_l2": 32.6164122577712,
+      "tmi_correlation": 0.28556910982655465
+    }
+  },
+  {
+    "sample_id": "sample_001104",
+    "geological_support": {
+      "iou": 0.06234567901234568,
+      "dice": 0.11737361998837885,
+      "precision": 0.07292418772563176,
+      "recall": 0.3005952380952381,
+      "true_occupied_cells": 336,
+      "predicted_occupied_cells": 1385,
+      "predicted_to_true_volume_ratio": 4.122023809523809
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.08340425531914894,
+      "dice": 0.1539670070699136,
+      "precision": 0.10458911419423693,
+      "recall": 0.2916666666666667,
+      "true_occupied_cells": 336,
+      "predicted_occupied_cells": 937,
+      "predicted_to_true_volume_ratio": 2.7886904761904763
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00043979615050539184,
+      "susceptibility_rmse_si": 0.006122390795404857,
+      "susceptibility_relative_l2": 23.970113921866407
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.386840593154464,
+      "tmi_rmse_nt": 9.951810228404293,
+      "tmi_relative_l2": 34.12203092202655,
+      "tmi_correlation": 0.9677069844932124
+    }
+  },
+  {
+    "sample_id": "sample_001105",
+    "geological_support": {
+      "iou": 0.1467065868263473,
+      "dice": 0.2558746736292428,
+      "precision": 0.15170278637770898,
+      "recall": 0.8166666666666667,
+      "true_occupied_cells": 120,
+      "predicted_occupied_cells": 646,
+      "predicted_to_true_volume_ratio": 5.383333333333334
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.1628721541155867,
+      "dice": 0.28012048192771083,
+      "precision": 0.17095588235294118,
+      "recall": 0.775,
+      "true_occupied_cells": 120,
+      "predicted_occupied_cells": 544,
+      "predicted_to_true_volume_ratio": 4.533333333333333
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0004694195804777808,
+      "susceptibility_rmse_si": 0.006635172726794649,
+      "susceptibility_relative_l2": 14.282341321665035
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 6.100901812004607,
+      "tmi_rmse_nt": 19.824354314319514,
+      "tmi_relative_l2": 36.17112681357674,
+      "tmi_correlation": 0.8644382601167914
+    }
+  },
+  {
+    "sample_id": "sample_001106",
+    "geological_support": {
+      "iou": 0.14814814814814814,
+      "dice": 0.25806451612903225,
+      "precision": 0.19672131147540983,
+      "recall": 0.375,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 549,
+      "predicted_to_true_volume_ratio": 1.90625
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.15,
+      "dice": 0.2608695652173913,
+      "precision": 0.2,
+      "recall": 0.375,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 540,
+      "predicted_to_true_volume_ratio": 1.875
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005718878778960731,
+      "susceptibility_rmse_si": 0.0070475790298332106,
+      "susceptibility_relative_l2": 2.525404194744185
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.1685829912716175,
+      "tmi_rmse_nt": 10.029586612343309,
+      "tmi_relative_l2": 2.956451362456857,
+      "tmi_correlation": 0.982638759269385
+    }
+  },
+  {
+    "sample_id": "sample_001107",
+    "geological_support": {
+      "iou": 0.006497022198159177,
+      "dice": 0.012910166756320602,
+      "precision": 0.006518196632265073,
+      "recall": 0.6666666666666666,
+      "true_occupied_cells": 72,
+      "predicted_occupied_cells": 7364,
+      "predicted_to_true_volume_ratio": 102.27777777777777
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1908,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00018687912435520757,
+      "susceptibility_rmse_si": 0.0017692791039268674,
+      "susceptibility_relative_l2": 260.16713983748184
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 1.6634379040612604,
+      "tmi_rmse_nt": 3.5940282393011063,
+      "tmi_relative_l2": 947.7800563509343,
+      "tmi_correlation": 0.9955507072942368
+    }
+  },
+  {
+    "sample_id": "sample_001108",
+    "geological_support": {
+      "iou": 0.04438579654510556,
+      "dice": 0.08499885136687342,
+      "precision": 0.06160506160506161,
+      "recall": 0.13703703703703704,
+      "true_occupied_cells": 1350,
+      "predicted_occupied_cells": 3003,
+      "predicted_to_true_volume_ratio": 2.2244444444444444
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.04447115384615385,
+      "dice": 0.08515535097813579,
+      "precision": 0.06176961602671119,
+      "recall": 0.13703703703703704,
+      "true_occupied_cells": 1350,
+      "predicted_occupied_cells": 2995,
+      "predicted_to_true_volume_ratio": 2.2185185185185183
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.003264779372397149,
+      "susceptibility_rmse_si": 0.017363413011875318,
+      "susceptibility_relative_l2": 6.30127522709481
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 80.6492573053465,
+      "tmi_rmse_nt": 170.71281496623325,
+      "tmi_relative_l2": 5.124673764219987,
+      "tmi_correlation": 0.12762956540696477
+    }
+  },
+  {
+    "sample_id": "sample_001109",
+    "geological_support": {
+      "iou": 0.09933774834437085,
+      "dice": 0.18072289156626506,
+      "precision": 0.17088607594936708,
+      "recall": 0.19176136363636365,
+      "true_occupied_cells": 1408,
+      "predicted_occupied_cells": 1580,
+      "predicted_to_true_volume_ratio": 1.1221590909090908
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.09985152190051967,
+      "dice": 0.18157273034087074,
+      "precision": 0.1729903536977492,
+      "recall": 0.19105113636363635,
+      "true_occupied_cells": 1408,
+      "predicted_occupied_cells": 1555,
+      "predicted_to_true_volume_ratio": 1.1044034090909092
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0015485430251228815,
+      "susceptibility_rmse_si": 0.012299086486629739,
+      "susceptibility_relative_l2": 52.23872313095583
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 42.922777227696976,
+      "tmi_rmse_nt": 136.67489374702228,
+      "tmi_relative_l2": 49.35290632567328,
+      "tmi_correlation": 0.2974540650060677
+    }
+  },
+  {
+    "sample_id": "sample_001110",
+    "geological_support": {
+      "iou": 0.0484196368527236,
+      "dice": 0.09236690186016677,
+      "precision": 0.05393258426966292,
+      "recall": 0.32142857142857145,
+      "true_occupied_cells": 448,
+      "predicted_occupied_cells": 2670,
+      "predicted_to_true_volume_ratio": 5.959821428571429
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1270,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00036754603687573186,
+      "susceptibility_rmse_si": 0.005099299368726355,
+      "susceptibility_relative_l2": 594.6035160931567
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 6.694186635640574,
+      "tmi_rmse_nt": 22.32080730487049,
+      "tmi_relative_l2": 656.719132060854,
+      "tmi_correlation": 0.7258859420373223
+    }
+  },
+  {
+    "sample_id": "sample_001111",
+    "geological_support": {
+      "iou": 0.08261211644374508,
+      "dice": 0.15261627906976744,
+      "precision": 0.10595358224016145,
+      "recall": 0.2727272727272727,
+      "true_occupied_cells": 385,
+      "predicted_occupied_cells": 991,
+      "predicted_to_true_volume_ratio": 2.574025974025974
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.08300395256916997,
+      "dice": 0.15328467153284672,
+      "precision": 0.1065989847715736,
+      "recall": 0.2727272727272727,
+      "true_occupied_cells": 385,
+      "predicted_occupied_cells": 985,
+      "predicted_to_true_volume_ratio": 2.5584415584415585
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0010162662671288252,
+      "susceptibility_rmse_si": 0.009786855293708732,
+      "susceptibility_relative_l2": 9.084392067012882
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 19.42131693560664,
+      "tmi_rmse_nt": 51.853548813950425,
+      "tmi_relative_l2": 13.170249125402144,
+      "tmi_correlation": 0.5841659509513928
+    }
+  },
+  {
+    "sample_id": "sample_001112",
+    "geological_support": {
+      "iou": 0.2063125481139338,
+      "dice": 0.34205488194001277,
+      "precision": 0.47942754919499103,
+      "recall": 0.26587301587301587,
+      "true_occupied_cells": 1008,
+      "predicted_occupied_cells": 559,
+      "predicted_to_true_volume_ratio": 0.5545634920634921
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.20480993017843288,
+      "dice": 0.3399871216999356,
+      "precision": 0.48440366972477067,
+      "recall": 0.2619047619047619,
+      "true_occupied_cells": 1008,
+      "predicted_occupied_cells": 545,
+      "predicted_to_true_volume_ratio": 0.5406746031746031
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005709889836521823,
+      "susceptibility_rmse_si": 0.007104473752764413,
+      "susceptibility_relative_l2": 10.659945934406647
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 6.289536436602196,
+      "tmi_rmse_nt": 21.542470440323825,
+      "tmi_relative_l2": 8.76743479285225,
+      "tmi_correlation": 0.8633627907865581
+    }
+  },
+  {
+    "sample_id": "sample_001113",
+    "geological_support": {
+      "iou": 0.09645061728395062,
+      "dice": 0.17593244194229415,
+      "precision": 0.1263902932254803,
+      "recall": 0.28935185185185186,
+      "true_occupied_cells": 432,
+      "predicted_occupied_cells": 989,
+      "predicted_to_true_volume_ratio": 2.2893518518518516
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 690,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00037400445017766256,
+      "susceptibility_rmse_si": 0.005617767701880549,
+      "susceptibility_relative_l2": 87.85009430960328
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 5.461163575705516,
+      "tmi_rmse_nt": 16.96528626503439,
+      "tmi_relative_l2": 104.28666178143008,
+      "tmi_correlation": 0.8105237997094964
+    }
+  },
+  {
+    "sample_id": "sample_001114",
+    "geological_support": {
+      "iou": 0.11864406779661017,
+      "dice": 0.21212121212121213,
+      "precision": 0.13663663663663664,
+      "recall": 0.4739583333333333,
+      "true_occupied_cells": 192,
+      "predicted_occupied_cells": 666,
+      "predicted_to_true_volume_ratio": 3.46875
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.13990461049284578,
+      "dice": 0.24546722454672246,
+      "precision": 0.1676190476190476,
+      "recall": 0.4583333333333333,
+      "true_occupied_cells": 192,
+      "predicted_occupied_cells": 525,
+      "predicted_to_true_volume_ratio": 2.734375
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00045383770848138886,
+      "susceptibility_rmse_si": 0.00644688086689354,
+      "susceptibility_relative_l2": 11.934007549302121
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 5.123844863029604,
+      "tmi_rmse_nt": 14.526104054076779,
+      "tmi_relative_l2": 22.852233900183624,
+      "tmi_correlation": 0.9311093750802117
+    }
+  },
+  {
+    "sample_id": "sample_001115",
+    "geological_support": {
+      "iou": 0.1118488253319714,
+      "dice": 0.20119430408819478,
+      "precision": 0.16020482809070957,
+      "recall": 0.27037037037037037,
+      "true_occupied_cells": 810,
+      "predicted_occupied_cells": 1367,
+      "predicted_to_true_volume_ratio": 1.6876543209876542
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 928,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0004828006811610781,
+      "susceptibility_rmse_si": 0.0063606848075433795,
+      "susceptibility_relative_l2": 278.5927968072968
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 8.936710008960945,
+      "tmi_rmse_nt": 26.232750727425145,
+      "tmi_relative_l2": 253.92964216319973,
+      "tmi_correlation": 0.7038708941239855
+    }
+  },
+  {
+    "sample_id": "sample_001116",
+    "geological_support": {
+      "iou": 0.09562471808750564,
+      "dice": 0.1745574310415809,
+      "precision": 0.16195569136745608,
+      "recall": 0.18928571428571428,
+      "true_occupied_cells": 1120,
+      "predicted_occupied_cells": 1309,
+      "predicted_to_true_volume_ratio": 1.16875
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.09995240361732509,
+      "dice": 0.18173950670705322,
+      "precision": 0.17632241813602015,
+      "recall": 0.1875,
+      "true_occupied_cells": 1120,
+      "predicted_occupied_cells": 1191,
+      "predicted_to_true_volume_ratio": 1.0633928571428573
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0011284711606396607,
+      "susceptibility_rmse_si": 0.010483822945574683,
+      "susceptibility_relative_l2": 73.89013441236612
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 26.229575443887473,
+      "tmi_rmse_nt": 74.99445295475189,
+      "tmi_relative_l2": 68.41433544943179,
+      "tmi_correlation": 0.46732392780222454
+    }
+  },
+  {
+    "sample_id": "sample_001117",
+    "geological_support": {
+      "iou": 0.15370813397129188,
+      "dice": 0.2664593053395542,
+      "precision": 0.5255623721881391,
+      "recall": 0.17847222222222223,
+      "true_occupied_cells": 1440,
+      "predicted_occupied_cells": 489,
+      "predicted_to_true_volume_ratio": 0.33958333333333335
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.15389221556886226,
+      "dice": 0.2667358588479502,
+      "precision": 0.5277207392197125,
+      "recall": 0.17847222222222223,
+      "true_occupied_cells": 1440,
+      "predicted_occupied_cells": 487,
+      "predicted_to_true_volume_ratio": 0.33819444444444446
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0009257229118514696,
+      "susceptibility_rmse_si": 0.007497157394217115,
+      "susceptibility_relative_l2": 1.3480213570049029
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.779728019599565,
+      "tmi_rmse_nt": 11.229380468248264,
+      "tmi_relative_l2": 0.48962297635054614,
+      "tmi_correlation": 0.8696053420947452
+    }
+  },
+  {
+    "sample_id": "sample_001118",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 40,
+      "predicted_occupied_cells": 1829,
+      "predicted_to_true_volume_ratio": 45.725
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 40,
+      "predicted_occupied_cells": 1737,
+      "predicted_to_true_volume_ratio": 43.425
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0016339438702774522,
+      "susceptibility_rmse_si": 0.012643281916962155,
+      "susceptibility_relative_l2": 167.16720998909236
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 54.39648198792499,
+      "tmi_rmse_nt": 194.76092857267818,
+      "tmi_relative_l2": 505.8018116095551,
+      "tmi_correlation": -0.04943778751573615
+    }
+  },
+  {
+    "sample_id": "sample_001119",
+    "geological_support": {
+      "iou": 0.09950946040644709,
+      "dice": 0.1810070108349267,
+      "precision": 0.13434247871333965,
+      "recall": 0.27734375,
+      "true_occupied_cells": 512,
+      "predicted_occupied_cells": 1057,
+      "predicted_to_true_volume_ratio": 2.064453125
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.1400198609731877,
+      "dice": 0.2456445993031359,
+      "precision": 0.22169811320754718,
+      "recall": 0.275390625,
+      "true_occupied_cells": 512,
+      "predicted_occupied_cells": 636,
+      "predicted_to_true_volume_ratio": 1.2421875
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005531678811774919,
+      "susceptibility_rmse_si": 0.006990944361974091,
+      "susceptibility_relative_l2": 10.298916350236729
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.918508937368588,
+      "tmi_rmse_nt": 11.13419463550259,
+      "tmi_relative_l2": 14.542951494639631,
+      "tmi_correlation": 0.9265597761556487
+    }
+  },
+  {
+    "sample_id": "sample_001120",
+    "geological_support": {
+      "iou": 0.07271171941830624,
+      "dice": 0.13556618819776714,
+      "precision": 0.10340632603406326,
+      "recall": 0.19675925925925927,
+      "true_occupied_cells": 432,
+      "predicted_occupied_cells": 822,
+      "predicted_to_true_volume_ratio": 1.9027777777777777
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.08577633007600434,
+      "dice": 0.158,
+      "precision": 0.13908450704225353,
+      "recall": 0.18287037037037038,
+      "true_occupied_cells": 432,
+      "predicted_occupied_cells": 568,
+      "predicted_to_true_volume_ratio": 1.3148148148148149
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00044963281434200176,
+      "susceptibility_rmse_si": 0.006383445107654552,
+      "susceptibility_relative_l2": 20.086271421010274
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.771047704184957,
+      "tmi_rmse_nt": 12.48066182666243,
+      "tmi_relative_l2": 22.60107418821453,
+      "tmi_correlation": 0.9570546207513014
+    }
+  },
+  {
+    "sample_id": "sample_001121",
+    "geological_support": {
+      "iou": 0.01675257731958763,
+      "dice": 0.032953105196451206,
+      "precision": 0.0196078431372549,
+      "recall": 0.10317460317460317,
+      "true_occupied_cells": 252,
+      "predicted_occupied_cells": 1326,
+      "predicted_to_true_volume_ratio": 5.261904761904762
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1122,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0009192274983367616,
+      "susceptibility_rmse_si": 0.009345736924952303,
+      "susceptibility_relative_l2": 216.78316534903936
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 21.247605362800464,
+      "tmi_rmse_nt": 63.200840055667875,
+      "tmi_relative_l2": 357.55278450521945,
+      "tmi_correlation": 0.3651108434269907
+    }
+  },
+  {
+    "sample_id": "sample_001122",
+    "geological_support": {
+      "iou": 0.006292906178489702,
+      "dice": 0.012507106310403639,
+      "precision": 0.0070063694267515925,
+      "recall": 0.0582010582010582,
+      "true_occupied_cells": 378,
+      "predicted_occupied_cells": 3140,
+      "predicted_to_true_volume_ratio": 8.306878306878307
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 2505,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0020901022035943015,
+      "susceptibility_rmse_si": 0.014118131567809906,
+      "susceptibility_relative_l2": 1178.27456510558
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 73.57362715976146,
+      "tmi_rmse_nt": 214.5548826522722,
+      "tmi_relative_l2": 1718.3768470772407,
+      "tmi_correlation": 0.01709584661685309
+    }
+  },
+  {
+    "sample_id": "sample_001123",
+    "geological_support": {
+      "iou": 0.13399778516057587,
+      "dice": 0.236328125,
+      "precision": 0.21080139372822299,
+      "recall": 0.2688888888888889,
+      "true_occupied_cells": 450,
+      "predicted_occupied_cells": 574,
+      "predicted_to_true_volume_ratio": 1.2755555555555556
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.13333333333333333,
+      "dice": 0.23529411764705882,
+      "precision": 0.21052631578947367,
+      "recall": 0.26666666666666666,
+      "true_occupied_cells": 450,
+      "predicted_occupied_cells": 570,
+      "predicted_to_true_volume_ratio": 1.2666666666666666
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0007818962125677055,
+      "susceptibility_rmse_si": 0.008731613588995967,
+      "susceptibility_relative_l2": 1.3498746432428672
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.745651832809533,
+      "tmi_rmse_nt": 17.09293898703464,
+      "tmi_relative_l2": 1.0126769653427825,
+      "tmi_correlation": 0.7997316845478122
+    }
+  },
+  {
+    "sample_id": "sample_001124",
+    "geological_support": {
+      "iou": 0.061030671026000315,
+      "dice": 0.11504035216434336,
+      "precision": 0.06129788897576231,
+      "recall": 0.9333333333333333,
+      "true_occupied_cells": 420,
+      "predicted_occupied_cells": 6395,
+      "predicted_to_true_volume_ratio": 15.226190476190476
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 2703,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0002751782457846268,
+      "susceptibility_rmse_si": 0.002694950775231482,
+      "susceptibility_relative_l2": 399.993071864517
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 2.8863646379442383,
+      "tmi_rmse_nt": 7.600047366163887,
+      "tmi_relative_l2": 571.9220995328553,
+      "tmi_correlation": 0.8897585813899315
+    }
+  },
+  {
+    "sample_id": "sample_001125",
+    "geological_support": {
+      "iou": 0.040740740740740744,
+      "dice": 0.07829181494661921,
+      "precision": 0.04417670682730924,
+      "recall": 0.34375,
+      "true_occupied_cells": 96,
+      "predicted_occupied_cells": 747,
+      "predicted_to_true_volume_ratio": 7.78125
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.04198473282442748,
+      "dice": 0.08058608058608059,
+      "precision": 0.04564315352697095,
+      "recall": 0.34375,
+      "true_occupied_cells": 96,
+      "predicted_occupied_cells": 723,
+      "predicted_to_true_volume_ratio": 7.53125
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0007043681692899969,
+      "susceptibility_rmse_si": 0.008223209523073007,
+      "susceptibility_relative_l2": 9.813420223347103
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 11.488101452190746,
+      "tmi_rmse_nt": 34.3924530373065,
+      "tmi_relative_l2": 28.15243226101772,
+      "tmi_correlation": 0.7673639645110972
+    }
+  },
+  {
+    "sample_id": "sample_001126",
+    "geological_support": {
+      "iou": 0.2818725099601594,
+      "dice": 0.4397824397824398,
+      "precision": 0.46016260162601624,
+      "recall": 0.4211309523809524,
+      "true_occupied_cells": 672,
+      "predicted_occupied_cells": 615,
+      "predicted_to_true_volume_ratio": 0.9151785714285714
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.2827172827172827,
+      "dice": 0.440809968847352,
+      "precision": 0.4624183006535948,
+      "recall": 0.4211309523809524,
+      "true_occupied_cells": 672,
+      "predicted_occupied_cells": 612,
+      "predicted_to_true_volume_ratio": 0.9107142857142857
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006961798304555947,
+      "susceptibility_rmse_si": 0.00753257914283878,
+      "susceptibility_relative_l2": 1.2135095476208906
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 2.3308207080977366,
+      "tmi_rmse_nt": 10.002376715640205,
+      "tmi_relative_l2": 0.7278226587057895,
+      "tmi_correlation": 0.9258268248143108
+    }
+  },
+  {
+    "sample_id": "sample_001127",
+    "geological_support": {
+      "iou": 0.025749007339670317,
+      "dice": 0.05020527859237537,
+      "precision": 0.025755205199181612,
+      "recall": 0.9907407407407407,
+      "true_occupied_cells": 216,
+      "predicted_occupied_cells": 8309,
+      "predicted_to_true_volume_ratio": 38.467592592592595
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 2666,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00026935450127788663,
+      "susceptibility_rmse_si": 0.0021424749840890864,
+      "susceptibility_relative_l2": 414.1802492157385
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 2.5403942248693907,
+      "tmi_rmse_nt": 5.155394196286422,
+      "tmi_relative_l2": 1030.7844208794102,
+      "tmi_correlation": 0.9864762148468432
+    }
+  },
+  {
+    "sample_id": "sample_001128",
+    "geological_support": {
+      "iou": 0.008874357776739842,
+      "dice": 0.017592592592592594,
+      "precision": 0.009099616858237548,
+      "recall": 0.2638888888888889,
+      "true_occupied_cells": 72,
+      "predicted_occupied_cells": 2088,
+      "predicted_to_true_volume_ratio": 29.0
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.009052924791086351,
+      "dice": 0.017943409247757072,
+      "precision": 0.00944081336238199,
+      "recall": 0.18055555555555555,
+      "true_occupied_cells": 72,
+      "predicted_occupied_cells": 1377,
+      "predicted_to_true_volume_ratio": 19.125
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006666042590363735,
+      "susceptibility_rmse_si": 0.007439055667948947,
+      "susceptibility_relative_l2": 226.09653976644356
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 12.667198658577009,
+      "tmi_rmse_nt": 45.305278121570176,
+      "tmi_relative_l2": 811.1961650889561,
+      "tmi_correlation": 0.6235486359859793
+    }
+  },
+  {
+    "sample_id": "sample_001129",
+    "geological_support": {
+      "iou": 0.00921942224953903,
+      "dice": 0.018270401948842874,
+      "precision": 0.00933997509339975,
+      "recall": 0.4166666666666667,
+      "true_occupied_cells": 72,
+      "predicted_occupied_cells": 3212,
+      "predicted_to_true_volume_ratio": 44.611111111111114
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1243,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0002890223427931261,
+      "susceptibility_rmse_si": 0.004428613145367224,
+      "susceptibility_relative_l2": 1088.6754783044587
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 6.285561799556629,
+      "tmi_rmse_nt": 29.38598343107816,
+      "tmi_relative_l2": 2713.1172305848354,
+      "tmi_correlation": 0.2974288395592761
+    }
+  },
+  {
+    "sample_id": "sample_001130",
+    "geological_support": {
+      "iou": 0.07070279424216766,
+      "dice": 0.1320680110715698,
+      "precision": 0.07452030343596609,
+      "recall": 0.5798611111111112,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 2241,
+      "predicted_to_true_volume_ratio": 7.78125
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1315,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005502525029353742,
+      "susceptibility_rmse_si": 0.006546935200421967,
+      "susceptibility_relative_l2": 307.82583336711144
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 9.475337742373455,
+      "tmi_rmse_nt": 30.372949433524212,
+      "tmi_relative_l2": 542.9907675574232,
+      "tmi_correlation": 0.7292458343640209
+    }
+  },
+  {
+    "sample_id": "sample_001131",
+    "geological_support": {
+      "iou": 0.10224719101123596,
+      "dice": 0.18552497451580022,
+      "precision": 0.1324599708879185,
+      "recall": 0.30952380952380953,
+      "true_occupied_cells": 294,
+      "predicted_occupied_cells": 687,
+      "predicted_to_true_volume_ratio": 2.336734693877551
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.10814094775212636,
+      "dice": 0.19517543859649122,
+      "precision": 0.14401294498381878,
+      "recall": 0.30272108843537415,
+      "true_occupied_cells": 294,
+      "predicted_occupied_cells": 618,
+      "predicted_to_true_volume_ratio": 2.1020408163265305
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006179560721574434,
+      "susceptibility_rmse_si": 0.007427899713968043,
+      "susceptibility_relative_l2": 5.436642586316565
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 5.598968567520274,
+      "tmi_rmse_nt": 12.643756965395058,
+      "tmi_relative_l2": 9.550781724376627,
+      "tmi_correlation": 0.9576354982273465
+    }
+  },
+  {
+    "sample_id": "sample_001132",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 330,
+      "predicted_occupied_cells": 2679,
+      "predicted_to_true_volume_ratio": 8.118181818181819
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 330,
+      "predicted_occupied_cells": 2602,
+      "predicted_to_true_volume_ratio": 7.884848484848485
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0025166152488518743,
+      "susceptibility_rmse_si": 0.015762728784214065,
+      "susceptibility_relative_l2": 111.61981063559831
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 78.4279934707323,
+      "tmi_rmse_nt": 229.7280160836274,
+      "tmi_relative_l2": 166.49523928405412,
+      "tmi_correlation": -0.028390509465471604
+    }
+  },
+  {
+    "sample_id": "sample_001133",
+    "geological_support": {
+      "iou": 0.02715207597710946,
+      "dice": 0.05286865813181603,
+      "precision": 0.027612679544328875,
+      "recall": 0.6194444444444445,
+      "true_occupied_cells": 360,
+      "predicted_occupied_cells": 8076,
+      "predicted_to_true_volume_ratio": 22.433333333333334
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 3324,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0003218222450575903,
+      "susceptibility_rmse_si": 0.0023846603175272096,
+      "susceptibility_relative_l2": 354.05190911349473
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 2.9344683092768773,
+      "tmi_rmse_nt": 6.251790532276369,
+      "tmi_relative_l2": 806.1605151814114,
+      "tmi_correlation": 0.9541149380606411
+    }
+  },
+  {
+    "sample_id": "sample_001134",
+    "geological_support": {
+      "iou": 0.05203171456888008,
+      "dice": 0.09891662741403674,
+      "precision": 0.07177033492822966,
+      "recall": 0.1590909090909091,
+      "true_occupied_cells": 660,
+      "predicted_occupied_cells": 1463,
+      "predicted_to_true_volume_ratio": 2.216666666666667
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.05257886830245368,
+      "dice": 0.09990485252140818,
+      "precision": 0.07281553398058252,
+      "recall": 0.1590909090909091,
+      "true_occupied_cells": 660,
+      "predicted_occupied_cells": 1442,
+      "predicted_to_true_volume_ratio": 2.184848484848485
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0015329115525400169,
+      "susceptibility_rmse_si": 0.011940954863556029,
+      "susceptibility_relative_l2": 7.74172541328826
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 32.155331229991994,
+      "tmi_rmse_nt": 78.79271234064099,
+      "tmi_relative_l2": 8.416359580506526,
+      "tmi_correlation": 0.4040531791750601
+    }
+  },
+  {
+    "sample_id": "sample_001135",
+    "geological_support": {
+      "iou": 0.0657439446366782,
+      "dice": 0.12337662337662338,
+      "precision": 0.11585365853658537,
+      "recall": 0.13194444444444445,
+      "true_occupied_cells": 720,
+      "predicted_occupied_cells": 820,
+      "predicted_to_true_volume_ratio": 1.1388888888888888
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.06442577030812324,
+      "dice": 0.12105263157894737,
+      "precision": 0.115,
+      "recall": 0.12777777777777777,
+      "true_occupied_cells": 720,
+      "predicted_occupied_cells": 800,
+      "predicted_to_true_volume_ratio": 1.1111111111111112
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0008072134078955804,
+      "susceptibility_rmse_si": 0.00878448932441774,
+      "susceptibility_relative_l2": 25.72185537003578
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 15.350564977807666,
+      "tmi_rmse_nt": 42.41691510220535,
+      "tmi_relative_l2": 24.391586975915715,
+      "tmi_correlation": 0.5573843787880373
+    }
+  },
+  {
+    "sample_id": "sample_001136",
+    "geological_support": {
+      "iou": 0.20596205962059622,
+      "dice": 0.3415730337078652,
+      "precision": 0.28679245283018867,
+      "recall": 0.4222222222222222,
+      "true_occupied_cells": 720,
+      "predicted_occupied_cells": 1060,
+      "predicted_to_true_volume_ratio": 1.4722222222222223
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.23582580115036977,
+      "dice": 0.3816489361702128,
+      "precision": 0.36607142857142855,
+      "recall": 0.39861111111111114,
+      "true_occupied_cells": 720,
+      "predicted_occupied_cells": 784,
+      "predicted_to_true_volume_ratio": 1.0888888888888888
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00043472792838901534,
+      "susceptibility_rmse_si": 0.00617627623012,
+      "susceptibility_relative_l2": 44.443786700422166
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.426638342171476,
+      "tmi_rmse_nt": 11.01818897493698,
+      "tmi_relative_l2": 38.71453252271929,
+      "tmi_correlation": 0.9794326955103153
+    }
+  },
+  {
+    "sample_id": "sample_001137",
+    "geological_support": {
+      "iou": 0.19284940411700974,
+      "dice": 0.32334241598546776,
+      "precision": 0.2981574539363484,
+      "recall": 0.3531746031746032,
+      "true_occupied_cells": 504,
+      "predicted_occupied_cells": 597,
+      "predicted_to_true_volume_ratio": 1.1845238095238095
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.19386637458926614,
+      "dice": 0.3247706422018349,
+      "precision": 0.30204778156996587,
+      "recall": 0.35119047619047616,
+      "true_occupied_cells": 504,
+      "predicted_occupied_cells": 586,
+      "predicted_to_true_volume_ratio": 1.1626984126984128
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006414490515526326,
+      "susceptibility_rmse_si": 0.00719774462402247,
+      "susceptibility_relative_l2": 2.6400641694412204
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.156714581770495,
+      "tmi_rmse_nt": 10.333261342757574,
+      "tmi_relative_l2": 2.591609379992245,
+      "tmi_correlation": 0.9721441039917235
+    }
+  },
+  {
+    "sample_id": "sample_001138",
+    "geological_support": {
+      "iou": 0.009038619556285949,
+      "dice": 0.017915309446254073,
+      "precision": 0.009136212624584718,
+      "recall": 0.4583333333333333,
+      "true_occupied_cells": 120,
+      "predicted_occupied_cells": 6020,
+      "predicted_to_true_volume_ratio": 50.166666666666664
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 2441,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00026689903236111695,
+      "susceptibility_rmse_si": 0.002593700594090855,
+      "susceptibility_relative_l2": 85.38335838984827
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 2.760469824716586,
+      "tmi_rmse_nt": 6.736641099886287,
+      "tmi_relative_l2": 284.9498560045304,
+      "tmi_correlation": 0.9158602504153919
+    }
+  },
+  {
+    "sample_id": "sample_001139",
+    "geological_support": {
+      "iou": 0.04335628666156593,
+      "dice": 0.08310926423857247,
+      "precision": 0.04487264088689455,
+      "recall": 0.5619834710743802,
+      "true_occupied_cells": 605,
+      "predicted_occupied_cells": 7577,
+      "predicted_to_true_volume_ratio": 12.52396694214876
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 3426,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00031811153119183465,
+      "susceptibility_rmse_si": 0.002408709621938009,
+      "susceptibility_relative_l2": 216.5602472398696
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 2.9230392668032863,
+      "tmi_rmse_nt": 5.755237035053386,
+      "tmi_relative_l2": 380.48059034536806,
+      "tmi_correlation": 0.8309022407212674
+    }
+  },
+  {
+    "sample_id": "sample_001140",
+    "geological_support": {
+      "iou": 0.0619935170178282,
+      "dice": 0.11674933231590996,
+      "precision": 0.06766917293233082,
+      "recall": 0.425,
+      "true_occupied_cells": 360,
+      "predicted_occupied_cells": 2261,
+      "predicted_to_true_volume_ratio": 6.280555555555556
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1220,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0004684279554645554,
+      "susceptibility_rmse_si": 0.00596026619226175,
+      "susceptibility_relative_l2": 355.8171392509261
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 8.42071641103344,
+      "tmi_rmse_nt": 26.617787386606242,
+      "tmi_relative_l2": 531.6513886985042,
+      "tmi_correlation": 0.7267616298571241
+    }
+  },
+  {
+    "sample_id": "sample_001141",
+    "geological_support": {
+      "iou": 0.16622127204703366,
+      "dice": 0.2850595783684693,
+      "precision": 0.21389270976616231,
+      "recall": 0.4271978021978022,
+      "true_occupied_cells": 728,
+      "predicted_occupied_cells": 1454,
+      "predicted_to_true_volume_ratio": 1.9972527472527473
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1033,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005265976025240454,
+      "susceptibility_rmse_si": 0.00658977524589056,
+      "susceptibility_relative_l2": 179.12548505031316
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 8.731063164412742,
+      "tmi_rmse_nt": 26.50179038394335,
+      "tmi_relative_l2": 199.430363715918,
+      "tmi_correlation": 0.8104694503256464
+    }
+  },
+  {
+    "sample_id": "sample_001142",
+    "geological_support": {
+      "iou": 0.11407407407407408,
+      "dice": 0.2047872340425532,
+      "precision": 0.2532894736842105,
+      "recall": 0.171875,
+      "true_occupied_cells": 896,
+      "predicted_occupied_cells": 608,
+      "predicted_to_true_volume_ratio": 0.6785714285714286
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.11275964391691394,
+      "dice": 0.20266666666666666,
+      "precision": 0.25165562913907286,
+      "recall": 0.16964285714285715,
+      "true_occupied_cells": 896,
+      "predicted_occupied_cells": 604,
+      "predicted_to_true_volume_ratio": 0.6741071428571429
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0007243588727069488,
+      "susceptibility_rmse_si": 0.007624880151204982,
+      "susceptibility_relative_l2": 4.13391508951979
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 7.827163907644158,
+      "tmi_rmse_nt": 25.38090798430284,
+      "tmi_relative_l2": 3.232528851005651,
+      "tmi_correlation": 0.7534027442007223
+    }
+  },
+  {
+    "sample_id": "sample_001143",
+    "geological_support": {
+      "iou": 0.01780821917808219,
+      "dice": 0.034993270524899055,
+      "precision": 0.02034428794992175,
+      "recall": 0.125,
+      "true_occupied_cells": 624,
+      "predicted_occupied_cells": 3834,
+      "predicted_to_true_volume_ratio": 6.144230769230769
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.01782857142857143,
+      "dice": 0.035032562317538735,
+      "precision": 0.020370854008879603,
+      "recall": 0.125,
+      "true_occupied_cells": 624,
+      "predicted_occupied_cells": 3829,
+      "predicted_to_true_volume_ratio": 6.136217948717949
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.004064684495892881,
+      "susceptibility_rmse_si": 0.019787045244432568,
+      "susceptibility_relative_l2": 6.751312891348886
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 100.95677892561315,
+      "tmi_rmse_nt": 206.4724643071462,
+      "tmi_relative_l2": 7.874272484384668,
+      "tmi_correlation": 0.06934412410310986
+    }
+  },
+  {
+    "sample_id": "sample_001144",
+    "geological_support": {
+      "iou": 0.17189631650750342,
+      "dice": 0.29336437718277064,
+      "precision": 0.1777150916784203,
+      "recall": 0.84,
+      "true_occupied_cells": 150,
+      "predicted_occupied_cells": 709,
+      "predicted_to_true_volume_ratio": 4.726666666666667
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.18562874251497005,
+      "dice": 0.31313131313131315,
+      "precision": 0.19314641744548286,
+      "recall": 0.8266666666666667,
+      "true_occupied_cells": 150,
+      "predicted_occupied_cells": 642,
+      "predicted_to_true_volume_ratio": 4.28
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005841845211568544,
+      "susceptibility_rmse_si": 0.007439414016972654,
+      "susceptibility_relative_l2": 13.210119242495693
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 8.050668305468282,
+      "tmi_rmse_nt": 26.06278824214589,
+      "tmi_relative_l2": 32.01291725638678,
+      "tmi_correlation": 0.8610826806658041
+    }
+  },
+  {
+    "sample_id": "sample_001145",
+    "geological_support": {
+      "iou": 0.011459307764265668,
+      "dice": 0.022658959537572253,
+      "precision": 0.011719684286055968,
+      "recall": 0.3402777777777778,
+      "true_occupied_cells": 144,
+      "predicted_occupied_cells": 4181,
+      "predicted_to_true_volume_ratio": 29.03472222222222
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1892,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005284317668665221,
+      "susceptibility_rmse_si": 0.006029947776842387,
+      "susceptibility_relative_l2": 870.5727857839521
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 11.352032051400958,
+      "tmi_rmse_nt": 50.26336043853522,
+      "tmi_relative_l2": 3090.155165297429,
+      "tmi_correlation": 0.48209164869768467
+    }
+  },
+  {
+    "sample_id": "sample_001146",
+    "geological_support": {
+      "iou": 0.047396386822529224,
+      "dice": 0.09050324675324675,
+      "precision": 0.04907570422535211,
+      "recall": 0.5807291666666666,
+      "true_occupied_cells": 384,
+      "predicted_occupied_cells": 4544,
+      "predicted_to_true_volume_ratio": 11.833333333333334
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1717,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0002402232117494982,
+      "susceptibility_rmse_si": 0.003182085268208366,
+      "susceptibility_relative_l2": 301.23567930381995
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 2.9159005482068063,
+      "tmi_rmse_nt": 10.63077982801807,
+      "tmi_relative_l2": 491.21090172737087,
+      "tmi_correlation": 0.7793194469822623
+    }
+  },
+  {
+    "sample_id": "sample_001147",
+    "geological_support": {
+      "iou": 0.18976897689768976,
+      "dice": 0.31900138696255204,
+      "precision": 0.19524617996604415,
+      "recall": 0.8712121212121212,
+      "true_occupied_cells": 132,
+      "predicted_occupied_cells": 589,
+      "predicted_to_true_volume_ratio": 4.462121212121212
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.18855218855218855,
+      "dice": 0.31728045325779036,
+      "precision": 0.1951219512195122,
+      "recall": 0.8484848484848485,
+      "true_occupied_cells": 132,
+      "predicted_occupied_cells": 574,
+      "predicted_to_true_volume_ratio": 4.348484848484849
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005278592136457455,
+      "susceptibility_rmse_si": 0.007008593612253462,
+      "susceptibility_relative_l2": 4.733519495661084
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 6.937795941921694,
+      "tmi_rmse_nt": 21.9462097278783,
+      "tmi_relative_l2": 11.916887267901584,
+      "tmi_correlation": 0.8773627450447711
+    }
+  },
+  {
+    "sample_id": "sample_001148",
+    "geological_support": {
+      "iou": 0.03306581059390048,
+      "dice": 0.06401491609695463,
+      "precision": 0.03421926910299003,
+      "recall": 0.4951923076923077,
+      "true_occupied_cells": 208,
+      "predicted_occupied_cells": 3010,
+      "predicted_to_true_volume_ratio": 14.471153846153847
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.06480836236933799,
+      "dice": 0.12172774869109948,
+      "precision": 0.07045454545454545,
+      "recall": 0.44711538461538464,
+      "true_occupied_cells": 208,
+      "predicted_occupied_cells": 1320,
+      "predicted_to_true_volume_ratio": 6.346153846153846
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0003184611486835636,
+      "susceptibility_rmse_si": 0.004143676422938855,
+      "susceptibility_relative_l2": 53.91504359636035
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 3.2893814578081537,
+      "tmi_rmse_nt": 7.246020249124285,
+      "tmi_relative_l2": 89.4973985471353,
+      "tmi_correlation": 0.9449183208870271
+    }
+  },
+  {
+    "sample_id": "sample_001149",
+    "geological_support": {
+      "iou": 0.04174573055028463,
+      "dice": 0.08014571948998178,
+      "precision": 0.05128205128205128,
+      "recall": 0.18333333333333332,
+      "true_occupied_cells": 240,
+      "predicted_occupied_cells": 858,
+      "predicted_to_true_volume_ratio": 3.575
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.04230769230769231,
+      "dice": 0.08118081180811808,
+      "precision": 0.052132701421800945,
+      "recall": 0.18333333333333332,
+      "true_occupied_cells": 240,
+      "predicted_occupied_cells": 844,
+      "predicted_to_true_volume_ratio": 3.5166666666666666
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.000853467736958126,
+      "susceptibility_rmse_si": 0.009061337669417588,
+      "susceptibility_relative_l2": 14.22233851642104
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 14.590270675228796,
+      "tmi_rmse_nt": 43.760994618813605,
+      "tmi_relative_l2": 24.280740928341594,
+      "tmi_correlation": 0.6371364152917884
+    }
+  },
+  {
+    "sample_id": "sample_001150",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 120,
+      "predicted_occupied_cells": 2651,
+      "predicted_to_true_volume_ratio": 22.091666666666665
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 120,
+      "predicted_occupied_cells": 2507,
+      "predicted_to_true_volume_ratio": 20.891666666666666
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.002357995709648436,
+      "susceptibility_rmse_si": 0.01522314227507647,
+      "susceptibility_relative_l2": 358.8451452465666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 74.96011300526615,
+      "tmi_rmse_nt": 226.2286166209318,
+      "tmi_relative_l2": 566.1533171421819,
+      "tmi_correlation": -0.0823466072159756
+    }
+  },
+  {
+    "sample_id": "sample_001151",
+    "geological_support": {
+      "iou": 0.052385406922357346,
+      "dice": 0.09955555555555555,
+      "precision": 0.07898448519040903,
+      "recall": 0.1346153846153846,
+      "true_occupied_cells": 416,
+      "predicted_occupied_cells": 709,
+      "predicted_to_true_volume_ratio": 1.7043269230769231
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.05953693495038589,
+      "dice": 0.11238293444328824,
+      "precision": 0.09908256880733946,
+      "recall": 0.12980769230769232,
+      "true_occupied_cells": 416,
+      "predicted_occupied_cells": 545,
+      "predicted_to_true_volume_ratio": 1.3100961538461537
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0004985430455043193,
+      "susceptibility_rmse_si": 0.006808010053368496,
+      "susceptibility_relative_l2": 16.863109217633898
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 6.876355564649728,
+      "tmi_rmse_nt": 23.84755982385029,
+      "tmi_relative_l2": 20.39846845579299,
+      "tmi_correlation": 0.8117320929856688
+    }
+  },
+  {
+    "sample_id": "sample_001152",
+    "geological_support": {
+      "iou": 0.009229448379480575,
+      "dice": 0.018290089323692044,
+      "precision": 0.009303331890956296,
+      "recall": 0.5375,
+      "true_occupied_cells": 80,
+      "predicted_occupied_cells": 4622,
+      "predicted_to_true_volume_ratio": 57.775
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1748,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0002913589331015542,
+      "susceptibility_rmse_si": 0.00401290128583589,
+      "susceptibility_relative_l2": 665.4359714686406
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.972308778566274,
+      "tmi_rmse_nt": 22.057073910309953,
+      "tmi_relative_l2": 2320.9127492830344,
+      "tmi_correlation": 0.5027201222302429
+    }
+  },
+  {
+    "sample_id": "sample_001153",
+    "geological_support": {
+      "iou": 0.028835489833641405,
+      "dice": 0.056054617319439455,
+      "precision": 0.031413612565445025,
+      "recall": 0.26,
+      "true_occupied_cells": 300,
+      "predicted_occupied_cells": 2483,
+      "predicted_to_true_volume_ratio": 8.276666666666667
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1704,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0009360141598499394,
+      "susceptibility_rmse_si": 0.008902824546107689,
+      "susceptibility_relative_l2": 802.5205305241636
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 24.60145700416621,
+      "tmi_rmse_nt": 95.61344699835897,
+      "tmi_relative_l2": 1822.0977832935969,
+      "tmi_correlation": 0.4229666926719175
+    }
+  },
+  {
+    "sample_id": "sample_001154",
+    "geological_support": {
+      "iou": 0.15107102593010147,
+      "dice": 0.2624877571008815,
+      "precision": 0.21036106750392464,
+      "recall": 0.3489583333333333,
+      "true_occupied_cells": 384,
+      "predicted_occupied_cells": 637,
+      "predicted_to_true_volume_ratio": 1.6588541666666667
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.15447154471544716,
+      "dice": 0.2676056338028169,
+      "precision": 0.2180327868852459,
+      "recall": 0.3463541666666667,
+      "true_occupied_cells": 384,
+      "predicted_occupied_cells": 610,
+      "predicted_to_true_volume_ratio": 1.5885416666666667
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006131520797854978,
+      "susceptibility_rmse_si": 0.007323770319645849,
+      "susceptibility_relative_l2": 5.196155599493719
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 5.246616850873942,
+      "tmi_rmse_nt": 12.297731601622335,
+      "tmi_relative_l2": 7.613729347724105,
+      "tmi_correlation": 0.9530966893055905
+    }
+  },
+  {
+    "sample_id": "sample_001155",
+    "geological_support": {
+      "iou": 0.0021205695243865495,
+      "dice": 0.004232164449818622,
+      "precision": 0.0022271714922048997,
+      "recall": 0.04242424242424243,
+      "true_occupied_cells": 165,
+      "predicted_occupied_cells": 3143,
+      "predicted_to_true_volume_ratio": 19.048484848484847
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0022300095571838167,
+      "dice": 0.004450095359186269,
+      "precision": 0.0023482053002348204,
+      "recall": 0.04242424242424243,
+      "true_occupied_cells": 165,
+      "predicted_occupied_cells": 2981,
+      "predicted_to_true_volume_ratio": 18.066666666666666
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0028170593133473383,
+      "susceptibility_rmse_si": 0.016609050082868018,
+      "susceptibility_relative_l2": 64.81362556683135
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 80.06936018839752,
+      "tmi_rmse_nt": 196.40007034249467,
+      "tmi_relative_l2": 177.14810405795717,
+      "tmi_correlation": 0.11366048360405175
+    }
+  },
+  {
+    "sample_id": "sample_001156",
+    "geological_support": {
+      "iou": 0.02997275204359673,
+      "dice": 0.0582010582010582,
+      "precision": 0.03459119496855346,
+      "recall": 0.18333333333333332,
+      "true_occupied_cells": 180,
+      "predicted_occupied_cells": 954,
+      "predicted_to_true_volume_ratio": 5.3
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.033126293995859216,
+      "dice": 0.06412825651302605,
+      "precision": 0.039119804400977995,
+      "recall": 0.17777777777777778,
+      "true_occupied_cells": 180,
+      "predicted_occupied_cells": 818,
+      "predicted_to_true_volume_ratio": 4.544444444444444
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006717104646106049,
+      "susceptibility_rmse_si": 0.007987749250814202,
+      "susceptibility_relative_l2": 50.94246067319151
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 12.59992542094076,
+      "tmi_rmse_nt": 35.12873273144496,
+      "tmi_relative_l2": 101.18045083679202,
+      "tmi_correlation": 0.7009914287648019
+    }
+  },
+  {
+    "sample_id": "sample_001157",
+    "geological_support": {
+      "iou": 0.19004282655246252,
+      "dice": 0.31938821412505625,
+      "precision": 0.6537753222836096,
+      "recall": 0.2113095238095238,
+      "true_occupied_cells": 1680,
+      "predicted_occupied_cells": 543,
+      "predicted_to_true_volume_ratio": 0.32321428571428573
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.1874328678839957,
+      "dice": 0.31569425599276346,
+      "precision": 0.6572504708097928,
+      "recall": 0.20773809523809525,
+      "true_occupied_cells": 1680,
+      "predicted_occupied_cells": 531,
+      "predicted_to_true_volume_ratio": 0.31607142857142856
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005516521788187135,
+      "susceptibility_rmse_si": 0.006982992631250927,
+      "susceptibility_relative_l2": 14.877939444291844
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 5.855437568395176,
+      "tmi_rmse_nt": 18.433917454779756,
+      "tmi_relative_l2": 9.516983273020319,
+      "tmi_correlation": 0.8889119553171114
+    }
+  },
+  {
+    "sample_id": "sample_001158",
+    "geological_support": {
+      "iou": 0.23045930701047543,
+      "dice": 0.3745907007203667,
+      "precision": 0.46353322528363045,
+      "recall": 0.3142857142857143,
+      "true_occupied_cells": 910,
+      "predicted_occupied_cells": 617,
+      "predicted_to_true_volume_ratio": 0.6780219780219781
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.23006644518272426,
+      "dice": 0.3740715732613099,
+      "precision": 0.4851138353765324,
+      "recall": 0.30439560439560437,
+      "true_occupied_cells": 910,
+      "predicted_occupied_cells": 571,
+      "predicted_to_true_volume_ratio": 0.6274725274725275
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005527535747767077,
+      "susceptibility_rmse_si": 0.007203624946301944,
+      "susceptibility_relative_l2": 26.96393488299958
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 6.755132940857755,
+      "tmi_rmse_nt": 23.425981572635227,
+      "tmi_relative_l2": 25.652157383920308,
+      "tmi_correlation": 0.8769667925269656
+    }
+  },
+  {
+    "sample_id": "sample_001159",
+    "geological_support": {
+      "iou": 0.113776559287183,
+      "dice": 0.2043076923076923,
+      "precision": 0.19369894982497082,
+      "recall": 0.21614583333333334,
+      "true_occupied_cells": 768,
+      "predicted_occupied_cells": 857,
+      "predicted_to_true_volume_ratio": 1.1158854166666667
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.11473087818696884,
+      "dice": 0.20584498094027953,
+      "precision": 0.20099255583126552,
+      "recall": 0.2109375,
+      "true_occupied_cells": 768,
+      "predicted_occupied_cells": 806,
+      "predicted_to_true_volume_ratio": 1.0494791666666667
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.000783633174766483,
+      "susceptibility_rmse_si": 0.008670590217068164,
+      "susceptibility_relative_l2": 32.2486648589432
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 15.67538187325744,
+      "tmi_rmse_nt": 42.18805764526012,
+      "tmi_relative_l2": 28.654866538288058,
+      "tmi_correlation": 0.6046327429980595
+    }
+  },
+  {
+    "sample_id": "sample_001160",
+    "geological_support": {
+      "iou": 0.011203117389186557,
+      "dice": 0.022157996146435453,
+      "precision": 0.012693156732891833,
+      "recall": 0.08712121212121213,
+      "true_occupied_cells": 528,
+      "predicted_occupied_cells": 3624,
+      "predicted_to_true_volume_ratio": 6.863636363636363
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.01121951219512195,
+      "dice": 0.02219006271104679,
+      "precision": 0.01271420674405749,
+      "recall": 0.08712121212121213,
+      "true_occupied_cells": 528,
+      "predicted_occupied_cells": 3618,
+      "predicted_to_true_volume_ratio": 6.8522727272727275
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0037987820087016597,
+      "susceptibility_rmse_si": 0.01920245351931618,
+      "susceptibility_relative_l2": 9.232730064266208
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 103.91269404048703,
+      "tmi_rmse_nt": 231.05719122503905,
+      "tmi_relative_l2": 12.550935379161507,
+      "tmi_correlation": 0.03119732822176292
+    }
+  },
+  {
+    "sample_id": "sample_001161",
+    "geological_support": {
+      "iou": 0.03188565145684442,
+      "dice": 0.06180074587107086,
+      "precision": 0.034421364985163204,
+      "recall": 0.3020833333333333,
+      "true_occupied_cells": 192,
+      "predicted_occupied_cells": 1685,
+      "predicted_to_true_volume_ratio": 8.776041666666666
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.04302788844621514,
+      "dice": 0.0825057295645531,
+      "precision": 0.048343777976723366,
+      "recall": 0.28125,
+      "true_occupied_cells": 192,
+      "predicted_occupied_cells": 1117,
+      "predicted_to_true_volume_ratio": 5.817708333333333
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005000450678192087,
+      "susceptibility_rmse_si": 0.006251200752023894,
+      "susceptibility_relative_l2": 120.98640805548276
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 8.323046012605756,
+      "tmi_rmse_nt": 25.460171470510996,
+      "tmi_relative_l2": 255.54079495370289,
+      "tmi_correlation": 0.8030402844036724
+    }
+  },
+  {
+    "sample_id": "sample_001162",
+    "geological_support": {
+      "iou": 0.051697127937336815,
+      "dice": 0.09831181727904667,
+      "precision": 0.05985489721886336,
+      "recall": 0.275,
+      "true_occupied_cells": 360,
+      "predicted_occupied_cells": 1654,
+      "predicted_to_true_volume_ratio": 4.594444444444444
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.07170393215111796,
+      "dice": 0.13381294964028778,
+      "precision": 0.09029126213592233,
+      "recall": 0.25833333333333336,
+      "true_occupied_cells": 360,
+      "predicted_occupied_cells": 1030,
+      "predicted_to_true_volume_ratio": 2.861111111111111
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0004615729780039076,
+      "susceptibility_rmse_si": 0.006202130078794016,
+      "susceptibility_relative_l2": 24.239875035161585
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.461169916032887,
+      "tmi_rmse_nt": 10.039873409479465,
+      "tmi_relative_l2": 36.1581512716226,
+      "tmi_correlation": 0.9560108887145339
+    }
+  },
+  {
+    "sample_id": "sample_001163",
+    "geological_support": {
+      "iou": 0.00851063829787234,
+      "dice": 0.016877637130801686,
+      "precision": 0.00975609756097561,
+      "recall": 0.0625,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 1845,
+      "predicted_to_true_volume_ratio": 6.40625
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.008188824662813102,
+      "dice": 0.016244624940277116,
+      "precision": 0.009418282548476454,
+      "recall": 0.059027777777777776,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 1805,
+      "predicted_to_true_volume_ratio": 6.267361111111111
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0017431391206861942,
+      "susceptibility_rmse_si": 0.013094448450385538,
+      "susceptibility_relative_l2": 117.46162836241034
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 57.558769293574876,
+      "tmi_rmse_nt": 201.33589774369352,
+      "tmi_relative_l2": 244.78485481875077,
+      "tmi_correlation": 0.08531515357848922
+    }
+  },
+  {
+    "sample_id": "sample_001164",
+    "geological_support": {
+      "iou": 0.021908652060898627,
+      "dice": 0.042877906976744186,
+      "precision": 0.02497883149872989,
+      "recall": 0.15128205128205127,
+      "true_occupied_cells": 390,
+      "predicted_occupied_cells": 2362,
+      "predicted_to_true_volume_ratio": 6.056410256410256
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1452,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006915858873475096,
+      "susceptibility_rmse_si": 0.007630974917207137,
+      "susceptibility_relative_l2": 912.9799302750054
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 16.140471511832462,
+      "tmi_rmse_nt": 42.282949360986,
+      "tmi_relative_l2": 934.050138687245,
+      "tmi_correlation": 0.47779336603863204
+    }
+  },
+  {
+    "sample_id": "sample_001165",
+    "geological_support": {
+      "iou": 0.11533742331288344,
+      "dice": 0.2068206820682068,
+      "precision": 0.11868686868686869,
+      "recall": 0.8034188034188035,
+      "true_occupied_cells": 234,
+      "predicted_occupied_cells": 1584,
+      "predicted_to_true_volume_ratio": 6.769230769230769
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.1564625850340136,
+      "dice": 0.27058823529411763,
+      "precision": 0.1684100418410042,
+      "recall": 0.688034188034188,
+      "true_occupied_cells": 234,
+      "predicted_occupied_cells": 956,
+      "predicted_to_true_volume_ratio": 4.085470085470085
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00037037034031411393,
+      "susceptibility_rmse_si": 0.00527266323159271,
+      "susceptibility_relative_l2": 98.92279254520541
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 5.307970128003557,
+      "tmi_rmse_nt": 16.24065240061032,
+      "tmi_relative_l2": 174.93772218603004,
+      "tmi_correlation": 0.835222813877407
+    }
+  },
+  {
+    "sample_id": "sample_001166",
+    "geological_support": {
+      "iou": 0.004846186262115465,
+      "dice": 0.009645628014258754,
+      "precision": 0.005392731535756155,
+      "recall": 0.04563492063492063,
+      "true_occupied_cells": 504,
+      "predicted_occupied_cells": 4265,
+      "predicted_to_true_volume_ratio": 8.462301587301587
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 3684,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.003184268932750924,
+      "susceptibility_rmse_si": 0.017526620415219827,
+      "susceptibility_relative_l2": 501.4751319608767
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 103.12108900578463,
+      "tmi_rmse_nt": 244.93480830855341,
+      "tmi_relative_l2": 644.8768211670081,
+      "tmi_correlation": -0.0029370952859521164
+    }
+  },
+  {
+    "sample_id": "sample_001167",
+    "geological_support": {
+      "iou": 0.03393692289243314,
+      "dice": 0.06564602180468569,
+      "precision": 0.03468137254901961,
+      "recall": 0.6125541125541125,
+      "true_occupied_cells": 462,
+      "predicted_occupied_cells": 8160,
+      "predicted_to_true_volume_ratio": 17.662337662337663
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 3594,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0003290566070293163,
+      "susceptibility_rmse_si": 0.0024443986475424957,
+      "susceptibility_relative_l2": 210.8998419784802
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 2.9499030254572056,
+      "tmi_rmse_nt": 5.900501687218224,
+      "tmi_relative_l2": 427.00810997144794,
+      "tmi_correlation": 0.8358875384440968
+    }
+  },
+  {
+    "sample_id": "sample_001168",
+    "geological_support": {
+      "iou": 0.04933437744714174,
+      "dice": 0.09402985074626866,
+      "precision": 0.06702127659574468,
+      "recall": 0.1575,
+      "true_occupied_cells": 400,
+      "predicted_occupied_cells": 940,
+      "predicted_to_true_volume_ratio": 2.35
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0493730407523511,
+      "dice": 0.09410007468259896,
+      "precision": 0.0670926517571885,
+      "recall": 0.1575,
+      "true_occupied_cells": 400,
+      "predicted_occupied_cells": 939,
+      "predicted_to_true_volume_ratio": 2.3475
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0012021139125860758,
+      "susceptibility_rmse_si": 0.01077619664997551,
+      "susceptibility_relative_l2": 1.902593513365702
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 16.388147746715205,
+      "tmi_rmse_nt": 61.773531498423026,
+      "tmi_relative_l2": 2.639827040369381,
+      "tmi_correlation": 0.5332562026749286
+    }
+  },
+  {
+    "sample_id": "sample_001169",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 112,
+      "predicted_occupied_cells": 3458,
+      "predicted_to_true_volume_ratio": 30.875
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 112,
+      "predicted_occupied_cells": 3229,
+      "predicted_to_true_volume_ratio": 28.830357142857142
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.002987161485091407,
+      "susceptibility_rmse_si": 0.017088992379303686,
+      "susceptibility_relative_l2": 174.8498535603311
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 94.00182106955128,
+      "tmi_rmse_nt": 236.8890534014613,
+      "tmi_relative_l2": 509.92549185025996,
+      "tmi_correlation": -0.01764320949314342
+    }
+  },
+  {
+    "sample_id": "sample_001170",
+    "geological_support": {
+      "iou": 0.04488078541374474,
+      "dice": 0.08590604026845637,
+      "precision": 0.0512,
+      "recall": 0.26666666666666666,
+      "true_occupied_cells": 240,
+      "predicted_occupied_cells": 1250,
+      "predicted_to_true_volume_ratio": 5.208333333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.04772727272727273,
+      "dice": 0.0911062906724512,
+      "precision": 0.05511811023622047,
+      "recall": 0.2625,
+      "true_occupied_cells": 240,
+      "predicted_occupied_cells": 1143,
+      "predicted_to_true_volume_ratio": 4.7625
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.001060552619320606,
+      "susceptibility_rmse_si": 0.010152885796088532,
+      "susceptibility_relative_l2": 47.85304125711794
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 22.293990582080113,
+      "tmi_rmse_nt": 61.9599492924872,
+      "tmi_relative_l2": 86.64488312097467,
+      "tmi_correlation": 0.5109771969363934
+    }
+  },
+  {
+    "sample_id": "sample_001171",
+    "geological_support": {
+      "iou": 0.05318491032776747,
+      "dice": 0.10099823840281856,
+      "precision": 0.0745880312228968,
+      "recall": 0.15636363636363637,
+      "true_occupied_cells": 550,
+      "predicted_occupied_cells": 1153,
+      "predicted_to_true_volume_ratio": 2.096363636363636
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.05338299193047796,
+      "dice": 0.10135533294048321,
+      "precision": 0.07497820401046207,
+      "recall": 0.15636363636363637,
+      "true_occupied_cells": 550,
+      "predicted_occupied_cells": 1147,
+      "predicted_to_true_volume_ratio": 2.0854545454545454
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0014569386393231834,
+      "susceptibility_rmse_si": 0.011639854174576745,
+      "susceptibility_relative_l2": 2.03753489931626
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 20.52138193018615,
+      "tmi_rmse_nt": 57.172813510415565,
+      "tmi_relative_l2": 2.0123924880285156,
+      "tmi_correlation": 0.46484023919987283
+    }
+  },
+  {
+    "sample_id": "sample_001172",
+    "geological_support": {
+      "iou": 0.17684887459807075,
+      "dice": 0.3005464480874317,
+      "precision": 0.25462962962962965,
+      "recall": 0.36666666666666664,
+      "true_occupied_cells": 450,
+      "predicted_occupied_cells": 648,
+      "predicted_to_true_volume_ratio": 1.44
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.17768147345612134,
+      "dice": 0.3017479300827967,
+      "precision": 0.25745682888540034,
+      "recall": 0.36444444444444446,
+      "true_occupied_cells": 450,
+      "predicted_occupied_cells": 637,
+      "predicted_to_true_volume_ratio": 1.4155555555555555
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006663944642609507,
+      "susceptibility_rmse_si": 0.007576960798483327,
+      "susceptibility_relative_l2": 4.218082349946836
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 7.808685939217262,
+      "tmi_rmse_nt": 26.52208162837945,
+      "tmi_relative_l2": 5.683975582628188,
+      "tmi_correlation": 0.8438816963173251
+    }
+  },
+  {
+    "sample_id": "sample_001173",
+    "geological_support": {
+      "iou": 0.04502541757443718,
+      "dice": 0.08617095205003475,
+      "precision": 0.06256306760847628,
+      "recall": 0.13839285714285715,
+      "true_occupied_cells": 448,
+      "predicted_occupied_cells": 991,
+      "predicted_to_true_volume_ratio": 2.2120535714285716
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 731,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00040268967285079653,
+      "susceptibility_rmse_si": 0.005856835443321747,
+      "susceptibility_relative_l2": 89.1163498287869
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 6.465301362912576,
+      "tmi_rmse_nt": 20.218648348374487,
+      "tmi_relative_l2": 104.17887880664698,
+      "tmi_correlation": 0.7958190641791789
+    }
+  },
+  {
+    "sample_id": "sample_001174",
+    "geological_support": {
+      "iou": 0.1038135593220339,
+      "dice": 0.18809980806142035,
+      "precision": 0.12468193384223919,
+      "recall": 0.3828125,
+      "true_occupied_cells": 256,
+      "predicted_occupied_cells": 786,
+      "predicted_to_true_volume_ratio": 3.0703125
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.1040339702760085,
+      "dice": 0.18846153846153846,
+      "precision": 0.125,
+      "recall": 0.3828125,
+      "true_occupied_cells": 256,
+      "predicted_occupied_cells": 784,
+      "predicted_to_true_volume_ratio": 3.0625
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0008359268619643733,
+      "susceptibility_rmse_si": 0.008840605766329146,
+      "susceptibility_relative_l2": 2.402261103345401
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 11.11030368677614,
+      "tmi_rmse_nt": 32.29774048631655,
+      "tmi_relative_l2": 3.94728984795397,
+      "tmi_correlation": 0.758936427796402
+    }
+  },
+  {
+    "sample_id": "sample_001175",
+    "geological_support": {
+      "iou": 0.1422893481717011,
+      "dice": 0.24913013221990257,
+      "precision": 0.19185423365487675,
+      "recall": 0.3551587301587302,
+      "true_occupied_cells": 504,
+      "predicted_occupied_cells": 933,
+      "predicted_to_true_volume_ratio": 1.8511904761904763
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.1866235167206041,
+      "dice": 0.3145454545454546,
+      "precision": 0.2902684563758389,
+      "recall": 0.34325396825396826,
+      "true_occupied_cells": 504,
+      "predicted_occupied_cells": 596,
+      "predicted_to_true_volume_ratio": 1.1825396825396826
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.000475727498075208,
+      "susceptibility_rmse_si": 0.0065744306673324445,
+      "susceptibility_relative_l2": 17.017595820906358
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.619621391672262,
+      "tmi_rmse_nt": 10.784733045505225,
+      "tmi_relative_l2": 19.115379214899942,
+      "tmi_correlation": 0.9699517795726038
+    }
+  },
+  {
+    "sample_id": "sample_001176",
+    "geological_support": {
+      "iou": 0.027672273467173086,
+      "dice": 0.05385427666314678,
+      "precision": 0.031598513011152414,
+      "recall": 0.18214285714285713,
+      "true_occupied_cells": 280,
+      "predicted_occupied_cells": 1614,
+      "predicted_to_true_volume_ratio": 5.764285714285714
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.027747551686615888,
+      "dice": 0.05399682371625199,
+      "precision": 0.031696706028589185,
+      "recall": 0.18214285714285713,
+      "true_occupied_cells": 280,
+      "predicted_occupied_cells": 1609,
+      "predicted_to_true_volume_ratio": 5.746428571428571
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0017708854922665357,
+      "susceptibility_rmse_si": 0.013134654690448146,
+      "susceptibility_relative_l2": 3.039770537630826
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 36.70803946156046,
+      "tmi_rmse_nt": 95.25434901498205,
+      "tmi_relative_l2": 5.358606912847948,
+      "tmi_correlation": 0.3785621299091423
+    }
+  },
+  {
+    "sample_id": "sample_001177",
+    "geological_support": {
+      "iou": 0.01422387136672851,
+      "dice": 0.02804878048780488,
+      "precision": 0.01749049429657795,
+      "recall": 0.07076923076923076,
+      "true_occupied_cells": 325,
+      "predicted_occupied_cells": 1315,
+      "predicted_to_true_volume_ratio": 4.046153846153846
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.014906027219701879,
+      "dice": 0.02937420178799489,
+      "precision": 0.018533440773569703,
+      "recall": 0.07076923076923076,
+      "true_occupied_cells": 325,
+      "predicted_occupied_cells": 1241,
+      "predicted_to_true_volume_ratio": 3.8184615384615386
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0011969340504324815,
+      "susceptibility_rmse_si": 0.01078358975992784,
+      "susceptibility_relative_l2": 31.85717290074163
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 25.893581765531362,
+      "tmi_rmse_nt": 66.50887740017461,
+      "tmi_relative_l2": 49.26480426237021,
+      "tmi_correlation": 0.4118959914761779
+    }
+  },
+  {
+    "sample_id": "sample_001178",
+    "geological_support": {
+      "iou": 0.058823529411764705,
+      "dice": 0.1111111111111111,
+      "precision": 0.06310679611650485,
+      "recall": 0.4642857142857143,
+      "true_occupied_cells": 280,
+      "predicted_occupied_cells": 2060,
+      "predicted_to_true_volume_ratio": 7.357142857142857
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1417,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006354519748045263,
+      "susceptibility_rmse_si": 0.007098109456056279,
+      "susceptibility_relative_l2": 209.23305641238588
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 11.813935373387901,
+      "tmi_rmse_nt": 34.01237995518134,
+      "tmi_relative_l2": 387.52484015716516,
+      "tmi_correlation": 0.7125104961802088
+    }
+  },
+  {
+    "sample_id": "sample_001179",
+    "geological_support": {
+      "iou": 0.27237728585178056,
+      "dice": 0.4281391830559758,
+      "precision": 0.46622734761120266,
+      "recall": 0.3958041958041958,
+      "true_occupied_cells": 715,
+      "predicted_occupied_cells": 607,
+      "predicted_to_true_volume_ratio": 0.848951048951049
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.2748768472906404,
+      "dice": 0.4312210200927357,
+      "precision": 0.48186528497409326,
+      "recall": 0.3902097902097902,
+      "true_occupied_cells": 715,
+      "predicted_occupied_cells": 579,
+      "predicted_to_true_volume_ratio": 0.8097902097902098
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005475602561452868,
+      "susceptibility_rmse_si": 0.007151432424948595,
+      "susceptibility_relative_l2": 21.044455944588822
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 7.35194563074505,
+      "tmi_rmse_nt": 25.00533590755324,
+      "tmi_relative_l2": 21.84863083113085,
+      "tmi_correlation": 0.8509450000096724
+    }
+  },
+  {
+    "sample_id": "sample_001180",
+    "geological_support": {
+      "iou": 0.040208488458674606,
+      "dice": 0.07730851825340014,
+      "precision": 0.047493403693931395,
+      "recall": 0.2076923076923077,
+      "true_occupied_cells": 260,
+      "predicted_occupied_cells": 1137,
+      "predicted_to_true_volume_ratio": 4.373076923076923
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.042993630573248405,
+      "dice": 0.08244274809160305,
+      "precision": 0.05142857142857143,
+      "recall": 0.2076923076923077,
+      "true_occupied_cells": 260,
+      "predicted_occupied_cells": 1050,
+      "predicted_to_true_volume_ratio": 4.038461538461538
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0009973800610368795,
+      "susceptibility_rmse_si": 0.009841782816093108,
+      "susceptibility_relative_l2": 35.08779777363521
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 20.247990025785583,
+      "tmi_rmse_nt": 56.50028370385384,
+      "tmi_relative_l2": 63.13879735413203,
+      "tmi_correlation": 0.5707422486183267
+    }
+  },
+  {
+    "sample_id": "sample_001181",
+    "geological_support": {
+      "iou": 0.16055045871559634,
+      "dice": 0.2766798418972332,
+      "precision": 0.330188679245283,
+      "recall": 0.23809523809523808,
+      "true_occupied_cells": 882,
+      "predicted_occupied_cells": 636,
+      "predicted_to_true_volume_ratio": 0.7210884353741497
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.16222570532915362,
+      "dice": 0.2791638570465273,
+      "precision": 0.34442595673876875,
+      "recall": 0.23469387755102042,
+      "true_occupied_cells": 882,
+      "predicted_occupied_cells": 601,
+      "predicted_to_true_volume_ratio": 0.68140589569161
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006487331182994915,
+      "susceptibility_rmse_si": 0.007289167609377147,
+      "susceptibility_relative_l2": 5.304698523481958
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.967081935040597,
+      "tmi_rmse_nt": 11.357877813490814,
+      "tmi_relative_l2": 5.366485668344665,
+      "tmi_correlation": 0.92912547722065
+    }
+  },
+  {
+    "sample_id": "sample_001182",
+    "geological_support": {
+      "iou": 0.043891733723482075,
+      "dice": 0.08409250175192712,
+      "precision": 0.0495458298926507,
+      "recall": 0.2777777777777778,
+      "true_occupied_cells": 432,
+      "predicted_occupied_cells": 2422,
+      "predicted_to_true_volume_ratio": 5.606481481481482
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1616,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0008070890074370427,
+      "susceptibility_rmse_si": 0.008184657370951006,
+      "susceptibility_relative_l2": 1067.5191232511695
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 20.36547901829134,
+      "tmi_rmse_nt": 78.9834258787598,
+      "tmi_relative_l2": 1799.2771999652357,
+      "tmi_correlation": 0.4568229618784474
+    }
+  },
+  {
+    "sample_id": "sample_001183",
+    "geological_support": {
+      "iou": 0.15060240963855423,
+      "dice": 0.2617801047120419,
+      "precision": 0.1953125,
+      "recall": 0.3968253968253968,
+      "true_occupied_cells": 315,
+      "predicted_occupied_cells": 640,
+      "predicted_to_true_volume_ratio": 2.0317460317460316
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.16621983914209115,
+      "dice": 0.2850574712643678,
+      "precision": 0.22342342342342342,
+      "recall": 0.39365079365079364,
+      "true_occupied_cells": 315,
+      "predicted_occupied_cells": 555,
+      "predicted_to_true_volume_ratio": 1.7619047619047619
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005158685931903794,
+      "susceptibility_rmse_si": 0.006892193132679225,
+      "susceptibility_relative_l2": 11.838376241786891
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 5.2911532645827775,
+      "tmi_rmse_nt": 14.629548706586391,
+      "tmi_relative_l2": 17.454084016419866,
+      "tmi_correlation": 0.9577201862934677
+    }
+  },
+  {
+    "sample_id": "sample_001184",
+    "geological_support": {
+      "iou": 0.1912023460410557,
+      "dice": 0.3210241260462826,
+      "precision": 0.31867057673509286,
+      "recall": 0.32341269841269843,
+      "true_occupied_cells": 1008,
+      "predicted_occupied_cells": 1023,
+      "predicted_to_true_volume_ratio": 1.0148809523809523
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 746,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00043565724342248014,
+      "susceptibility_rmse_si": 0.0061340985891576395,
+      "susceptibility_relative_l2": 141.50144737806923
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 6.823687127597286,
+      "tmi_rmse_nt": 21.304129823500173,
+      "tmi_relative_l2": 116.12225720813598,
+      "tmi_correlation": 0.8149351913405775
+    }
+  },
+  {
+    "sample_id": "sample_001185",
+    "geological_support": {
+      "iou": 0.023700165349990813,
+      "dice": 0.04630294328786791,
+      "precision": 0.02476958525345622,
+      "recall": 0.3543956043956044,
+      "true_occupied_cells": 364,
+      "predicted_occupied_cells": 5208,
+      "predicted_to_true_volume_ratio": 14.307692307692308
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 2204,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00033438915314016633,
+      "susceptibility_rmse_si": 0.003426297467534418,
+      "susceptibility_relative_l2": 98.39654008107233
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 3.225023160739258,
+      "tmi_rmse_nt": 7.4321334619302055,
+      "tmi_relative_l2": 172.78803301523791,
+      "tmi_correlation": 0.9045768248609648
+    }
+  },
+  {
+    "sample_id": "sample_001186",
+    "geological_support": {
+      "iou": 0.04213119004407571,
+      "dice": 0.0808558278392835,
+      "precision": 0.04430811179277437,
+      "recall": 0.4616477272727273,
+      "true_occupied_cells": 704,
+      "predicted_occupied_cells": 7335,
+      "predicted_to_true_volume_ratio": 10.419034090909092
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 3249,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00029975520745078324,
+      "susceptibility_rmse_si": 0.002322587816061248,
+      "susceptibility_relative_l2": 171.12129018940317
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 2.4256251340875576,
+      "tmi_rmse_nt": 5.179137679303865,
+      "tmi_relative_l2": 289.5655619231168,
+      "tmi_correlation": 0.7962273870866218
+    }
+  },
+  {
+    "sample_id": "sample_001187",
+    "geological_support": {
+      "iou": 0.17780429594272076,
+      "dice": 0.30192502532928067,
+      "precision": 0.2346456692913386,
+      "recall": 0.42329545454545453,
+      "true_occupied_cells": 352,
+      "predicted_occupied_cells": 635,
+      "predicted_to_true_volume_ratio": 1.8039772727272727
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.20053835800807537,
+      "dice": 0.33408071748878926,
+      "precision": 0.2759259259259259,
+      "recall": 0.42329545454545453,
+      "true_occupied_cells": 352,
+      "predicted_occupied_cells": 540,
+      "predicted_to_true_volume_ratio": 1.5340909090909092
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005154782040655719,
+      "susceptibility_rmse_si": 0.006837220713065689,
+      "susceptibility_relative_l2": 9.116504354519051
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 5.074694848978433,
+      "tmi_rmse_nt": 11.657514023747073,
+      "tmi_relative_l2": 12.365039599046668,
+      "tmi_correlation": 0.97670567207144
+    }
+  },
+  {
+    "sample_id": "sample_001188",
+    "geological_support": {
+      "iou": 0.030191458026509573,
+      "dice": 0.058613295210864905,
+      "precision": 0.03266932270916335,
+      "recall": 0.2847222222222222,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 2510,
+      "predicted_to_true_volume_ratio": 8.715277777777779
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 1530,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006143544826812371,
+      "susceptibility_rmse_si": 0.006948367154032963,
+      "susceptibility_relative_l2": 848.8008442383343
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 13.7015609721319,
+      "tmi_rmse_nt": 47.03222210001478,
+      "tmi_relative_l2": 1342.1818397744269,
+      "tmi_correlation": 0.5500031661387272
+    }
+  },
+  {
+    "sample_id": "sample_001189",
+    "geological_support": {
+      "iou": 0.1496415770609319,
+      "dice": 0.2603273577552611,
+      "precision": 0.19623971797884843,
+      "recall": 0.38657407407407407,
+      "true_occupied_cells": 432,
+      "predicted_occupied_cells": 851,
+      "predicted_to_true_volume_ratio": 1.9699074074074074
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.20224719101123595,
+      "dice": 0.3364485981308411,
+      "precision": 0.3050847457627119,
+      "recall": 0.375,
+      "true_occupied_cells": 432,
+      "predicted_occupied_cells": 531,
+      "predicted_to_true_volume_ratio": 1.2291666666666667
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0004530573915160795,
+      "susceptibility_rmse_si": 0.006404072515512207,
+      "susceptibility_relative_l2": 15.14139526816569
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.57926321122965,
+      "tmi_rmse_nt": 10.451315949405537,
+      "tmi_relative_l2": 17.93259529068921,
+      "tmi_correlation": 0.971853500082776
+    }
+  },
+  {
+    "sample_id": "sample_001190",
+    "geological_support": {
+      "iou": 0.06693877551020408,
+      "dice": 0.12547819433817903,
+      "precision": 0.09001097694840834,
+      "recall": 0.20707070707070707,
+      "true_occupied_cells": 396,
+      "predicted_occupied_cells": 911,
+      "predicted_to_true_volume_ratio": 2.3005050505050506
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.06699346405228758,
+      "dice": 0.12557427258805512,
+      "precision": 0.09010989010989011,
+      "recall": 0.20707070707070707,
+      "true_occupied_cells": 396,
+      "predicted_occupied_cells": 910,
+      "predicted_to_true_volume_ratio": 2.297979797979798
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.001088469681422863,
+      "susceptibility_rmse_si": 0.010011841242896665,
+      "susceptibility_relative_l2": 2.2749180217614007
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 14.667310145142658,
+      "tmi_rmse_nt": 45.234912980300166,
+      "tmi_relative_l2": 2.6540443115527537,
+      "tmi_correlation": 0.5773717972799971
+    }
+  },
+  {
+    "sample_id": "sample_001191",
+    "geological_support": {
+      "iou": 0.06777837547068316,
+      "dice": 0.1269521410579345,
+      "precision": 0.07650273224043716,
+      "recall": 0.3727810650887574,
+      "true_occupied_cells": 338,
+      "predicted_occupied_cells": 1647,
+      "predicted_to_true_volume_ratio": 4.872781065088757
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.09239574816026165,
+      "dice": 0.1691616766467066,
+      "precision": 0.11322645290581163,
+      "recall": 0.3343195266272189,
+      "true_occupied_cells": 338,
+      "predicted_occupied_cells": 998,
+      "predicted_to_true_volume_ratio": 2.9526627218934913
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0003555314692046732,
+      "susceptibility_rmse_si": 0.005182212183488334,
+      "susceptibility_relative_l2": 29.461335075235706
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 3.483134781729603,
+      "tmi_rmse_nt": 7.776322965273215,
+      "tmi_relative_l2": 37.743118330038264,
+      "tmi_correlation": 0.9556006388443703
+    }
+  },
+  {
+    "sample_id": "sample_001192",
+    "geological_support": {
+      "iou": 0.20811099252934898,
+      "dice": 0.34452296819787986,
+      "precision": 0.2817919075144509,
+      "recall": 0.4431818181818182,
+      "true_occupied_cells": 440,
+      "predicted_occupied_cells": 692,
+      "predicted_to_true_volume_ratio": 1.5727272727272728
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.20559741657696448,
+      "dice": 0.3410714285714286,
+      "precision": 0.28088235294117647,
+      "recall": 0.4340909090909091,
+      "true_occupied_cells": 440,
+      "predicted_occupied_cells": 680,
+      "predicted_to_true_volume_ratio": 1.5454545454545454
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.000673707635644118,
+      "susceptibility_rmse_si": 0.007881078811159545,
+      "susceptibility_relative_l2": 9.343427738436944
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 9.373226686187822,
+      "tmi_rmse_nt": 30.67303718105685,
+      "tmi_relative_l2": 12.94423327768013,
+      "tmi_correlation": 0.8203583674333303
+    }
+  },
+  {
+    "sample_id": "sample_001193",
+    "geological_support": {
+      "iou": 0.19138149556400508,
+      "dice": 0.32127659574468087,
+      "precision": 0.23159509202453987,
+      "recall": 0.5243055555555556,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 652,
+      "predicted_to_true_volume_ratio": 2.263888888888889
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.1882202304737516,
+      "dice": 0.3168103448275862,
+      "precision": 0.2296875,
+      "recall": 0.5104166666666666,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 640,
+      "predicted_to_true_volume_ratio": 2.2222222222222223
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0006326154780418835,
+      "susceptibility_rmse_si": 0.007546655532228259,
+      "susceptibility_relative_l2": 4.695180437055446
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 7.948445888483863,
+      "tmi_rmse_nt": 27.272077585527253,
+      "tmi_relative_l2": 8.064972077414122,
+      "tmi_correlation": 0.8507594744464618
+    }
+  },
+  {
+    "sample_id": "sample_001194",
+    "geological_support": {
+      "iou": 0.21076233183856502,
+      "dice": 0.34814814814814815,
+      "precision": 0.24102564102564103,
+      "recall": 0.6266666666666667,
+      "true_occupied_cells": 300,
+      "predicted_occupied_cells": 780,
+      "predicted_to_true_volume_ratio": 2.6
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.23910171730515192,
+      "dice": 0.3859275053304904,
+      "precision": 0.2836990595611285,
+      "recall": 0.6033333333333334,
+      "true_occupied_cells": 300,
+      "predicted_occupied_cells": 638,
+      "predicted_to_true_volume_ratio": 2.1266666666666665
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0005257945550468801,
+      "susceptibility_rmse_si": 0.007009068594403317,
+      "susceptibility_relative_l2": 22.93412907484877
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 6.688883916258647,
+      "tmi_rmse_nt": 20.424769665189224,
+      "tmi_relative_l2": 39.02397732893045,
+      "tmi_correlation": 0.9018527647214757
+    }
+  },
+  {
+    "sample_id": "sample_001195",
+    "geological_support": {
+      "iou": 0.11554921540656206,
+      "dice": 0.2071611253196931,
+      "precision": 0.16135458167330677,
+      "recall": 0.2892857142857143,
+      "true_occupied_cells": 560,
+      "predicted_occupied_cells": 1004,
+      "predicted_to_true_volume_ratio": 1.792857142857143
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.13737734165923282,
+      "dice": 0.2415686274509804,
+      "precision": 0.2153846153846154,
+      "recall": 0.275,
+      "true_occupied_cells": 560,
+      "predicted_occupied_cells": 715,
+      "predicted_to_true_volume_ratio": 1.2767857142857142
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.00047068564360376223,
+      "susceptibility_rmse_si": 0.006531064038057717,
+      "susceptibility_relative_l2": 23.328788376493815
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.8117114769075355,
+      "tmi_rmse_nt": 11.066248480637949,
+      "tmi_relative_l2": 23.84219869617578,
+      "tmi_correlation": 0.9757861247964896
+    }
+  },
+  {
+    "sample_id": "sample_001196",
+    "geological_support": {
+      "iou": 0.07068062827225131,
+      "dice": 0.13202933985330073,
+      "precision": 0.07417582417582418,
+      "recall": 0.6,
+      "true_occupied_cells": 90,
+      "predicted_occupied_cells": 728,
+      "predicted_to_true_volume_ratio": 8.088888888888889
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.071334214002642,
+      "dice": 0.13316892725030827,
+      "precision": 0.07489597780859916,
+      "recall": 0.6,
+      "true_occupied_cells": 90,
+      "predicted_occupied_cells": 721,
+      "predicted_to_true_volume_ratio": 8.011111111111111
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0007073997403946462,
+      "susceptibility_rmse_si": 0.00832585336573552,
+      "susceptibility_relative_l2": 3.2507739067386296
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 10.032111125316563,
+      "tmi_rmse_nt": 35.11515281318659,
+      "tmi_relative_l2": 10.255764593376677,
+      "tmi_correlation": 0.7791625981694311
+    }
+  },
+  {
+    "sample_id": "sample_001197",
+    "geological_support": {
+      "iou": 0.04654255319148936,
+      "dice": 0.08894536213468869,
+      "precision": 0.05852842809364549,
+      "recall": 0.18518518518518517,
+      "true_occupied_cells": 378,
+      "predicted_occupied_cells": 1196,
+      "predicted_to_true_volume_ratio": 3.164021164021164
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.04708362614195362,
+      "dice": 0.08993288590604027,
+      "precision": 0.06025179856115108,
+      "recall": 0.17724867724867724,
+      "true_occupied_cells": 378,
+      "predicted_occupied_cells": 1112,
+      "predicted_to_true_volume_ratio": 2.941798941798942
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0010085256580512814,
+      "susceptibility_rmse_si": 0.009882785806964061,
+      "susceptibility_relative_l2": 102.16120797861264
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 22.22269779520911,
+      "tmi_rmse_nt": 92.07714138984248,
+      "tmi_relative_l2": 199.71673787947884,
+      "tmi_correlation": 0.47560281091919454
+    }
+  },
+  {
+    "sample_id": "sample_001198",
+    "geological_support": {
+      "iou": 0.002857142857142857,
+      "dice": 0.005698005698005698,
+      "precision": 0.0030175015087507543,
+      "recall": 0.05102040816326531,
+      "true_occupied_cells": 98,
+      "predicted_occupied_cells": 1657,
+      "predicted_to_true_volume_ratio": 16.908163265306122
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.003205128205128205,
+      "dice": 0.006389776357827476,
+      "precision": 0.0034083162917518746,
+      "recall": 0.05102040816326531,
+      "true_occupied_cells": 98,
+      "predicted_occupied_cells": 1467,
+      "predicted_to_true_volume_ratio": 14.96938775510204
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0012839267665801443,
+      "susceptibility_rmse_si": 0.011089425917636358,
+      "susceptibility_relative_l2": 246.80513597952685
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 41.37639401277149,
+      "tmi_rmse_nt": 166.96265385085533,
+      "tmi_relative_l2": 953.7667767380727,
+      "tmi_correlation": 0.18316393752112325
+    }
+  },
+  {
+    "sample_id": "sample_001199",
+    "geological_support": {
+      "iou": 0.04222520107238606,
+      "dice": 0.08102893890675242,
+      "precision": 0.050199203187251,
+      "recall": 0.21,
+      "true_occupied_cells": 300,
+      "predicted_occupied_cells": 1255,
+      "predicted_to_true_volume_ratio": 4.183333333333334
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.04982817869415808,
+      "dice": 0.09492635024549918,
+      "precision": 0.06290672451193059,
+      "recall": 0.19333333333333333,
+      "true_occupied_cells": 300,
+      "predicted_occupied_cells": 922,
+      "predicted_to_true_volume_ratio": 3.0733333333333333
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0004316189078063251,
+      "susceptibility_rmse_si": 0.005974340285557301,
+      "susceptibility_relative_l2": 31.272404550089405
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 4.369218914580902,
+      "tmi_rmse_nt": 10.15709840272402,
+      "tmi_relative_l2": 41.925070452201105,
+      "tmi_correlation": 0.9692245053755912
+    }
+  }
+]

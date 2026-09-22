@@ -1,0 +1,34 @@
+{
+  "status": "unverified_saved_prediction_arrays",
+  "checkpoint_path": null,
+  "checkpoint_sha256": null,
+  "checkpoint_epoch": null,
+  "training_commit": null,
+  "recorded_best_validation_epoch": 11,
+  "recorded_best_validation_loss": 0.10606759041547775,
+  "recomputed_validation_loss": null,
+  "validation_loss_tolerance": 0.001,
+  "model": "E01 asymmetric 2-D U-Net, base_filters=8, 190592 parameters",
+  "loss": "E01 composite soft-Tversky; depth=2, amplitude=1, TMI=0, Tversky=0.1",
+  "dataset_path": "C:\\Users\\tsche\\Code\\01_magnetic_inversion_cnn_test\\magnetic-inversion-testing-framework\\datasets\\E02",
+  "dataset_version": "E02_loguniform_susceptibility_v1",
+  "dataset_metadata_sha256": "483c12e213e9f6b9b9c5d61daccb71c7610719f79013c8c5c6d03ed828151c1d",
+  "test_manifest_sha256": "32c850ff9228cbd91e8d370d509a1c603699e03b4545da0255f28e58d3ba0671",
+  "tmi_normalization": {
+    "operation": "divide",
+    "scale_nt": 100.0,
+    "clipping": false,
+    "per_sample_normalization": false
+  },
+  "geological_prediction_threshold_si": 5e-05,
+  "thresholded_diagnostic_si": 0.001,
+  "threshold_policy": "geological truth=manifest body; predictions >= threshold; diagnostic truth and predictions >= threshold",
+  "empty_mask_policy": "both empty scores=1; one empty scores=0; true-empty predicted-nonempty volume ratio=null",
+  "geological_threshold_note": "0.00005 SI is provisional evaluation convention, not validated detection limit",
+  "tmi_source": "saved recovered_tmi.npy (not independently forward-verified)",
+  "git": {
+    "commit": "47e79f29a1bde8661489235ebd351a29cb5ce90f",
+    "dirty": true
+  },
+  "timestamp_utc": "2026-09-22T17:13:30.608450+00:00"
+}
