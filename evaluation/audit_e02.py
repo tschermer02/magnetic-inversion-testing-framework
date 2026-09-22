@@ -31,10 +31,16 @@ def _sha256(path: Path) -> str:
 
 def _git_state() -> dict[str, object]:
     def run(*args):
-        result = subprocess.run(["git", *args], capture_output=True, text=True, check=False)
+        try:
+            result = subprocess.run(["git", *args], capture_output=True, text=True,
+                                    check=False, timeout=10)
+        except subprocess.TimeoutExpired:
+            return None
         return result.stdout.strip() if result.returncode == 0 else None
+    status = run("status", "--porcelain", "--untracked-files=no")
     return {"commit": run("rev-parse", "HEAD"),
-            "dirty": bool(run("status", "--porcelain")) if run("status", "--porcelain") is not None else None}
+            "dirty_tracked_files": bool(status) if status is not None else None,
+            "untracked_files_checked": False}
 
 
 def _write_csv(path: Path, rows: list[dict]) -> None:
@@ -105,14 +111,18 @@ def _load_checkpoint_predictions(checkpoint: Path, dataset: Path, manifest: list
     model.compile(optimizer=tf.keras.optimizers.Adam(1e-3), jit_compile=False)
     _, validation, _, _ = build_training_datasets(dataset_directory=dataset,
         batch_size=2, tmi_scale=tmi_scale, susceptibility_scale=1.0, random_seed=20260727)
+    print("Verifying checkpoint validation loss...", flush=True)
     validation_loss = float(model.evaluate(validation, verbose=0, return_dict=True)["loss"])
+    print(f"Validation loss: {validation_loss:.8g}", flush=True)
     predictions = {}
-    for row in manifest:
+    for index, row in enumerate(manifest, start=1):
         with np.load(dataset / row["relative_path"]) as saved:
             tmi = saved["tmi"]
         predictions[row["sample_id"]] = np.asarray(
             model.inversion_model(tmi[None, ..., None] / tmi_scale, training=False)[0, ..., 0]
         )
+        if index % 10 == 0 or index == len(manifest):
+            print(f"CNN predictions: {index}/{len(manifest)}", flush=True)
     return predictions, validation_loss
 
 
@@ -192,6 +202,26 @@ def run_audit(dataset: Path, predictions: Path, output: Path, *,
                              f"recorded best {best_val:.6g} by more than {validation_tolerance:g}.")
     output.mkdir(parents=True, exist_ok=True)
 
+    batched_recovered_tmi = None
+    if regenerated is not None:
+        from e01_magnetic.config import MagneticSurveyConfig
+        from forward_modeling.forward_model import TMIForwardModel, make_tensor_grid
+        survey = MagneticSurveyConfig()
+        forward = TMIForwardModel(make_tensor_grid([0,640,0,640,0,240],[10,10],10),
+            survey.receiver_xyz, survey.field_strength_nt, survey.inclination_deg,
+            survey.declination_deg, survey.azimuth_deg)
+        model_matrix = np.stack([
+            np.asarray(regenerated[item["sample_id"]], dtype=np.float64)
+              .transpose(2,1,0).ravel(order="F")
+            for item in manifest
+        ])
+        print(f"Forward modeling {len(manifest)} predictions together (CPU/NumPy)...", flush=True)
+        responses = forward.predict_many(model_matrix).reshape(len(manifest),81,81)
+        batched_recovered_tmi = {
+            item["sample_id"]: responses[index] for index,item in enumerate(manifest)
+        }
+        print("Forward modeling complete.", flush=True)
+
     historical = {}
     old_csv = predictions / "combined_test_metrics.csv"
     if old_csv.exists():
@@ -248,13 +278,7 @@ def run_audit(dataset: Path, predictions: Path, output: Path, *,
             recovered_tmi = np.asarray(np.load(cache), dtype=np.float64)
             cached_tmi_count += 1
         else:
-            from e01_magnetic.config import MagneticSurveyConfig
-            from forward_modeling.forward_model import TMIForwardModel, make_tensor_grid
-            survey = MagneticSurveyConfig()
-            forward = TMIForwardModel(make_tensor_grid([0,640,0,640,0,240],[10,10],10),
-                survey.receiver_xyz, survey.field_strength_nt, survey.inclination_deg,
-                survey.declination_deg, survey.azimuth_deg)
-            recovered_tmi = forward.predict(predicted.transpose(2,1,0)).reshape(81,81)
+            recovered_tmi = batched_recovered_tmi[sample_id]
         tmi_metrics = calculate_tmi_fit_metrics(tmi, recovered_tmi)
         zero_tmi = calculate_tmi_fit_metrics(tmi, np.zeros_like(tmi))
         row = {"sample_id":sample_id, "susceptibility_si":float(item["susceptibility_si"]),
@@ -274,6 +298,8 @@ def run_audit(dataset: Path, predictions: Path, output: Path, *,
                         "susceptibility_errors":{key:row[key] for key in (
                             "susceptibility_mae_si","susceptibility_rmse_si","susceptibility_relative_l2")},
                         "tmi_fit":tmi_metrics})
+        if len(rows) % 10 == 0 or len(rows) == len(manifest):
+            print(f"Metrics complete: {len(rows)}/{len(manifest)}", flush=True)
     _write_csv(output / "per_sample_metrics.csv", rows)
     (output / "per_sample_reports.json").write_text(json.dumps(reports, indent=2), encoding="utf-8")
     grouped = {name:_summary([row for row in rows if row["susceptibility_decade"] == name])

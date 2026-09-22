@@ -57,10 +57,17 @@ def build_training_callbacks(
 
 def _git_state() -> dict[str, object]:
     def run(*args):
-        result = subprocess.run(["git", *args], capture_output=True, text=True, check=False)
+        try:
+            result = subprocess.run(["git", *args], capture_output=True, text=True,
+                                    check=False, timeout=10)
+        except subprocess.TimeoutExpired:
+            return None
         return result.stdout.strip() if result.returncode == 0 else None
-    status = run("status", "--porcelain")
-    return {"commit": run("rev-parse", "HEAD"), "dirty": bool(status) if status is not None else None}
+    # Do not recursively scan large untracked datasets on network filesystems.
+    status = run("status", "--porcelain", "--untracked-files=no")
+    return {"commit": run("rev-parse", "HEAD"),
+            "dirty_tracked_files": bool(status) if status is not None else None,
+            "untracked_files_checked": False}
 
 
 def _sha256(path: Path) -> str:
