@@ -1,0 +1,36 @@
+{
+  "source": "fresh seeded initialization",
+  "split": "training only",
+  "sample_ids": [
+    "sample_000498",
+    "sample_000484",
+    "sample_000516"
+  ],
+  "sample_susceptibility_si": [
+    0.00029619052062522907,
+    0.0033256595103870797,
+    0.04491929782697323
+  ],
+  "raw_losses": {
+    "susceptibility_relative": 9512.8603515625,
+    "tmi_absolute": 32.77950668334961,
+    "tmi_relative": 17543426.0
+  },
+  "raw_gradient_norms": {
+    "susceptibility_relative": 2807.791748046875,
+    "tmi_absolute": 8.185964584350586,
+    "tmi_relative": 4373919.0
+  },
+  "frozen_starting_coefficients": {
+    "susceptibility_relative": 1e-06,
+    "tmi_absolute": 0.0001,
+    "tmi_relative": 1e-09
+  },
+  "weighted_losses": {
+    "susceptibility_relative": 0.0095128603515625,
+    "tmi_absolute": 0.003277950668334961,
+    "tmi_relative": 0.017543426
+  },
+  "p2_checkpoint_diagnostic": "not run unless checkpoint weights are locally available",
+  "timestamp_utc": "2026-09-23T14:27:01.127177+00:00"
+}
