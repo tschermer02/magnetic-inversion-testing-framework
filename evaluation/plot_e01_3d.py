@@ -77,11 +77,12 @@ def _isosurface(values, threshold, common_maximum, name, showscale):
                       "<br>susceptibility=%{value:.5f} SI<extra>" + name + "</extra>")
 
 
-def build_figure(sample_id, truth, prediction, *, threshold=0.001, label=None, metric_value=None):
+def build_figure(sample_id, truth, prediction, *, threshold=0.001, label=None, metric_value=None,
+                 experiment="E01"):
     """Build an E09B-12-style, common-scale true/predicted E01 figure."""
     common_maximum = max(float(np.max(truth)), float(np.max(prediction)), threshold * 1.001)
     figure = make_subplots(rows=1, cols=2, specs=[[{"type":"scene"},{"type":"scene"}]],
-                           subplot_titles=("True susceptibility", "E01 reconstructed susceptibility"),
+                           subplot_titles=("True susceptibility", f"{experiment} reconstructed susceptibility"),
                            horizontal_spacing=0.04)
     for trace in _model_domain_box(True): figure.add_trace(trace, row=1, col=1)
     for trace in _model_domain_box(False): figure.add_trace(trace, row=1, col=2)
@@ -92,7 +93,7 @@ def build_figure(sample_id, truth, prediction, *, threshold=0.001, label=None, m
             "zaxis":{"title":"Depth (m)","range":[240,0]}, "aspectmode":"manual",
             "aspectratio":{"x":1,"y":1,"z":0.5}, "camera":{"eye":{"x":1.45,"y":1.45,"z":1}}}
     descriptor = f"{label.title()} result | support IoU={metric_value:.4f} | " if label else ""
-    figure.update_layout(title={"text":f"{sample_id}: E01 3D susceptibility reconstruction<br>"
+    figure.update_layout(title={"text":f"{sample_id}: {experiment} 3D susceptibility reconstruction<br>"
         f"<sup>{descriptor}common scale; occupancy &gt;= {threshold:g} SI | "
         f"true cells={np.count_nonzero(truth >= threshold):,}, predicted cells={np.count_nonzero(prediction >= threshold):,}</sup>","x":0.5},
         scene=axis, scene2=axis, width=1400, height=720, margin={"l":20,"r":100,"t":100,"b":20})

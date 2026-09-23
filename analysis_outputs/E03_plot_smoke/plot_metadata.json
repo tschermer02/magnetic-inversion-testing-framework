@@ -1,0 +1,7 @@
+{
+  "source_audit": "C:\\Users\\tsche\\Code\\01_magnetic_inversion_cnn_test\\magnetic-inversion-testing-framework\\prediction_outputs\\E03_combined_audit",
+  "sample_count": 1,
+  "fresh_forward_model": true,
+  "interactive_plotly": false,
+  "susceptibility_threshold_si": 5e-05
+}
