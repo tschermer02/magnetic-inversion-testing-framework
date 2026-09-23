@@ -1,0 +1,24 @@
+{
+  "source": "fresh E01-seeded initialization",
+  "split": "training only",
+  "sample_ids": [
+    "sample_000875",
+    "sample_000484",
+    "sample_000966"
+  ],
+  "sample_susceptibility_si": [
+    0.011840355391661585,
+    0.05122196683795768,
+    0.09011992923157827
+  ],
+  "e01_raw_loss": 0.1378411501646042,
+  "e01_gradient_norm": 0.03008919581770897,
+  "tmi_raw_loss": 32.661781311035156,
+  "tmi_gradient_norm": 13.65234661102295,
+  "lambda_tmi": 0.001,
+  "weighted_tmi_loss": 0.03266178131103516,
+  "weighted_tmi_gradient_norm": 0.01365234661102295,
+  "physics_gradient_nonzero": true,
+  "coefficient_rationale": "Conservative starting influence relative to the unchanged E01 loss and gradient; fixed before validation.",
+  "timestamp_utc": "2026-09-23T19:46:55.218824+00:00"
+}

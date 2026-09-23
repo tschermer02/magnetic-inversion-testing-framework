@@ -1,0 +1,50 @@
+{
+  "dataset": "C:\\Users\\tsche\\Code\\01_magnetic_inversion_cnn_test\\magnetic-inversion-testing-framework\\datasets\\E01_soft_tversky_full",
+  "split": "training only",
+  "sample_count": 5,
+  "tolerance_note": "Float32 TensorFlow versus float64 NumPy generation; small round-off residuals expected.",
+  "samples": [
+    {
+      "sample_id": "sample_000000",
+      "rmse_nt": 2.6144456475687045e-07,
+      "mae_nt": 1.1441330777367613e-07,
+      "maximum_absolute_residual_nt": 1.9073486328125e-06,
+      "correlation": 0.9999999999999983,
+      "relative_l2": 1.143346218971028e-07
+    },
+    {
+      "sample_id": "sample_000249",
+      "rmse_nt": 1.1855682003659012e-07,
+      "mae_nt": 3.364207621932375e-08,
+      "maximum_absolute_residual_nt": 1.9073486328125e-06,
+      "correlation": 0.9999999999999979,
+      "relative_l2": 8.650555210948389e-08
+    },
+    {
+      "sample_id": "sample_000499",
+      "rmse_nt": 2.417334789172133e-06,
+      "mae_nt": 4.581928212292727e-07,
+      "maximum_absolute_residual_nt": 3.0517578125e-05,
+      "correlation": 0.9999999999999986,
+      "relative_l2": 6.111130301915434e-08
+    },
+    {
+      "sample_id": "sample_000749",
+      "rmse_nt": 4.625230351291073e-07,
+      "mae_nt": 1.366052580615507e-07,
+      "maximum_absolute_residual_nt": 3.814697265625e-06,
+      "correlation": 0.999999999999998,
+      "relative_l2": 6.890230435329734e-08
+    },
+    {
+      "sample_id": "sample_000999",
+      "rmse_nt": 2.806399443271037e-07,
+      "mae_nt": 1.0120428756794685e-07,
+      "maximum_absolute_residual_nt": 2.86102294921875e-06,
+      "correlation": 0.9999999999999978,
+      "relative_l2": 9.843059994734313e-08
+    }
+  ],
+  "maximum_rmse_nt": 2.417334789172133e-06,
+  "timestamp_utc": "2026-09-23T19:46:47.364475+00:00"
+}
