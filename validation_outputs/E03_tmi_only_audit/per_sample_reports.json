@@ -1,0 +1,4502 @@
+[
+  {
+    "sample_id": "sample_001000",
+    "geological_support": {
+      "iou": 0.005135227661759671,
+      "dice": 0.010217983651226158,
+      "precision": 0.005326704545454545,
+      "recall": 0.125,
+      "true_occupied_cells": 960,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 23.466666666666665
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291746751810327,
+      "susceptibility_rmse_si": 0.04787107861700245,
+      "susceptibility_relative_l2": 4432.183807633709
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.012581972405314445,
+      "true_body_susceptibility_bias_si": 0.01239070389419794,
+      "predicted_to_true_body_mean_ratio": 114.36801697399366,
+      "background_susceptibility_mae_si": 0.023019395477795468,
+      "integrated_absolute_background_leakage_si_cells": 2240.800033390522,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.52976446079396,
+      "tmi_rmse_nt": 306.74813832770053,
+      "tmi_relative_l2": 4217.03896147624,
+      "tmi_correlation": 0.08846850244508876,
+      "tmi_absolute_reference_mse": 9.409442036751011,
+      "tmi_floored_relative_mse": 17783417.602608617,
+      "observed_tmi_rms_nt": 0.07274017174845321,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 4217.169796070155
+    }
+  },
+  {
+    "sample_id": "sample_001001",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 512,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 44.0
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022920812952179404,
+      "susceptibility_rmse_si": 0.047871390571229674,
+      "susceptibility_relative_l2": 833.3011748199806
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.000796021253336221,
+      "true_body_susceptibility_bias_si": -0.000796021253336221,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.02303664955793251,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.49147130834746,
+      "tmi_rmse_nt": 306.71118746280285,
+      "tmi_relative_l2": 1098.7103000504496,
+      "tmi_correlation": 0.12608789829736075,
+      "tmi_absolute_reference_mse": 9.407175251484258,
+      "tmi_floored_relative_mse": 1207164.3234369496,
+      "observed_tmi_rms_nt": 0.2791556495362968,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 1098.8767584252196
+    }
+  },
+  {
+    "sample_id": "sample_001002",
+    "geological_support": {
+      "iou": 0.006216811293873851,
+      "dice": 0.012356802677307247,
+      "precision": 0.006334961066385113,
+      "recall": 0.25,
+      "true_occupied_cells": 576,
+      "predicted_occupied_cells": 22731,
+      "predicted_to_true_volume_ratio": 39.463541666666664
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.006216811293873851,
+      "dice": 0.012356802677307247,
+      "precision": 0.006334961066385113,
+      "recall": 0.25,
+      "true_occupied_cells": 576,
+      "predicted_occupied_cells": 22731,
+      "predicted_to_true_volume_ratio": 39.463541666666664
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023412877501939988,
+      "susceptibility_rmse_si": 0.04838202722451956,
+      "susceptibility_relative_l2": 6.3710385296630685
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.07460417039692402,
+      "true_body_susceptibility_bias_si": -0.07420833967626095,
+      "predicted_to_true_body_mean_ratio": 0.25199494679816437,
+      "background_susceptibility_mae_si": 0.023111160647942046,
+      "integrated_absolute_background_leakage_si_cells": 2258.6075078020804,
+      "prediction_fraction_near_saturation": 0.23122151692708334
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 271.9553840610951,
+      "tmi_rmse_nt": 306.1159836518683,
+      "tmi_relative_l2": 27.739425793732796,
+      "tmi_correlation": 0.27203385103231076,
+      "tmi_absolute_reference_mse": 9.37069954471509,
+      "tmi_floored_relative_mse": 769.4757433660085,
+      "observed_tmi_rms_nt": 11.035411689056284,
+      "predicted_tmi_rms_nt": 310.1519692760525,
+      "predicted_to_observed_tmi_rms_ratio": 28.10515620215849
+    }
+  },
+  {
+    "sample_id": "sample_001003",
+    "geological_support": {
+      "iou": 0.0034891835310537334,
+      "dice": 0.006954102920723227,
+      "precision": 0.0035511363636363635,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 480,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 46.93333333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0034891835310537334,
+      "dice": 0.006954102920723227,
+      "precision": 0.0035511363636363635,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 480,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 46.93333333333333
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022971238982184634,
+      "susceptibility_rmse_si": 0.047857188016666434,
+      "susceptibility_relative_l2": 40.85274825640359
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.0278430071969827,
+      "true_body_susceptibility_bias_si": -9.784350792566936e-05,
+      "predicted_to_true_body_mean_ratio": 0.994163652534001,
+      "background_susceptibility_mae_si": 0.022947334329511435,
+      "integrated_absolute_background_leakage_si_cells": 2244.8000334501266,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.8036300888831,
+      "tmi_rmse_nt": 306.0396133049992,
+      "tmi_relative_l2": 107.5907619459455,
+      "tmi_correlation": 0.19650903229872727,
+      "tmi_absolute_reference_mse": 9.366024491187341,
+      "tmi_floored_relative_mse": 11575.772056109121,
+      "observed_tmi_rms_nt": 2.8444785385826705,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 107.84319554450981
+    }
+  },
+  {
+    "sample_id": "sample_001004",
+    "geological_support": {
+      "iou": 0.00255461592670895,
+      "dice": 0.0050962129865565415,
+      "precision": 0.0025745738636363635,
+      "recall": 0.24786324786324787,
+      "true_occupied_cells": 234,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 96.27350427350427
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.00255461592670895,
+      "dice": 0.0050962129865565415,
+      "precision": 0.0025745738636363635,
+      "recall": 0.24786324786324787,
+      "true_occupied_cells": 234,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 96.27350427350427
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291871101747726,
+      "susceptibility_rmse_si": 0.047869329436188816,
+      "susceptibility_relative_l2": 576.1863356319813
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.025645018714424383,
+      "true_body_susceptibility_bias_si": 0.023083492166275144,
+      "predicted_to_true_body_mean_ratio": 14.55593432241469,
+      "background_susceptibility_mae_si": 0.02291220590887029,
+      "integrated_absolute_background_leakage_si_cells": 2247.000033482909,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.51450140576264,
+      "tmi_rmse_nt": 306.7210089966723,
+      "tmi_relative_l2": 2669.324446123776,
+      "tmi_correlation": 0.2649767540196231,
+      "tmi_absolute_reference_mse": 9.407777735993673,
+      "tmi_floored_relative_mse": 7125292.998674006,
+      "observed_tmi_rms_nt": 0.11490585546544298,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 2669.643370357113
+    }
+  },
+  {
+    "sample_id": "sample_001005",
+    "geological_support": {
+      "iou": 0.0026492405510420347,
+      "dice": 0.005284481240091597,
+      "precision": 0.0026633522727272725,
+      "recall": 0.3333333333333333,
+      "true_occupied_cells": 180,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 125.15555555555555
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0026492405510420347,
+      "dice": 0.005284481240091597,
+      "precision": 0.0026633522727272725,
+      "recall": 0.3333333333333333,
+      "true_occupied_cells": 180,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 125.15555555555555
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022919894851175588,
+      "susceptibility_rmse_si": 0.04786514783925223,
+      "susceptibility_relative_l2": 211.51267686025992
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03509616650020083,
+      "true_body_susceptibility_bias_si": 0.028044835819552343,
+      "predicted_to_true_body_mean_ratio": 6.302986928224854,
+      "background_susceptibility_mae_si": 0.022897558532876044,
+      "integrated_absolute_background_leakage_si_cells": 2246.800033479929,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.4624862710569,
+      "tmi_rmse_nt": 306.6797688535524,
+      "tmi_relative_l2": 1132.1328115204083,
+      "tmi_correlation": 0.21284299787199343,
+      "tmi_absolute_reference_mse": 9.405248062406834,
+      "tmi_floored_relative_mse": 1281724.702921104,
+      "observed_tmi_rms_nt": 0.2708867420260473,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 1132.420335392553
+    }
+  },
+  {
+    "sample_id": "sample_001006",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 320,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 70.4
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 320,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 70.4
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02292808279238064,
+      "susceptibility_rmse_si": 0.047871774244406876,
+      "susceptibility_relative_l2": 239.25618117321437
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.003506928915157914,
+      "true_body_susceptibility_bias_si": -0.003506928915157914,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022991509160366345,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.39221666273994,
+      "tmi_rmse_nt": 306.63907375746385,
+      "tmi_relative_l2": 458.0315929758719,
+      "tmi_correlation": 0.13612123236159965,
+      "tmi_absolute_reference_mse": 9.402752155483531,
+      "tmi_floored_relative_mse": 209792.94016401493,
+      "observed_tmi_rms_nt": 0.6694714479523179,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 458.20872002353235
+    }
+  },
+  {
+    "sample_id": "sample_001007",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 360,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 62.577777777777776
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291707782491888,
+      "susceptibility_rmse_si": 0.04787135658250381,
+      "susceptibility_relative_l2": 7051.690284117426
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.00011218036524951458,
+      "true_body_susceptibility_bias_si": -0.00011218036524951458,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.023000898815336682,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.53755602847116,
+      "tmi_rmse_nt": 306.75254674169605,
+      "tmi_relative_l2": 11179.262921067515,
+      "tmi_correlation": 0.15518448403348786,
+      "tmi_absolute_reference_mse": 9.409712493251641,
+      "tmi_floored_relative_mse": 86577477.38048965,
+      "observed_tmi_rms_nt": 0.027439425023595747,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 11179.449095407248
+    }
+  },
+  {
+    "sample_id": "sample_001008",
+    "geological_support": {
+      "iou": 0.0019777611743506352,
+      "dice": 0.003947714711816826,
+      "precision": 0.0019975142045454545,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 270,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 83.43703703703704
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0019777611743506352,
+      "dice": 0.003947714711816826,
+      "precision": 0.0019975142045454545,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 270,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 83.43703703703704
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.0229721544772777,
+      "susceptibility_rmse_si": 0.04786872217792367,
+      "susceptibility_relative_l2": 30.141297686130464
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03686903789639473,
+      "true_body_susceptibility_bias_si": -0.01363688955704371,
+      "predicted_to_true_body_mean_ratio": 0.5499904583933705,
+      "background_susceptibility_mae_si": 0.022933880424161827,
+      "integrated_absolute_background_leakage_si_cells": 2248.3000335022807,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.961031132469,
+      "tmi_rmse_nt": 306.0606045370358,
+      "tmi_relative_l2": 133.7144002508212,
+      "tmi_correlation": 0.2452956463730635,
+      "tmi_absolute_reference_mse": 9.36730936495758,
+      "tmi_floored_relative_mse": 17879.54083443682,
+      "observed_tmi_rms_nt": 2.288912816891284,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 134.01893379021718
+    }
+  },
+  {
+    "sample_id": "sample_001009",
+    "geological_support": {
+      "iou": 0.001847128155510599,
+      "dice": 0.003687445127304653,
+      "precision": 0.001864346590909091,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 252,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 89.39682539682539
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291685066965184,
+      "susceptibility_rmse_si": 0.04787126049620136,
+      "susceptibility_relative_l2": 8797.922905289297
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.016738312391680665,
+      "true_body_susceptibility_bias_si": 0.016559198700027384,
+      "predicted_to_true_body_mean_ratio": 155.08461656560473,
+      "background_susceptibility_mae_si": 0.022932729913788103,
+      "integrated_absolute_background_leakage_si_cells": 2248.600033506751,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5382377398607,
+      "tmi_rmse_nt": 306.75444390827386,
+      "tmi_relative_l2": 11309.571794365982,
+      "tmi_correlation": 0.08736164914706024,
+      "tmi_absolute_reference_mse": 9.409828885747434,
+      "tmi_floored_relative_mse": 86578548.29192069,
+      "observed_tmi_rms_nt": 0.027123435748565454,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 11309.69019198671
+    }
+  },
+  {
+    "sample_id": "sample_001010",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 225,
+      "predicted_occupied_cells": 22588,
+      "predicted_to_true_volume_ratio": 100.39111111111112
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 225,
+      "predicted_occupied_cells": 22588,
+      "predicted_to_true_volume_ratio": 100.39111111111112
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023065761082269393,
+      "susceptibility_rmse_si": 0.04797038865766153,
+      "susceptibility_relative_l2": 26.061869248893466
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03847352787852287,
+      "true_body_susceptibility_bias_si": -0.03847352787852287,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.02303041460107406,
+      "integrated_absolute_background_leakage_si_cells": 2258.800033658743,
+      "prediction_fraction_near_saturation": 0.22977701822916666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.9120655240741,
+      "tmi_rmse_nt": 306.6204956852658,
+      "tmi_relative_l2": 67.30026426202447,
+      "tmi_correlation": 0.174052272543603,
+      "tmi_absolute_reference_mse": 9.401612837427809,
+      "tmi_floored_relative_mse": 4529.325569738329,
+      "observed_tmi_rms_nt": 4.556007306174614,
+      "predicted_tmi_rms_nt": 307.57941064538426,
+      "predicted_to_observed_tmi_rms_ratio": 67.5107369183828
+    }
+  },
+  {
+    "sample_id": "sample_001011",
+    "geological_support": {
+      "iou": 0.006119416032870006,
+      "dice": 0.012164393083673647,
+      "precision": 0.006214488636363636,
+      "recall": 0.2857142857142857,
+      "true_occupied_cells": 490,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 45.97551020408163
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.006119416032870006,
+      "dice": 0.012164393083673647,
+      "precision": 0.006214488636363636,
+      "recall": 0.2857142857142857,
+      "true_occupied_cells": 490,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 45.97551020408163
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02292387705376105,
+      "susceptibility_rmse_si": 0.04786190736643013,
+      "susceptibility_relative_l2": 200.8573135632238
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.030017911290217723,
+      "true_body_susceptibility_bias_si": 0.025196303646745428,
+      "predicted_to_true_body_mean_ratio": 8.465294183379237,
+      "background_susceptibility_mae_si": 0.022888339433626267,
+      "integrated_absolute_background_leakage_si_cells": 2238.8000333607197,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.40821721955706,
+      "tmi_rmse_nt": 306.64152408521204,
+      "tmi_relative_l2": 1088.5939587663954,
+      "tmi_correlation": 0.29508274106819377,
+      "tmi_absolute_reference_mse": 9.402902429330167,
+      "tmi_floored_relative_mse": 1185036.8070626927,
+      "observed_tmi_rms_nt": 0.28168585873166246,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 1089.0062306988357
+    }
+  },
+  {
+    "sample_id": "sample_001012",
+    "geological_support": {
+      "iou": 0.003415061295971979,
+      "dice": 0.006806876690810717,
+      "precision": 0.0034623579545454545,
+      "recall": 0.2,
+      "true_occupied_cells": 390,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 57.764102564102565
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.003415061295971979,
+      "dice": 0.006806876690810717,
+      "precision": 0.0034623579545454545,
+      "recall": 0.2,
+      "true_occupied_cells": 390,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 57.764102564102565
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022932665100303968,
+      "susceptibility_rmse_si": 0.0478620872558641,
+      "susceptibility_relative_l2": 113.06323283546388
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.02403250401839614,
+      "true_body_susceptibility_bias_si": 0.013279160764068366,
+      "predicted_to_true_body_mean_ratio": 2.9758187495743234,
+      "background_susceptibility_mae_si": 0.022928284345988387,
+      "integrated_absolute_background_leakage_si_cells": 2245.000033453107,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.3857488933808,
+      "tmi_rmse_nt": 306.568307309653,
+      "tmi_relative_l2": 650.0501800688011,
+      "tmi_correlation": 0.33430294262789595,
+      "tmi_absolute_reference_mse": 9.398412704670584,
+      "tmi_floored_relative_mse": 422565.23660748074,
+      "observed_tmi_rms_nt": 0.47160714158590944,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 650.4516751527024
+    }
+  },
+  {
+    "sample_id": "sample_001013",
+    "geological_support": {
+      "iou": 0.0033436102305788354,
+      "dice": 0.0066649355145849565,
+      "precision": 0.003412061860238401,
+      "recall": 0.14285714285714285,
+      "true_occupied_cells": 539,
+      "predicted_occupied_cells": 22567,
+      "predicted_to_true_volume_ratio": 41.868274582560296
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0033436102305788354,
+      "dice": 0.0066649355145849565,
+      "precision": 0.003412061860238401,
+      "recall": 0.14285714285714285,
+      "true_occupied_cells": 539,
+      "predicted_occupied_cells": 22567,
+      "predicted_to_true_volume_ratio": 41.868274582560296
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023303744499192664,
+      "susceptibility_rmse_si": 0.04821701746296099,
+      "susceptibility_relative_l2": 7.340835324275192
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.07764613309076854,
+      "true_body_susceptibility_bias_si": -0.07441887153046471,
+      "predicted_to_true_body_mean_ratio": 0.16104820661593672,
+      "background_susceptibility_mae_si": 0.02300414292960376,
+      "integrated_absolute_background_leakage_si_cells": 2249.0000335127115,
+      "prediction_fraction_near_saturation": 0.22956339518229166
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 270.8309841337643,
+      "tmi_rmse_nt": 302.94068384533256,
+      "tmi_relative_l2": 16.561190012430583,
+      "tmi_correlation": 0.19714092049350557,
+      "tmi_absolute_reference_mse": 9.177305792867774,
+      "tmi_floored_relative_mse": 274.2730146278306,
+      "observed_tmi_rms_nt": 18.292205066058038,
+      "predicted_tmi_rms_nt": 307.06638344118625,
+      "predicted_to_observed_tmi_rms_ratio": 16.786734148905914
+    }
+  },
+  {
+    "sample_id": "sample_001014",
+    "geological_support": {
+      "iou": 0.01306532663316583,
+      "dice": 0.025793650793650792,
+      "precision": 0.013849431818181818,
+      "recall": 0.1875,
+      "true_occupied_cells": 1664,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 13.538461538461538
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022923621032447272,
+      "susceptibility_rmse_si": 0.04786707435266409,
+      "susceptibility_relative_l2": 559.7212094919142
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.019160822637786623,
+      "true_body_susceptibility_bias_si": 0.01809268450597301,
+      "predicted_to_true_body_mean_ratio": 28.52510321140421,
+      "background_susceptibility_mae_si": 0.022988410938580502,
+      "integrated_absolute_background_leakage_si_cells": 2221.6000331044197,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.4015623035059,
+      "tmi_rmse_nt": 306.6523975460545,
+      "tmi_relative_l2": 298.9020532013634,
+      "tmi_correlation": 0.07426381337172443,
+      "tmi_absolute_reference_mse": 9.403569292074344,
+      "tmi_floored_relative_mse": 89342.43740799068,
+      "observed_tmi_rms_nt": 1.0259293780744618,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 299.0046506264177
+    }
+  },
+  {
+    "sample_id": "sample_001015",
+    "geological_support": {
+      "iou": 0.005500742163625251,
+      "dice": 0.010941299062174366,
+      "precision": 0.005593039772727273,
+      "recall": 0.25,
+      "true_occupied_cells": 504,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 44.698412698412696
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.005500742163625251,
+      "dice": 0.010941299062174366,
+      "precision": 0.005593039772727273,
+      "recall": 0.25,
+      "true_occupied_cells": 504,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 44.698412698412696
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022973479854120644,
+      "susceptibility_rmse_si": 0.04783830756482019,
+      "susceptibility_relative_l2": 30.14594754539723
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03608121071010828,
+      "true_body_susceptibility_bias_si": 0.002837579697370529,
+      "predicted_to_true_body_mean_ratio": 1.1280356392003301,
+      "background_susceptibility_mae_si": 0.02290593081167261,
+      "integrated_absolute_background_leakage_si_cells": 2240.2000333815813,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.60136308692927,
+      "tmi_rmse_nt": 305.8736311850924,
+      "tmi_relative_l2": 105.59576449835885,
+      "tmi_correlation": 0.2278545925268277,
+      "tmi_absolute_reference_mse": 9.355867825435393,
+      "tmi_floored_relative_mse": 11150.46547999287,
+      "observed_tmi_rms_nt": 2.8966467797091062,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 105.90095327029773
+    }
+  },
+  {
+    "sample_id": "sample_001016",
+    "geological_support": {
+      "iou": 0.006119416032870006,
+      "dice": 0.012164393083673647,
+      "precision": 0.006214488636363636,
+      "recall": 0.2857142857142857,
+      "true_occupied_cells": 490,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 45.97551020408163
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.006119416032870006,
+      "dice": 0.012164393083673647,
+      "precision": 0.006214488636363636,
+      "recall": 0.2857142857142857,
+      "true_occupied_cells": 490,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 45.97551020408163
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022922347330994814,
+      "susceptibility_rmse_si": 0.047863813071289917,
+      "susceptibility_relative_l2": 254.95875744553163
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.029711017684478844,
+      "true_body_susceptibility_bias_si": 0.02591238872680281,
+      "predicted_to_true_body_mean_ratio": 10.745015528917028,
+      "background_susceptibility_mae_si": 0.022888339433626267,
+      "integrated_absolute_background_leakage_si_cells": 2238.8000333607197,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.45142751593886,
+      "tmi_rmse_nt": 306.66112020171903,
+      "tmi_relative_l2": 1279.2267490886431,
+      "tmi_correlation": 0.3191059674475451,
+      "tmi_absolute_reference_mse": 9.404104264337318,
+      "tmi_floored_relative_mse": 1636421.0755838992,
+      "observed_tmi_rms_nt": 0.23972381786121416,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 1279.6294418943673
+    }
+  },
+  {
+    "sample_id": "sample_001017",
+    "geological_support": {
+      "iou": 0.001055223355610271,
+      "dice": 0.0021082220660576245,
+      "precision": 0.001065340909090909,
+      "recall": 0.1,
+      "true_occupied_cells": 240,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 93.86666666666666
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.001055223355610271,
+      "dice": 0.0021082220660576245,
+      "precision": 0.001065340909090909,
+      "recall": 0.1,
+      "true_occupied_cells": 240,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 93.86666666666666
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02292130125518573,
+      "susceptibility_rmse_si": 0.047870289570706,
+      "susceptibility_relative_l2": 408.3164594505186
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.01189818773418665,
+      "true_body_susceptibility_bias_si": 0.0076272656675428156,
+      "predicted_to_true_body_mean_ratio": 4.214546645278784,
+      "background_susceptibility_mae_si": 0.022948279017106922,
+      "integrated_absolute_background_leakage_si_cells": 2250.400033533573,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.48411998700675,
+      "tmi_rmse_nt": 306.6999499065315,
+      "tmi_relative_l2": 609.6492073558711,
+      "tmi_correlation": 0.0843080739300606,
+      "tmi_absolute_reference_mse": 9.406485927266896,
+      "tmi_floored_relative_mse": 371672.15602964215,
+      "observed_tmi_rms_nt": 0.5030761070562685,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 609.763912370066
+    }
+  },
+  {
+    "sample_id": "sample_001018",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 396,
+      "predicted_occupied_cells": 22538,
+      "predicted_to_true_volume_ratio": 56.91414141414141
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 396,
+      "predicted_occupied_cells": 22538,
+      "predicted_to_true_volume_ratio": 56.91414141414141
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022968567180366033,
+      "susceptibility_rmse_si": 0.04788649315228773,
+      "susceptibility_relative_l2": 72.83684846251435
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.010358572006225586,
+      "true_body_susceptibility_bias_si": -0.010358572006225586,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.02301956973469213,
+      "integrated_absolute_background_leakage_si_cells": 2253.800033584237,
+      "prediction_fraction_near_saturation": 0.22926839192708334
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.11698454211466,
+      "tmi_rmse_nt": 306.455780330779,
+      "tmi_relative_l2": 133.30054368069477,
+      "tmi_correlation": 0.10828262595261211,
+      "tmi_absolute_reference_mse": 9.39151452981467,
+      "tmi_floored_relative_mse": 17769.03494556882,
+      "observed_tmi_rms_nt": 2.2989837240638455,
+      "predicted_tmi_rms_nt": 306.8042519502668,
+      "predicted_to_observed_tmi_rms_ratio": 133.45212005587322
+    }
+  },
+  {
+    "sample_id": "sample_001019",
+    "geological_support": {
+      "iou": 0.0007516802263883976,
+      "dice": 0.0015022312552467635,
+      "precision": 0.0007546164772727273,
+      "recall": 0.1619047619047619,
+      "true_occupied_cells": 105,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 214.55238095238096
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0007516802263883976,
+      "dice": 0.0015022312552467635,
+      "precision": 0.0007546164772727273,
+      "recall": 0.1619047619047619,
+      "true_occupied_cells": 105,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 214.55238095238096
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02293675276380706,
+      "susceptibility_rmse_si": 0.047869937937310196,
+      "susceptibility_relative_l2": 52.66872360313194
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03499533475509712,
+      "true_body_susceptibility_bias_si": -0.01161952531408696,
+      "predicted_to_true_body_mean_ratio": 0.5821817840830081,
+      "background_susceptibility_mae_si": 0.022923859036690843,
+      "integrated_absolute_background_leakage_si_cells": 2251.100033544004,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.30114375464444,
+      "tmi_rmse_nt": 306.4407136336161,
+      "tmi_relative_l2": 275.81621145284146,
+      "tmi_correlation": 0.25153066949646596,
+      "tmi_absolute_reference_mse": 9.390591097227993,
+      "tmi_floored_relative_mse": 76074.58250019861,
+      "observed_tmi_rms_nt": 1.1110322776876032,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 276.10147915503285
+    }
+  },
+  {
+    "sample_id": "sample_001020",
+    "geological_support": {
+      "iou": 0.004025006422882589,
+      "dice": 0.008017741385192767,
+      "precision": 0.004041446321853906,
+      "recall": 0.4973544973544973,
+      "true_occupied_cells": 189,
+      "predicted_occupied_cells": 23259,
+      "predicted_to_true_volume_ratio": 123.06349206349206
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.004025006422882589,
+      "dice": 0.008017741385192767,
+      "precision": 0.004041446321853906,
+      "recall": 0.4973544973544973,
+      "true_occupied_cells": 189,
+      "predicted_occupied_cells": 23259,
+      "predicted_to_true_volume_ratio": 123.06349206349206
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023661240032424757,
+      "susceptibility_rmse_si": 0.04863255804800334,
+      "susceptibility_relative_l2": 11.736126272262192
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.05023547951821928,
+      "true_body_susceptibility_bias_si": -0.044770038395962386,
+      "predicted_to_true_body_mean_ratio": 0.5262704957132215,
+      "background_susceptibility_mae_si": 0.02361004978360638,
+      "integrated_absolute_background_leakage_si_cells": 2316.50003451854,
+      "prediction_fraction_near_saturation": 0.236602783203125
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 279.3453424111948,
+      "tmi_rmse_nt": 318.84903202076646,
+      "tmi_relative_l2": 10.06474069203181,
+      "tmi_correlation": 0.05307353976366409,
+      "tmi_absolute_reference_mse": 10.166470522057976,
+      "tmi_floored_relative_mse": 101.29900519784104,
+      "observed_tmi_rms_nt": 31.679805946038638,
+      "predicted_tmi_rms_nt": 319.5117502395604,
+      "predicted_to_observed_tmi_rms_ratio": 10.085659955865776
+    }
+  },
+  {
+    "sample_id": "sample_001021",
+    "geological_support": {
+      "iou": 0.002151670838273394,
+      "dice": 0.004294102182104987,
+      "precision": 0.0021750710227272725,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 294,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 76.62585034013605
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.002151670838273394,
+      "dice": 0.004294102182104987,
+      "precision": 0.0021750710227272725,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 294,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 76.62585034013605
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02293125575247738,
+      "susceptibility_rmse_si": 0.047865409394375384,
+      "susceptibility_relative_l2": 119.61914006226172
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.0215446666503946,
+      "true_body_susceptibility_bias_si": 0.009349667311956486,
+      "predicted_to_true_body_mean_ratio": 2.2778007132927476,
+      "background_susceptibility_mae_si": 0.022935415095360883,
+      "integrated_absolute_background_leakage_si_cells": 2247.9000334963202,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.32394960349916,
+      "tmi_rmse_nt": 306.56616118407686,
+      "tmi_relative_l2": 446.8900661963124,
+      "tmi_correlation": 0.2053224775885816,
+      "tmi_absolute_reference_mse": 9.398281118314138,
+      "tmi_floored_relative_mse": 199710.73126494448,
+      "observed_tmi_rms_nt": 0.6859990507137537,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 447.1692124637254
+    }
+  },
+  {
+    "sample_id": "sample_001022",
+    "geological_support": {
+      "iou": 0.0069054812257229176,
+      "dice": 0.013716245177882554,
+      "precision": 0.007101642254771416,
+      "recall": 0.2,
+      "true_occupied_cells": 800,
+      "predicted_occupied_cells": 22530,
+      "predicted_to_true_volume_ratio": 28.1625
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0069054812257229176,
+      "dice": 0.013716245177882554,
+      "precision": 0.007101642254771416,
+      "recall": 0.2,
+      "true_occupied_cells": 800,
+      "predicted_occupied_cells": 22530,
+      "predicted_to_true_volume_ratio": 28.1625
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023401533478590864,
+      "susceptibility_rmse_si": 0.0483658485213514,
+      "susceptibility_relative_l2": 5.421924255480604
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.07933039218187332,
+      "true_body_susceptibility_bias_si": -0.07888398617506027,
+      "predicted_to_true_body_mean_ratio": 0.20225722092491974,
+      "background_susceptibility_mae_si": 0.022942648848600034,
+      "integrated_absolute_background_leakage_si_cells": 2237.0000333338976,
+      "prediction_fraction_near_saturation": 0.22918701171875
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 269.37271181029365,
+      "tmi_rmse_nt": 300.76019276573635,
+      "tmi_relative_l2": 14.183254262864514,
+      "tmi_correlation": 0.2431725915858061,
+      "tmi_absolute_reference_mse": 9.04566935524829,
+      "tmi_floored_relative_mse": 201.16470148506448,
+      "observed_tmi_rms_nt": 21.205302195928724,
+      "predicted_tmi_rms_nt": 306.76314130249284,
+      "predicted_to_observed_tmi_rms_ratio": 14.466341411601732
+    }
+  },
+  {
+    "sample_id": "sample_001023",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 300,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 75.09333333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022917305648669856,
+      "susceptibility_rmse_si": 0.04787135749706479,
+      "susceptibility_relative_l2": 4140.895844331157
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.00020926972501911223,
+      "true_body_susceptibility_bias_si": -0.00020926972501911223,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022986817207148035,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.53424490174996,
+      "tmi_rmse_nt": 306.75169273093985,
+      "tmi_relative_l2": 9673.314619179257,
+      "tmi_correlation": 0.1396846450316688,
+      "tmi_absolute_reference_mse": 9.409660099329692,
+      "tmi_floored_relative_mse": 86576995.3111814,
+      "observed_tmi_rms_nt": 0.03171112538020256,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 9673.502645542912
+    }
+  },
+  {
+    "sample_id": "sample_001024",
+    "geological_support": {
+      "iou": 0.003185840707964602,
+      "dice": 0.006351446718419196,
+      "precision": 0.0031960227272727275,
+      "recall": 0.5,
+      "true_occupied_cells": 144,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 156.44444444444446
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.003185840707964602,
+      "dice": 0.006351446718419196,
+      "precision": 0.0031960227272727275,
+      "recall": 0.5,
+      "true_occupied_cells": 144,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 156.44444444444446
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291666700815161,
+      "susceptibility_rmse_si": 0.04786132760260427,
+      "susceptibility_relative_l2": 177.34877751818595
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.05000000074505806,
+      "true_body_susceptibility_bias_si": 0.042948835529387,
+      "predicted_to_true_body_mean_ratio": 7.091026690728241,
+      "background_susceptibility_mae_si": 0.022876935956214827,
+      "integrated_absolute_background_leakage_si_cells": 2245.6000334620476,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.38092494062323,
+      "tmi_rmse_nt": 306.5970313711026,
+      "tmi_relative_l2": 170.12712807188552,
+      "tmi_correlation": 0.07770513994759236,
+      "tmi_absolute_reference_mse": 9.400173964557288,
+      "tmi_floored_relative_mse": 28943.23970598775,
+      "observed_tmi_rms_nt": 1.8021642688375545,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 170.2162563995343
+    }
+  },
+  {
+    "sample_id": "sample_001025",
+    "geological_support": {
+      "iou": 0.0028011204481792717,
+      "dice": 0.00558659217877095,
+      "precision": 0.002840909090909091,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 384,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 58.666666666666664
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0028011204481792717,
+      "dice": 0.00558659217877095,
+      "precision": 0.002840909090909091,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 384,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 58.666666666666664
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022923098712756957,
+      "susceptibility_rmse_si": 0.047868246019875174,
+      "susceptibility_relative_l2": 310.1060097147253
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.018313183293988306,
+      "true_body_susceptibility_bias_si": 0.014196892346565923,
+      "predicted_to_true_body_mean_ratio": 6.748254325679607,
+      "background_susceptibility_mae_si": 0.022941176812438405,
+      "integrated_absolute_background_leakage_si_cells": 2246.4000334739685,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.44303604207306,
+      "tmi_rmse_nt": 306.6743309578507,
+      "tmi_relative_l2": 1167.8168692844117,
+      "tmi_correlation": 0.22762660979987184,
+      "tmi_absolute_reference_mse": 9.404914526844538,
+      "tmi_floored_relative_mse": 1363796.2401852454,
+      "observed_tmi_rms_nt": 0.26260481332639735,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 1168.1341684977288
+    }
+  },
+  {
+    "sample_id": "sample_001026",
+    "geological_support": {
+      "iou": 0.004250471057359449,
+      "dice": 0.008464962038572301,
+      "precision": 0.004305752840909091,
+      "recall": 0.24871794871794872,
+      "true_occupied_cells": 390,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 57.764102564102565
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.004250471057359449,
+      "dice": 0.008464962038572301,
+      "precision": 0.004305752840909091,
+      "recall": 0.24871794871794872,
+      "true_occupied_cells": 390,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 57.764102564102565
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022953276788636384,
+      "susceptibility_rmse_si": 0.04784747316257082,
+      "susceptibility_relative_l2": 41.37138457819725
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03409971283414425,
+      "true_body_susceptibility_bias_si": 0.0065101224833574054,
+      "predicted_to_true_body_mean_ratio": 1.354549531994386,
+      "background_susceptibility_mae_si": 0.022908879561909377,
+      "integrated_absolute_background_leakage_si_cells": 2243.1000334247947,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.9001054334574,
+      "tmi_rmse_nt": 306.14329513219667,
+      "tmi_relative_l2": 154.80659060534995,
+      "tmi_correlation": 0.23822184551511427,
+      "tmi_absolute_reference_mse": 9.372371715439929,
+      "tmi_floored_relative_mse": 23965.080494852427,
+      "observed_tmi_rms_nt": 1.9775856695445928,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 155.1172523055216
+    }
+  },
+  {
+    "sample_id": "sample_001027",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 252,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 89.39682539682539
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 252,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 89.39682539682539
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022945043368698254,
+      "susceptibility_rmse_si": 0.04787463677781629,
+      "susceptibility_relative_l2": 85.42076843699931
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.011069483123719692,
+      "true_body_susceptibility_bias_si": -0.011069483123719692,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022975564328818747,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.26073037382884,
+      "tmi_rmse_nt": 306.4965158351573,
+      "tmi_relative_l2": 266.2994107464986,
+      "tmi_correlation": 0.1725327075307371,
+      "tmi_absolute_reference_mse": 9.394011421909084,
+      "tmi_floored_relative_mse": 70915.37616393242,
+      "observed_tmi_rms_nt": 1.1509470297961866,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 266.52630166034146
+    }
+  },
+  {
+    "sample_id": "sample_001028",
+    "geological_support": {
+      "iou": 0.006045489135030016,
+      "dice": 0.012018321637181157,
+      "precision": 0.006312629673773893,
+      "recall": 0.125,
+      "true_occupied_cells": 1144,
+      "predicted_occupied_cells": 22653,
+      "predicted_to_true_volume_ratio": 19.801573426573427
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.006045489135030016,
+      "dice": 0.012018321637181157,
+      "precision": 0.006312629673773893,
+      "recall": 0.125,
+      "true_occupied_cells": 1144,
+      "predicted_occupied_cells": 22653,
+      "predicted_to_true_volume_ratio": 19.801573426573427
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02331235856956937,
+      "susceptibility_rmse_si": 0.048025485298902326,
+      "susceptibility_relative_l2": 14.469701448792534
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.035575230140239,
+      "true_body_susceptibility_bias_si": -0.018266973085701466,
+      "predicted_to_true_body_mean_ratio": 0.4062798142596032,
+      "background_susceptibility_mae_si": 0.02316797070340175,
+      "integrated_absolute_background_leakage_si_cells": 2251.000033542514,
+      "prediction_fraction_near_saturation": 0.230438232421875
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 272.6419921058429,
+      "tmi_rmse_nt": 305.70288151907897,
+      "tmi_relative_l2": 22.244695565289483,
+      "tmi_correlation": 0.15186286404914995,
+      "tmi_absolute_reference_mse": 9.345425176906804,
+      "tmi_floored_relative_mse": 494.82648079240937,
+      "observed_tmi_rms_nt": 13.742731637833533,
+      "predicted_tmi_rms_nt": 308.35876606300667,
+      "predicted_to_observed_tmi_rms_ratio": 22.437952962284417
+    }
+  },
+  {
+    "sample_id": "sample_001029",
+    "geological_support": {
+      "iou": 0.0014499758337361043,
+      "dice": 0.0028957528957528956,
+      "precision": 0.00146484375,
+      "recall": 0.125,
+      "true_occupied_cells": 264,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 85.33333333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022916930741922432,
+      "susceptibility_rmse_si": 0.047871264761672715,
+      "susceptibility_relative_l2": 7054.833839836217
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.012598205052199773,
+      "true_body_susceptibility_bias_si": 0.012369060365017503,
+      "predicted_to_true_body_mean_ratio": 95.46370284624025,
+      "background_susceptibility_mae_si": 0.02294471678417138,
+      "integrated_absolute_background_leakage_si_cells": 2249.500033520162,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.53779335629656,
+      "tmi_rmse_nt": 306.7547164476707,
+      "tmi_relative_l2": 22115.09663761328,
+      "tmi_correlation": 0.15075786629838298,
+      "tmi_absolute_reference_mse": 9.409845606289084,
+      "tmi_floored_relative_mse": 86578702.135337,
+      "observed_tmi_rms_nt": 0.01387082866850074,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 22115.308507497342
+    }
+  },
+  {
+    "sample_id": "sample_001030",
+    "geological_support": {
+      "iou": 0.0030410982709184117,
+      "dice": 0.006063756063756064,
+      "precision": 0.003107244318181818,
+      "recall": 0.125,
+      "true_occupied_cells": 560,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 40.22857142857143
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0030410982709184117,
+      "dice": 0.006063756063756064,
+      "precision": 0.003107244318181818,
+      "recall": 0.125,
+      "true_occupied_cells": 560,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 40.22857142857143
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023334639431899024,
+      "susceptibility_rmse_si": 0.04829341908218575,
+      "susceptibility_relative_l2": 6.540485785886198
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.08587207365781069,
+      "true_body_susceptibility_bias_si": -0.08532943110913038,
+      "predicted_to_true_body_mean_ratio": 0.1277734115464793,
+      "background_susceptibility_mae_si": 0.022976346716576238,
+      "integrated_absolute_background_leakage_si_cells": 2245.800033465028,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 271.6064432683833,
+      "tmi_rmse_nt": 302.51120596923835,
+      "tmi_relative_l2": 24.042502983168287,
+      "tmi_correlation": 0.2839775001045192,
+      "tmi_absolute_reference_mse": 9.151302973696293,
+      "tmi_floored_relative_mse": 578.0419496956564,
+      "observed_tmi_rms_nt": 12.582350771923403,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 24.379995504738254
+    }
+  },
+  {
+    "sample_id": "sample_001031",
+    "geological_support": {
+      "iou": 0.0023889154323936935,
+      "dice": 0.004766444232602479,
+      "precision": 0.00244140625,
+      "recall": 0.1,
+      "true_occupied_cells": 550,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 40.96
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291803579554615,
+      "susceptibility_rmse_si": 0.047871004151968446,
+      "susceptibility_relative_l2": 2092.7737405309317
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.01024464974179864,
+      "true_body_susceptibility_bias_si": 0.009694188158027828,
+      "predicted_to_true_body_mean_ratio": 32.69983010424816,
+      "background_susceptibility_mae_si": 0.02298934093221126,
+      "integrated_absolute_background_leakage_si_cells": 2247.3000334873796,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5246244830097,
+      "tmi_rmse_nt": 306.74339428445495,
+      "tmi_relative_l2": 5011.183890905139,
+      "tmi_correlation": 0.16643620042782775,
+      "tmi_absolute_reference_mse": 9.409150993714857,
+      "tmi_floored_relative_mse": 25111963.988467164,
+      "observed_tmi_rms_nt": 0.06121176172384482,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 5011.416868582563
+    }
+  },
+  {
+    "sample_id": "sample_001032",
+    "geological_support": {
+      "iou": 0.005298481102084069,
+      "dice": 0.010541110330288124,
+      "precision": 0.005326704545454545,
+      "recall": 0.5,
+      "true_occupied_cells": 240,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 93.86666666666666
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.005298481102084069,
+      "dice": 0.010541110330288124,
+      "precision": 0.005326704545454545,
+      "recall": 0.5,
+      "true_occupied_cells": 240,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 93.86666666666666
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291666700815161,
+      "susceptibility_rmse_si": 0.04786267345851619,
+      "susceptibility_relative_l2": 274.46967626049775
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.05000000074505806,
+      "true_body_susceptibility_bias_si": 0.04647074965760112,
+      "predicted_to_true_body_mean_ratio": 14.167311847762683,
+      "background_susceptibility_mae_si": 0.022850383763567895,
+      "integrated_absolute_background_leakage_si_cells": 2240.800033390522,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.4281036280059,
+      "tmi_rmse_nt": 306.67293069323387,
+      "tmi_relative_l2": 279.5130612339415,
+      "tmi_correlation": 0.05714870978099382,
+      "tmi_absolute_reference_mse": 9.404828641997701,
+      "tmi_floored_relative_mse": 78127.55140036915,
+      "observed_tmi_rms_nt": 1.0971685163455047,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 279.5902823390283
+    }
+  },
+  {
+    "sample_id": "sample_001033",
+    "geological_support": {
+      "iou": 0.004106073567151412,
+      "dice": 0.008178565343329358,
+      "precision": 0.004209787756533942,
+      "recall": 0.14285714285714285,
+      "true_occupied_cells": 672,
+      "predicted_occupied_cells": 22804,
+      "predicted_to_true_volume_ratio": 33.93452380952381
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.004106073567151412,
+      "dice": 0.008178565343329358,
+      "precision": 0.004209787756533942,
+      "recall": 0.14285714285714285,
+      "true_occupied_cells": 672,
+      "predicted_occupied_cells": 22804,
+      "predicted_to_true_volume_ratio": 33.93452380952381
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023485905880382536,
+      "susceptibility_rmse_si": 0.048291452577443786,
+      "susceptibility_relative_l2": 9.886210587188076
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.056485800338642936,
+      "true_body_susceptibility_bias_si": -0.04479440567748887,
+      "predicted_to_true_body_mean_ratio": 0.24180239403732093,
+      "background_susceptibility_mae_si": 0.02325876796375734,
+      "integrated_absolute_background_leakage_si_cells": 2270.800033837557,
+      "prediction_fraction_near_saturation": 0.23197428385416666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 273.1792439929325,
+      "tmi_rmse_nt": 308.3307981658593,
+      "tmi_relative_l2": 21.48402917623934,
+      "tmi_correlation": 0.17127903151133309,
+      "tmi_absolute_reference_mse": 9.506788109759587,
+      "tmi_floored_relative_mse": 461.5635096455033,
+      "observed_tmi_rms_nt": 14.351628162321779,
+      "predicted_tmi_rms_nt": 311.45543179016096,
+      "predicted_to_observed_tmi_rms_ratio": 21.701748977014624
+    }
+  },
+  {
+    "sample_id": "sample_001034",
+    "geological_support": {
+      "iou": 0.007000350017500875,
+      "dice": 0.013903371567605145,
+      "precision": 0.007099751508697196,
+      "recall": 0.3333333333333333,
+      "true_occupied_cells": 480,
+      "predicted_occupied_cells": 22536,
+      "predicted_to_true_volume_ratio": 46.95
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.007000350017500875,
+      "dice": 0.013903371567605145,
+      "precision": 0.007099751508697196,
+      "recall": 0.3333333333333333,
+      "true_occupied_cells": 480,
+      "predicted_occupied_cells": 22536,
+      "predicted_to_true_volume_ratio": 46.95
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023038398055480986,
+      "susceptibility_rmse_si": 0.04789097444654065,
+      "susceptibility_relative_l2": 9.820096887104139
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.05659718563159307,
+      "true_body_susceptibility_bias_si": -0.03645822157462438,
+      "predicted_to_true_body_mean_ratio": 0.4776127088265403,
+      "background_susceptibility_mae_si": 0.022873732758247858,
+      "integrated_absolute_background_leakage_si_cells": 2237.6000333428383,
+      "prediction_fraction_near_saturation": 0.229248046875
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 270.8599564969154,
+      "tmi_rmse_nt": 305.3054793075266,
+      "tmi_relative_l2": 5.73274752967319,
+      "tmi_correlation": 0.09893841706809975,
+      "tmi_absolute_reference_mse": 9.321143569519855,
+      "tmi_floored_relative_mse": 32.86439423897408,
+      "observed_tmi_rms_nt": 53.256397168589636,
+      "predicted_tmi_rms_nt": 306.7957216872462,
+      "predicted_to_observed_tmi_rms_ratio": 5.760729940405973
+    }
+  },
+  {
+    "sample_id": "sample_001035",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 480,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 46.93333333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022917224873834147,
+      "susceptibility_rmse_si": 0.04787135676686329,
+      "susceptibility_relative_l2": 5996.269087283757
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.00011425089178374037,
+      "true_body_susceptibility_bias_si": -0.00011425089178374037,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.023029113853137634,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.53321095689563,
+      "tmi_rmse_nt": 306.75132075707904,
+      "tmi_relative_l2": 7866.370984258762,
+      "tmi_correlation": 0.1254420439867867,
+      "tmi_absolute_reference_mse": 9.409637278621236,
+      "tmi_floored_relative_mse": 61879792.461988196,
+      "observed_tmi_rms_nt": 0.0389952776662724,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 7866.533427042417
+    }
+  },
+  {
+    "sample_id": "sample_001036",
+    "geological_support": {
+      "iou": 0.008264462809917356,
+      "dice": 0.01639344262295082,
+      "precision": 0.008522727272727272,
+      "recall": 0.21428571428571427,
+      "true_occupied_cells": 896,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 25.142857142857142
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.008264462809917356,
+      "dice": 0.01639344262295082,
+      "precision": 0.008522727272727272,
+      "recall": 0.21428571428571427,
+      "true_occupied_cells": 896,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 25.142857142857142
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022922502232783398,
+      "susceptibility_rmse_si": 0.047866904368866134,
+      "susceptibility_relative_l2": 447.51554321506006
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.022068779250340804,
+      "true_body_susceptibility_bias_si": 0.020308208618579165,
+      "predicted_to_true_body_mean_ratio": 19.126452118444714,
+      "background_susceptibility_mae_si": 0.022930355138009544,
+      "integrated_absolute_background_leakage_si_cells": 2233.6000332832336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.4040707528724,
+      "tmi_rmse_nt": 306.65175716792737,
+      "tmi_relative_l2": 388.3421583025123,
+      "tmi_correlation": 0.10218864231591318,
+      "tmi_absolute_reference_mse": 9.403530017417749,
+      "tmi_floored_relative_mse": 150809.63191505353,
+      "observed_tmi_rms_nt": 0.7896432324225034,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 388.47626708260054
+    }
+  },
+  {
+    "sample_id": "sample_001037",
+    "geological_support": {
+      "iou": 0.003947714711816826,
+      "dice": 0.007864383082838168,
+      "precision": 0.003995028409090909,
+      "recall": 0.25,
+      "true_occupied_cells": 360,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 62.577777777777776
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.003947714711816826,
+      "dice": 0.007864383082838168,
+      "precision": 0.003995028409090909,
+      "recall": 0.25,
+      "true_occupied_cells": 360,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 62.577777777777776
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02294952631276222,
+      "susceptibility_rmse_si": 0.04784934860372622,
+      "susceptibility_relative_l2": 44.060895684927566
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03397278115153313,
+      "true_body_susceptibility_bias_si": 0.007054438814520836,
+      "predicted_to_true_body_mean_ratio": 1.3931021490588462,
+      "background_susceptibility_mae_si": 0.022909009571134786,
+      "integrated_absolute_background_leakage_si_cells": 2243.8000334352255,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.11532017580356,
+      "tmi_rmse_nt": 306.2537672811739,
+      "tmi_relative_l2": 211.1976361175605,
+      "tmi_correlation": 0.28238035197177874,
+      "tmi_absolute_reference_mse": 9.379136997391141,
+      "tmi_floored_relative_mse": 44604.441501645524,
+      "observed_tmi_rms_nt": 1.4500814162081885,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 211.5451255562406
+    }
+  },
+  {
+    "sample_id": "sample_001038",
+    "geological_support": {
+      "iou": 0.005758157389635317,
+      "dice": 0.011450381679389313,
+      "precision": 0.005859375,
+      "recall": 0.25,
+      "true_occupied_cells": 528,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 42.666666666666664
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.005758157389635317,
+      "dice": 0.011450381679389313,
+      "precision": 0.005859375,
+      "recall": 0.25,
+      "true_occupied_cells": 528,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 42.666666666666664
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022996099634231843,
+      "susceptibility_rmse_si": 0.047837457711579275,
+      "susceptibility_relative_l2": 22.068384459164726
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03978891111910343,
+      "true_body_susceptibility_bias_si": -0.004577821120619774,
+      "predicted_to_true_body_mean_ratio": 0.8452279143790171,
+      "background_susceptibility_mae_si": 0.022905416803434796,
+      "integrated_absolute_background_leakage_si_cells": 2239.6000333726406,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.68479691007855,
+      "tmi_rmse_nt": 305.60438484584597,
+      "tmi_relative_l2": 99.92473296118582,
+      "tmi_correlation": 0.32278242482262676,
+      "tmi_absolute_reference_mse": 9.339404003700793,
+      "tmi_floored_relative_mse": 9984.9522573643,
+      "observed_tmi_rms_nt": 3.058345774759819,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 100.30182257028247
+    }
+  },
+  {
+    "sample_id": "sample_001039",
+    "geological_support": {
+      "iou": 0.005225115387964817,
+      "dice": 0.010395910941696266,
+      "precision": 0.00530832522339202,
+      "recall": 0.25,
+      "true_occupied_cells": 480,
+      "predicted_occupied_cells": 22606,
+      "predicted_to_true_volume_ratio": 47.09583333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.005225115387964817,
+      "dice": 0.010395910941696266,
+      "precision": 0.00530832522339202,
+      "recall": 0.25,
+      "true_occupied_cells": 480,
+      "predicted_occupied_cells": 22606,
+      "predicted_to_true_volume_ratio": 47.09583333333333
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023172554328842427,
+      "susceptibility_rmse_si": 0.04803622698293336,
+      "susceptibility_relative_l2": 9.506634957810487
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.06115572340786457,
+      "true_body_susceptibility_bias_si": -0.04731144569814205,
+      "predicted_to_true_body_mean_ratio": 0.3457267380339227,
+      "background_susceptibility_mae_si": 0.02298617960323388,
+      "integrated_absolute_background_leakage_si_cells": 2248.600033506751,
+      "prediction_fraction_near_saturation": 0.22996012369791666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 272.10010650168454,
+      "tmi_rmse_nt": 306.0441574396198,
+      "tmi_relative_l2": 8.940252269726347,
+      "tmi_correlation": 0.07228363238585292,
+      "tmi_absolute_reference_mse": 9.36630263029268,
+      "tmi_floored_relative_mse": 79.92811064634712,
+      "observed_tmi_rms_nt": 34.23216126416839,
+      "predicted_tmi_rms_nt": 307.5850220384817,
+      "predicted_to_observed_tmi_rms_ratio": 8.985264461243299
+    }
+  },
+  {
+    "sample_id": "sample_001040",
+    "geological_support": {
+      "iou": 0.002838221381267739,
+      "dice": 0.005660377358490566,
+      "precision": 0.0029296875,
+      "recall": 0.08333333333333333,
+      "true_occupied_cells": 792,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 28.444444444444443
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022918402111306097,
+      "susceptibility_rmse_si": 0.04787099926881854,
+      "susceptibility_relative_l2": 2063.6827960707456
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.008548696564200023,
+      "true_body_susceptibility_bias_si": 0.00807489772948126,
+      "predicted_to_true_body_mean_ratio": 32.24528404444673,
+      "background_susceptibility_mae_si": 0.023035113970290715,
+      "integrated_absolute_background_leakage_si_cells": 2246.2000334709883,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5190695123341,
+      "tmi_rmse_nt": 306.7377381251113,
+      "tmi_relative_l2": 2075.93270976222,
+      "tmi_correlation": 0.0945647289348874,
+      "tmi_absolute_reference_mse": 9.408803999010935,
+      "tmi_floored_relative_mse": 4309496.615460715,
+      "observed_tmi_rms_nt": 0.1477589984890432,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 2076.0675044862296
+    }
+  },
+  {
+    "sample_id": "sample_001041",
+    "geological_support": {
+      "iou": 0.0021082220660576245,
+      "dice": 0.004207573632538569,
+      "precision": 0.002130681818181818,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 78.22222222222223
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0021082220660576245,
+      "dice": 0.004207573632538569,
+      "precision": 0.002130681818181818,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 78.22222222222223
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022922894556207513,
+      "susceptibility_rmse_si": 0.04786841487248871,
+      "susceptibility_relative_l2": 277.36480277049094
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.0187923366514345,
+      "true_body_susceptibility_bias_si": 0.013478162310396632,
+      "predicted_to_true_body_mean_ratio": 5.227110818926175,
+      "background_susceptibility_mae_si": 0.02293503135710303,
+      "integrated_absolute_background_leakage_si_cells": 2248.0000334978104,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.48140814082007,
+      "tmi_rmse_nt": 306.683373538193,
+      "tmi_relative_l2": 1518.9936356681194,
+      "tmi_correlation": 0.3100887818876154,
+      "tmi_absolute_reference_mse": 9.405469160476681,
+      "tmi_floored_relative_mse": 2307341.665200251,
+      "observed_tmi_rms_nt": 0.20189905101432523,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 1519.3615508215898
+    }
+  },
+  {
+    "sample_id": "sample_001042",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 504,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 44.698412698412696
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 504,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 44.698412698412696
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022946087902331175,
+      "susceptibility_rmse_si": 0.04787311945173381,
+      "susceptibility_relative_l2": 116.51062522855071
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.005738475359976292,
+      "true_body_susceptibility_bias_si": -0.005738475359976292,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.02303476516942061,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.2718559186692,
+      "tmi_rmse_nt": 306.4987709337146,
+      "tmi_relative_l2": 193.70428613960198,
+      "tmi_correlation": 0.11849037208575117,
+      "tmi_absolute_reference_mse": 9.394149658387763,
+      "tmi_floored_relative_mse": 37521.35046885281,
+      "observed_tmi_rms_nt": 1.5823024727125654,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 193.8678985520721
+    }
+  },
+  {
+    "sample_id": "sample_001043",
+    "geological_support": {
+      "iou": 0.0025599453878317265,
+      "dice": 0.0051068176014979995,
+      "precision": 0.002662170556393646,
+      "recall": 0.0625,
+      "true_occupied_cells": 960,
+      "predicted_occupied_cells": 22538,
+      "predicted_to_true_volume_ratio": 23.477083333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0025599453878317265,
+      "dice": 0.0051068176014979995,
+      "precision": 0.002662170556393646,
+      "recall": 0.0625,
+      "true_occupied_cells": 960,
+      "predicted_occupied_cells": 22538,
+      "predicted_to_true_volume_ratio": 23.477083333333333
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02318038759646394,
+      "susceptibility_rmse_si": 0.04793391295287806,
+      "susceptibility_relative_l2": 16.347097842234298
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03221332165412605,
+      "true_body_susceptibility_bias_si": -0.02342236740514636,
+      "predicted_to_true_body_mean_ratio": 0.21063368447073993,
+      "background_susceptibility_mae_si": 0.023091305406546168,
+      "integrated_absolute_background_leakage_si_cells": 2247.80003349483,
+      "prediction_fraction_near_saturation": 0.22926839192708334
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 273.0270374158299,
+      "tmi_rmse_nt": 304.45803260850647,
+      "tmi_relative_l2": 23.02925769378454,
+      "tmi_correlation": 0.14516430038516737,
+      "tmi_absolute_reference_mse": 9.269469361984235,
+      "tmi_floored_relative_mse": 530.3467099267345,
+      "observed_tmi_rms_nt": 13.220488330836552,
+      "predicted_tmi_rms_nt": 306.808413830104,
+      "predicted_to_observed_tmi_rms_ratio": 23.207040931648404
+    }
+  },
+  {
+    "sample_id": "sample_001044",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 525,
+      "predicted_occupied_cells": 22925,
+      "predicted_to_true_volume_ratio": 43.666666666666664
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 525,
+      "predicted_occupied_cells": 22925,
+      "predicted_to_true_volume_ratio": 43.666666666666664
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02345839491613033,
+      "susceptibility_rmse_si": 0.04832764975587782,
+      "susceptibility_relative_l2": 25.42933816061689
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.0260055810213089,
+      "true_body_susceptibility_bias_si": -0.0260055810213089,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.023444718434419337,
+      "integrated_absolute_background_leakage_si_cells": 2292.4011237990885,
+      "prediction_fraction_near_saturation": 0.23319498697916666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 276.71157509106337,
+      "tmi_rmse_nt": 312.65564209268746,
+      "tmi_relative_l2": 41.3759224404375,
+      "tmi_correlation": 0.12887312797487124,
+      "tmi_absolute_reference_mse": 9.77535505323907,
+      "tmi_floored_relative_mse": 1711.9669577971003,
+      "observed_tmi_rms_nt": 7.556463364478925,
+      "predicted_tmi_rms_nt": 313.9063671191408,
+      "predicted_to_observed_tmi_rms_ratio": 41.541439689198704
+    }
+  },
+  {
+    "sample_id": "sample_001045",
+    "geological_support": {
+      "iou": 0.0013942747592697487,
+      "dice": 0.002784666927729191,
+      "precision": 0.0014204545454545455,
+      "recall": 0.07032967032967033,
+      "true_occupied_cells": 455,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 49.512087912087914
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0013942747592697487,
+      "dice": 0.002784666927729191,
+      "precision": 0.0014204545454545455,
+      "recall": 0.07032967032967033,
+      "true_occupied_cells": 455,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 49.512087912087914
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022932177111819385,
+      "susceptibility_rmse_si": 0.04786943954792909,
+      "susceptibility_relative_l2": 180.43845776123428
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.010383967645363985,
+      "true_body_susceptibility_bias_si": 0.0031334652683114284,
+      "predicted_to_true_body_mean_ratio": 1.803555267624319,
+      "background_susceptibility_mae_si": 0.022990526561555584,
+      "integrated_absolute_background_leakage_si_cells": 2249.600033521652,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.3112533157948,
+      "tmi_rmse_nt": 306.5211189279411,
+      "tmi_relative_l2": 236.23880600090027,
+      "tmi_correlation": 0.15436293219224415,
+      "tmi_absolute_reference_mse": 9.395519634883698,
+      "tmi_floored_relative_mse": 55808.773460731005,
+      "observed_tmi_rms_nt": 1.297505368050213,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 236.42110685021922
+    }
+  },
+  {
+    "sample_id": "sample_001046",
+    "geological_support": {
+      "iou": 0.0014064697609001407,
+      "dice": 0.0028089887640449437,
+      "precision": 0.0014204545454545455,
+      "recall": 0.125,
+      "true_occupied_cells": 256,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 88.0
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022917024331851128,
+      "susceptibility_rmse_si": 0.04787123260724053,
+      "susceptibility_relative_l2": 5127.532708962084
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.012637212486879434,
+      "true_body_susceptibility_bias_si": 0.012317050452111289,
+      "predicted_to_true_body_mean_ratio": 68.32477917565807,
+      "background_susceptibility_mae_si": 0.02294386457165523,
+      "integrated_absolute_background_leakage_si_cells": 2249.600033521652,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.53687124755356,
+      "tmi_rmse_nt": 306.7535731265175,
+      "tmi_relative_l2": 17208.057474778372,
+      "tmi_correlation": 0.16729808008947136,
+      "tmi_absolute_reference_mse": 9.409775462588573,
+      "tmi_floored_relative_mse": 86578056.75274442,
+      "observed_tmi_rms_nt": 0.01782615926150423,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 17208.28647149915
+    }
+  },
+  {
+    "sample_id": "sample_001047",
+    "geological_support": {
+      "iou": 0.007803017166637767,
+      "dice": 0.015485203028217482,
+      "precision": 0.007990056818181818,
+      "recall": 0.25,
+      "true_occupied_cells": 720,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 31.288888888888888
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.007803017166637767,
+      "dice": 0.015485203028217482,
+      "precision": 0.007990056818181818,
+      "recall": 0.25,
+      "true_occupied_cells": 720,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 31.288888888888888
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022951278988633323,
+      "susceptibility_rmse_si": 0.04784202962558242,
+      "susceptibility_relative_l2": 59.14714730380317
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.029725689440965652,
+      "true_body_susceptibility_bias_si": 0.015548622235655785,
+      "predicted_to_true_body_mean_ratio": 2.645116935380565,
+      "background_susceptibility_mae_si": 0.022901295635566435,
+      "integrated_absolute_background_leakage_si_cells": 2234.800033301115,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.0579410113507,
+      "tmi_rmse_nt": 306.155962379889,
+      "tmi_relative_l2": 161.37410619629006,
+      "tmi_correlation": 0.2630238988785101,
+      "tmi_absolute_reference_mse": 9.3731473300756,
+      "tmi_floored_relative_mse": 26041.602150651506,
+      "observed_tmi_rms_nt": 1.8971814598774048,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 161.69125713380893
+    }
+  },
+  {
+    "sample_id": "sample_001048",
+    "geological_support": {
+      "iou": 0.007888349514563107,
+      "dice": 0.015653220951234198,
+      "precision": 0.008078835227272728,
+      "recall": 0.25068870523415976,
+      "true_occupied_cells": 726,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 31.03030303030303
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.007888349514563107,
+      "dice": 0.015653220951234198,
+      "precision": 0.008078835227272728,
+      "recall": 0.25068870523415976,
+      "true_occupied_cells": 726,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 31.03030303030303
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022924259429610554,
+      "susceptibility_rmse_si": 0.04786370955570814,
+      "susceptibility_relative_l2": 270.13490962615265
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.026096922410882947,
+      "true_body_susceptibility_bias_si": 0.023007088026529583,
+      "predicted_to_true_body_mean_ratio": 12.158831687063635,
+      "background_susceptibility_mae_si": 0.02290065417715197,
+      "integrated_absolute_background_leakage_si_cells": 2234.600033298135,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.28373304446785,
+      "tmi_rmse_nt": 306.55977229694656,
+      "tmi_relative_l2": 149.0955911014078,
+      "tmi_correlation": 0.08160698225869059,
+      "tmi_absolute_reference_mse": 9.397889399075574,
+      "tmi_floored_relative_mse": 22229.495285878198,
+      "observed_tmi_rms_nt": 2.0561290245560584,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 149.19183163846682
+    }
+  },
+  {
+    "sample_id": "sample_001049",
+    "geological_support": {
+      "iou": 0.0022504977062234918,
+      "dice": 0.004490888677778737,
+      "precision": 0.0023082386363636365,
+      "recall": 0.08253968253968254,
+      "true_occupied_cells": 630,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 35.75873015873016
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022917573063977237,
+      "susceptibility_rmse_si": 0.04787117091017601,
+      "susceptibility_relative_l2": 3531.4167109314167
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.008395347602172046,
+      "true_body_susceptibility_bias_si": 0.008084635844866243,
+      "predicted_to_true_body_mean_ratio": 48.744138381489726,
+      "background_susceptibility_mae_si": 0.023011241819643403,
+      "integrated_absolute_background_leakage_si_cells": 2247.60003349185,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5297732196764,
+      "tmi_rmse_nt": 306.74717584933677,
+      "tmi_relative_l2": 6474.87473595222,
+      "tmi_correlation": 0.16409510221114468,
+      "tmi_absolute_reference_mse": 9.409382989154395,
+      "tmi_floored_relative_mse": 41924002.84627234,
+      "observed_tmi_rms_nt": 0.047374997719430836,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 6475.095937212382
+    }
+  },
+  {
+    "sample_id": "sample_001050",
+    "geological_support": {
+      "iou": 0.0005312555339118116,
+      "dice": 0.0010619469026548673,
+      "precision": 0.0005326704545454545,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 72,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 312.8888888888889
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022916737775671454,
+      "susceptibility_rmse_si": 0.04787131930469763,
+      "susceptibility_relative_l2": 12204.80417247807
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.016763288168779884,
+      "true_body_susceptibility_bias_si": 0.016521735034378555,
+      "predicted_to_true_body_mean_ratio": 114.99655452844377,
+      "background_susceptibility_mae_si": 0.022921248000157327,
+      "integrated_absolute_background_leakage_si_cells": 2251.6000335514545,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5398545102798,
+      "tmi_rmse_nt": 306.7567129287445,
+      "tmi_relative_l2": 86410.45054401371,
+      "tmi_correlation": 0.19437678252157004,
+      "tmi_absolute_reference_mse": 9.409968092684815,
+      "tmi_floored_relative_mse": 86579829.1159077,
+      "observed_tmi_rms_nt": 0.003549995527132403,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 86410.71598935888
+    }
+  },
+  {
+    "sample_id": "sample_001051",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 264,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 85.33333333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 264,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 85.33333333333333
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022928808511172367,
+      "susceptibility_rmse_si": 0.04787192943006447,
+      "susceptibility_relative_l2": 204.32657158268358
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.004521054215729237,
+      "true_body_susceptibility_bias_si": -0.004521054215729237,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022978376515395103,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.3669893748085,
+      "tmi_rmse_nt": 306.589943118333,
+      "tmi_relative_l2": 396.08077034472495,
+      "tmi_correlation": 0.1791132092114124,
+      "tmi_absolute_reference_mse": 9.399739322130268,
+      "tmi_floored_relative_mse": 156879.97663687074,
+      "observed_tmi_rms_nt": 0.7740591467025666,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 396.29743613946926
+    }
+  },
+  {
+    "sample_id": "sample_001052",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 300,
+      "predicted_occupied_cells": 23308,
+      "predicted_to_true_volume_ratio": 77.69333333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 300,
+      "predicted_occupied_cells": 23308,
+      "predicted_to_true_volume_ratio": 77.69333333333333
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02386066946913464,
+      "susceptibility_rmse_si": 0.04876924189172928,
+      "susceptibility_relative_l2": 17.89589799014848
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.04933072254061699,
+      "true_body_susceptibility_bias_si": -0.04933072254061699,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.023782703101216548,
+      "integrated_absolute_background_leakage_si_cells": 2330.8000347316265,
+      "prediction_fraction_near_saturation": 0.23710123697916666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 279.7332356028334,
+      "tmi_rmse_nt": 320.2273025650561,
+      "tmi_relative_l2": 11.79686721184837,
+      "tmi_correlation": 0.036930380184913215,
+      "tmi_absolute_reference_mse": 10.254552530809198,
+      "tmi_floored_relative_mse": 139.16607601398312,
+      "observed_tmi_rms_nt": 27.145113767444187,
+      "predicted_tmi_rms_nt": 320.5276983870383,
+      "predicted_to_observed_tmi_rms_ratio": 11.807933506304003
+    }
+  },
+  {
+    "sample_id": "sample_001053",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 64,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 352.0
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 64,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 352.0
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022947223687272828,
+      "susceptibility_rmse_si": 0.04788633327479807,
+      "susceptibility_relative_l2": 39.98617130985088
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.0469350591301918,
+      "true_body_susceptibility_bias_si": -0.0469350591301918,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.02293159643291262,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.14859609182344,
+      "tmi_rmse_nt": 306.3811130539966,
+      "tmi_relative_l2": 31.23061576167109,
+      "tmi_correlation": 0.044758500848030215,
+      "tmi_absolute_reference_mse": 9.386938643620583,
+      "tmi_floored_relative_mse": 975.3513608531385,
+      "observed_tmi_rms_nt": 9.81028089206022,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 31.26899816974674
+    }
+  },
+  {
+    "sample_id": "sample_001054",
+    "geological_support": {
+      "iou": 0.0012262952743835676,
+      "dice": 0.002449586632255807,
+      "precision": 0.0012369130185095197,
+      "recall": 0.125,
+      "true_occupied_cells": 224,
+      "predicted_occupied_cells": 22637,
+      "predicted_to_true_volume_ratio": 101.05803571428571
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0012262952743835676,
+      "dice": 0.002449586632255807,
+      "precision": 0.0012369130185095197,
+      "recall": 0.125,
+      "true_occupied_cells": 224,
+      "predicted_occupied_cells": 22637,
+      "predicted_to_true_volume_ratio": 101.05803571428571
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02314130701057626,
+      "susceptibility_rmse_si": 0.04805301512079075,
+      "susceptibility_relative_l2": 14.920657923457059
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.06310058292001486,
+      "true_body_susceptibility_bias_si": -0.05496744345873594,
+      "predicted_to_true_body_mean_ratio": 0.18527454889260211,
+      "background_susceptibility_mae_si": 0.023050046021549808,
+      "integrated_absolute_background_leakage_si_cells": 2260.748513793605,
+      "prediction_fraction_near_saturation": 0.230255126953125
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.4483144414437,
+      "tmi_rmse_nt": 306.932427144616,
+      "tmi_relative_l2": 61.02254819675852,
+      "tmi_correlation": 0.17835930484155824,
+      "tmi_absolute_reference_mse": 9.420751483288498,
+      "tmi_floored_relative_mse": 3723.7513884257182,
+      "observed_tmi_rms_nt": 5.029819897965519,
+      "predicted_tmi_rms_nt": 308.1485755672135,
+      "predicted_to_observed_tmi_rms_ratio": 61.26433586456141
+    }
+  },
+  {
+    "sample_id": "sample_001055",
+    "geological_support": {
+      "iou": 0.001188327978522072,
+      "dice": 0.00237383506242307,
+      "precision": 0.0011985085227272727,
+      "recall": 0.12272727272727273,
+      "true_occupied_cells": 220,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 102.4
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291737911916532,
+      "susceptibility_rmse_si": 0.047871118306313874,
+      "susceptibility_relative_l2": 2399.5898878408807
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.012590924551477655,
+      "true_body_susceptibility_bias_si": 0.011851020461075347,
+      "predicted_to_true_body_mean_ratio": 29.102499163640292,
+      "background_susceptibility_mae_si": 0.02294054110282108,
+      "integrated_absolute_background_leakage_si_cells": 2250.100033529103,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5307723989676,
+      "tmi_rmse_nt": 306.7493176532872,
+      "tmi_relative_l2": 3399.7530879116603,
+      "tmi_correlation": 0.06323827071837425,
+      "tmi_absolute_reference_mse": 9.409514388075731,
+      "tmi_floored_relative_mse": 11558321.058764871,
+      "observed_tmi_rms_nt": 0.09022693993395611,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 3399.8454949605016
+    }
+  },
+  {
+    "sample_id": "sample_001056",
+    "geological_support": {
+      "iou": 0.004207573632538569,
+      "dice": 0.008379888268156424,
+      "precision": 0.004261363636363636,
+      "recall": 0.25,
+      "true_occupied_cells": 384,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 58.666666666666664
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.004207573632538569,
+      "dice": 0.008379888268156424,
+      "precision": 0.004261363636363636,
+      "recall": 0.25,
+      "true_occupied_cells": 384,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 58.666666666666664
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022924789337897284,
+      "susceptibility_rmse_si": 0.047863577567407715,
+      "susceptibility_relative_l2": 184.1512036344046
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.027079316787421703,
+      "true_body_susceptibility_bias_si": 0.020841367542743683,
+      "predicted_to_true_body_mean_ratio": 6.011591163680453,
+      "background_susceptibility_mae_si": 0.022908497073389347,
+      "integrated_absolute_background_leakage_si_cells": 2243.200033426285,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.44114724795514,
+      "tmi_rmse_nt": 306.64733606162974,
+      "tmi_relative_l2": 1166.9620914267985,
+      "tmi_correlation": 0.32934658126521393,
+      "tmi_absolute_reference_mse": 9.403258871369406,
+      "tmi_floored_relative_mse": 1361800.522827207,
+      "observed_tmi_rms_nt": 0.2627740338049063,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 1167.381916762298
+    }
+  },
+  {
+    "sample_id": "sample_001057",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 22530,
+      "predicted_to_true_volume_ratio": 78.22916666666667
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 288,
+      "predicted_occupied_cells": 22530,
+      "predicted_to_true_volume_ratio": 78.22916666666667
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023167276783624402,
+      "susceptibility_rmse_si": 0.04809325376600119,
+      "susceptibility_relative_l2": 10.472174955491607
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.08484702557325363,
+      "true_body_susceptibility_bias_si": -0.08484702557325363,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.02298604343752363,
+      "integrated_absolute_background_leakage_si_cells": 2253.000033572316,
+      "prediction_fraction_near_saturation": 0.22918701171875
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 273.2706858791815,
+      "tmi_rmse_nt": 304.71166661237436,
+      "tmi_relative_l2": 17.697866726841696,
+      "tmi_correlation": 0.11109380276850728,
+      "tmi_absolute_reference_mse": 9.284919976969078,
+      "tmi_floored_relative_mse": 313.21448668105046,
+      "observed_tmi_rms_nt": 17.2174235073332,
+      "predicted_tmi_rms_nt": 306.76314130249284,
+      "predicted_to_observed_tmi_rms_ratio": 17.817017811743845
+    }
+  },
+  {
+    "sample_id": "sample_001058",
+    "geological_support": {
+      "iou": 0.0021042885400446108,
+      "dice": 0.004199739616143799,
+      "precision": 0.0021728738429446785,
+      "recall": 0.0625,
+      "true_occupied_cells": 800,
+      "predicted_occupied_cells": 23011,
+      "predicted_to_true_volume_ratio": 28.76375
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0021042885400446108,
+      "dice": 0.004199739616143799,
+      "precision": 0.0021728738429446785,
+      "recall": 0.0625,
+      "true_occupied_cells": 800,
+      "predicted_occupied_cells": 23011,
+      "predicted_to_true_volume_ratio": 28.76375
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023573998474300122,
+      "susceptibility_rmse_si": 0.048403008015697795,
+      "susceptibility_relative_l2": 23.016313692017448
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.02664788975380361,
+      "true_body_susceptibility_bias_si": -0.01706187380477786,
+      "predicted_to_true_body_mean_ratio": 0.2681037191820329,
+      "background_susceptibility_mae_si": 0.023548777836955984,
+      "integrated_absolute_background_leakage_si_cells": 2296.100034214556,
+      "prediction_fraction_near_saturation": 0.23407999674479166
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 276.8557962449185,
+      "tmi_rmse_nt": 313.8850497924942,
+      "tmi_relative_l2": 29.965486879844377,
+      "tmi_correlation": 0.10968770941014895,
+      "tmi_absolute_reference_mse": 9.85238244832366,
+      "tmi_floored_relative_mse": 897.9304039461256,
+      "observed_tmi_rms_nt": 10.474885692700761,
+      "predicted_tmi_rms_nt": 315.36307844470474,
+      "predicted_to_observed_tmi_rms_ratio": 30.106589006929205
+    }
+  },
+  {
+    "sample_id": "sample_001059",
+    "geological_support": {
+      "iou": 0.008816491036567446,
+      "dice": 0.01747887968704482,
+      "precision": 0.00916670304247239,
+      "recall": 0.1875,
+      "true_occupied_cells": 1120,
+      "predicted_occupied_cells": 22909,
+      "predicted_to_true_volume_ratio": 20.454464285714284
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.008816491036567446,
+      "dice": 0.01747887968704482,
+      "precision": 0.00916670304247239,
+      "recall": 0.1875,
+      "true_occupied_cells": 1120,
+      "predicted_occupied_cells": 22909,
+      "predicted_to_true_volume_ratio": 20.454464285714284
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023610467894819753,
+      "susceptibility_rmse_si": 0.04830238392761659,
+      "susceptibility_relative_l2": 10.522441515820482
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.04562872415408492,
+      "true_body_susceptibility_bias_si": -0.024255957920104265,
+      "predicted_to_true_body_mean_ratio": 0.4359861066789186,
+      "background_susceptibility_mae_si": 0.023356717822684656,
+      "integrated_absolute_background_leakage_si_cells": 2269.8992648797857,
+      "prediction_fraction_near_saturation": 0.23304239908854166
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 272.54338696989686,
+      "tmi_rmse_nt": 309.7795760020227,
+      "tmi_relative_l2": 8.707215910185122,
+      "tmi_correlation": 0.1244797325893409,
+      "tmi_absolute_reference_mse": 9.596338570799293,
+      "tmi_floored_relative_mse": 75.81560890658089,
+      "observed_tmi_rms_nt": 35.577339438621614,
+      "predicted_tmi_rms_nt": 313.5822610089046,
+      "predicted_to_observed_tmi_rms_ratio": 8.814100940569205
+    }
+  },
+  {
+    "sample_id": "sample_001060",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 1536,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 14.666666666666666
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 1536,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 14.666666666666666
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022949865743915627,
+      "susceptibility_rmse_si": 0.04787209284072779,
+      "susceptibility_relative_l2": 180.24817714826267
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.002124719088897109,
+      "true_body_susceptibility_bias_si": -0.002124719088897109,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.02328042362732862,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.1507034917086,
+      "tmi_rmse_nt": 306.40471429023114,
+      "tmi_relative_l2": 211.80200493700232,
+      "tmi_correlation": 0.18868130625147117,
+      "tmi_absolute_reference_mse": 9.388384893927814,
+      "tmi_floored_relative_mse": 44860.08929533396,
+      "observed_tmi_rms_nt": 1.4466563448318965,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 212.04597508897535
+    }
+  },
+  {
+    "sample_id": "sample_001061",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 260,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 86.64615384615385
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022917395196570805,
+      "susceptibility_rmse_si": 0.04787135819516999,
+      "susceptibility_relative_l2": 3380.905723906006
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.00027532243984751403,
+      "true_body_susceptibility_bias_si": -0.00027532243984751403,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022977439043381908,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.53429149716743,
+      "tmi_rmse_nt": 306.7503276946305,
+      "tmi_relative_l2": 8049.023454309934,
+      "tmi_correlation": 0.14296018179649647,
+      "tmi_absolute_reference_mse": 9.40957635407632,
+      "tmi_floored_relative_mse": 64786778.56803145,
+      "observed_tmi_rms_nt": 0.038110253925322794,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 8049.215727075065
+    }
+  },
+  {
+    "sample_id": "sample_001062",
+    "geological_support": {
+      "iou": 0.00175377060680463,
+      "dice": 0.0035014005602240898,
+      "precision": 0.0017755681818181818,
+      "recall": 0.125,
+      "true_occupied_cells": 320,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 70.4
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.00175377060680463,
+      "dice": 0.0035014005602240898,
+      "precision": 0.0017755681818181818,
+      "recall": 0.125,
+      "true_occupied_cells": 320,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 70.4
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022919238397795045,
+      "susceptibility_rmse_si": 0.04787049856678198,
+      "susceptibility_relative_l2": 796.6191054447999
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.013289931084727868,
+      "true_body_susceptibility_bias_si": 0.011446758988313377,
+      "predicted_to_true_body_mean_ratio": 11.868126893042799,
+      "background_susceptibility_mae_si": 0.022950686168249218,
+      "integrated_absolute_background_leakage_si_cells": 2248.8000335097313,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.51523383750464,
+      "tmi_rmse_nt": 306.722743452568,
+      "tmi_relative_l2": 2292.4331668856435,
+      "tmi_correlation": 0.21203414097589116,
+      "tmi_absolute_reference_mse": 9.407884135106984,
+      "tmi_floored_relative_mse": 5255249.824637339,
+      "observed_tmi_rms_nt": 0.13379789992711646,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 2292.694096287252
+    }
+  },
+  {
+    "sample_id": "sample_001063",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 120,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 187.73333333333332
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 120,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 187.73333333333332
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022919398707889133,
+      "susceptibility_rmse_si": 0.04787141994953088,
+      "susceptibility_relative_l2": 612.2776079909252
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.0022378084249794483,
+      "true_body_susceptibility_bias_si": -0.0022378084249794483,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022944675645414078,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5127141235341,
+      "tmi_rmse_nt": 306.73071940839725,
+      "tmi_relative_l2": 2859.700582744018,
+      "tmi_correlation": 0.19125281610633357,
+      "tmi_absolute_reference_mse": 9.408373422879293,
+      "tmi_floored_relative_mse": 8177887.42294648,
+      "observed_tmi_rms_nt": 0.1072597324556526,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 2859.9517100731523
+    }
+  },
+  {
+    "sample_id": "sample_001064",
+    "geological_support": {
+      "iou": 0.0005306916681408102,
+      "dice": 0.0010608203677510608,
+      "precision": 0.0005326704545454545,
+      "recall": 0.125,
+      "true_occupied_cells": 96,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 234.66666666666666
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0005306916681408102,
+      "dice": 0.0010608203677510608,
+      "precision": 0.0005326704545454545,
+      "recall": 0.125,
+      "true_occupied_cells": 96,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 234.66666666666666
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022932652979610186,
+      "susceptibility_rmse_si": 0.047870649527186296,
+      "susceptibility_relative_l2": 70.1845584549381
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.028869634959846735,
+      "true_body_susceptibility_bias_si": -0.009326179511845112,
+      "predicted_to_true_body_mean_ratio": 0.5727067383829496,
+      "background_susceptibility_mae_si": 0.02292684947816323,
+      "integrated_absolute_background_leakage_si_cells": 2251.6000335514545,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.3689265378791,
+      "tmi_rmse_nt": 306.58676550590775,
+      "tmi_relative_l2": 660.1775106526628,
+      "tmi_correlation": 0.2824394879964224,
+      "tmi_absolute_reference_mse": 9.399544478337445,
+      "tmi_floored_relative_mse": 435834.3455715468,
+      "observed_tmi_rms_nt": 0.4644004991972701,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 660.5454899139257
+    }
+  },
+  {
+    "sample_id": "sample_001065",
+    "geological_support": {
+      "iou": 0.001759711407329198,
+      "dice": 0.0035132405252294584,
+      "precision": 0.0017755681818181818,
+      "recall": 0.1646090534979424,
+      "true_occupied_cells": 243,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 92.70781893004116
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.001759711407329198,
+      "dice": 0.0035132405252294584,
+      "precision": 0.0017755681818181818,
+      "recall": 0.1646090534979424,
+      "true_occupied_cells": 243,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 92.70781893004116
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02296031582843246,
+      "susceptibility_rmse_si": 0.047866871860966664,
+      "susceptibility_relative_l2": 36.57306933969202
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.034118739458820456,
+      "true_body_susceptibility_bias_si": -0.009863349796874534,
+      "predicted_to_true_body_mean_ratio": 0.62531324628127,
+      "background_susceptibility_mae_si": 0.022932664703702095,
+      "integrated_absolute_background_leakage_si_cells": 2248.8000335097313,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.90867711373704,
+      "tmi_rmse_nt": 306.2011561580722,
+      "tmi_relative_l2": 148.130651190566,
+      "tmi_correlation": 0.19957345093353102,
+      "tmi_absolute_reference_mse": 9.375914803254009,
+      "tmi_floored_relative_mse": 21942.689822141136,
+      "observed_tmi_rms_nt": 2.0671019380327493,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 148.39986824765506
+    }
+  },
+  {
+    "sample_id": "sample_001066",
+    "geological_support": {
+      "iou": 0.0031358885017421603,
+      "dice": 0.006252170892671066,
+      "precision": 0.0031960227272727275,
+      "recall": 0.14285714285714285,
+      "true_occupied_cells": 504,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 44.698412698412696
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022917296907537594,
+      "susceptibility_rmse_si": 0.047871094521345595,
+      "susceptibility_relative_l2": 3886.9039601948025
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.01440857487406382,
+      "true_body_susceptibility_bias_si": 0.014113709972921893,
+      "predicted_to_true_body_mean_ratio": 83.05429431733535,
+      "background_susceptibility_mae_si": 0.022961145536421753,
+      "integrated_absolute_background_leakage_si_cells": 2245.6000334620476,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.53410568640174,
+      "tmi_rmse_nt": 306.7499038133638,
+      "tmi_relative_l2": 10633.05209606365,
+      "tmi_correlation": 0.2051840812802158,
+      "tmi_absolute_reference_mse": 9.409550348950795,
+      "tmi_floored_relative_mse": 86575985.51295927,
+      "observed_tmi_rms_nt": 0.028848716346167667,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 10633.320788960611
+    }
+  },
+  {
+    "sample_id": "sample_001067",
+    "geological_support": {
+      "iou": 0.0023686288270900954,
+      "dice": 0.004726063364256958,
+      "precision": 0.0023970170454545455,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 324,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 69.53086419753086
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0023686288270900954,
+      "dice": 0.004726063364256958,
+      "precision": 0.0023970170454545455,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 324,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 69.53086419753086
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022922136038819946,
+      "susceptibility_rmse_si": 0.04786871318709687,
+      "susceptibility_relative_l2": 334.9940129440679
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.01832601133113106,
+      "true_body_susceptibility_bias_si": 0.014177650290851792,
+      "predicted_to_true_body_mean_ratio": 6.696085013330689,
+      "background_susceptibility_mae_si": 0.02293733449161941,
+      "integrated_absolute_background_leakage_si_cells": 2247.4000334888697,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.4673744842406,
+      "tmi_rmse_nt": 306.69340246484285,
+      "tmi_relative_l2": 1714.5856353000756,
+      "tmi_correlation": 0.26160188098402476,
+      "tmi_absolute_reference_mse": 9.406084311546206,
+      "tmi_floored_relative_mse": 2939803.900777365,
+      "observed_tmi_rms_nt": 0.17887319020444684,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 1714.9448439305936
+    }
+  },
+  {
+    "sample_id": "sample_001068",
+    "geological_support": {
+      "iou": 0.0010596962204168139,
+      "dice": 0.002117148906139732,
+      "precision": 0.001065340909090909,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 144,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 156.44444444444446
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0010596962204168139,
+      "dice": 0.002117148906139732,
+      "precision": 0.001065340909090909,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 144,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 156.44444444444446
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022935488659034792,
+      "susceptibility_rmse_si": 0.04786720993939314,
+      "susceptibility_relative_l2": 64.89104870608256
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.029515580584605534,
+      "true_body_susceptibility_bias_si": -0.002606703589359919,
+      "predicted_to_true_body_mean_ratio": 0.8647510258380791,
+      "background_susceptibility_mae_si": 0.022925835712444713,
+      "integrated_absolute_background_leakage_si_cells": 2250.400033533573,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.34514703004066,
+      "tmi_rmse_nt": 306.4812700842865,
+      "tmi_relative_l2": 300.79521178159536,
+      "tmi_correlation": 0.23526497597453114,
+      "tmi_absolute_reference_mse": 9.393076891247736,
+      "tmi_floored_relative_mse": 90477.75943073478,
+      "observed_tmi_rms_nt": 1.018903420267274,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 301.0664692616943
+    }
+  },
+  {
+    "sample_id": "sample_001069",
+    "geological_support": {
+      "iou": 0.001592920353982301,
+      "dice": 0.003180773988337162,
+      "precision": 0.0015980113636363637,
+      "recall": 0.3333333333333333,
+      "true_occupied_cells": 108,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 208.59259259259258
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022916726807698257,
+      "susceptibility_rmse_si": 0.04787123148978542,
+      "susceptibility_relative_l2": 8844.672092984962
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03338776470627636,
+      "true_body_susceptibility_bias_si": 0.03317004120132575,
+      "predicted_to_true_body_mean_ratio": 204.13250795683194,
+      "background_susceptibility_mae_si": 0.022905210329501116,
+      "integrated_absolute_background_leakage_si_cells": 2249.2000335156918,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5386496896682,
+      "tmi_rmse_nt": 306.7559075589881,
+      "tmi_relative_l2": 6463.549370623155,
+      "tmi_correlation": 0.025613725682847113,
+      "tmi_absolute_reference_mse": 9.409918682233844,
+      "tmi_floored_relative_mse": 41777470.46648298,
+      "observed_tmi_rms_nt": 0.047459358623172944,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 6463.586195805691
+    }
+  },
+  {
+    "sample_id": "sample_001070",
+    "geological_support": {
+      "iou": 0.005886713469672524,
+      "dice": 0.01170452574995665,
+      "precision": 0.005992542613636364,
+      "recall": 0.25,
+      "true_occupied_cells": 540,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 41.71851851851852
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.005886713469672524,
+      "dice": 0.01170452574995665,
+      "precision": 0.005992542613636364,
+      "recall": 0.25,
+      "true_occupied_cells": 540,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 41.71851851851852
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022949617766433523,
+      "susceptibility_rmse_si": 0.047845190770945525,
+      "susceptibility_relative_l2": 53.80890653100013
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.030998502857983112,
+      "true_body_susceptibility_bias_si": 0.013002995401620865,
+      "predicted_to_true_body_mean_ratio": 2.0838534645232,
+      "background_susceptibility_mae_si": 0.02290515970467831,
+      "integrated_absolute_background_leakage_si_cells": 2239.3000333681703,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.0643375762918,
+      "tmi_rmse_nt": 306.18432304611576,
+      "tmi_relative_l2": 164.48139206866722,
+      "tmi_correlation": 0.24681873579008262,
+      "tmi_absolute_reference_mse": 9.374883967920818,
+      "tmi_floored_relative_mse": 27054.128336846625,
+      "observed_tmi_rms_nt": 1.8615134465684167,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 164.78938458597813
+    }
+  },
+  {
+    "sample_id": "sample_001071",
+    "geological_support": {
+      "iou": 0.004639243582379711,
+      "dice": 0.009235640777552996,
+      "precision": 0.004660866477272727,
+      "recall": 0.5,
+      "true_occupied_cells": 210,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 107.27619047619048
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.004639243582379711,
+      "dice": 0.009235640777552996,
+      "precision": 0.004660866477272727,
+      "recall": 0.5,
+      "true_occupied_cells": 210,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 107.27619047619048
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291666700815161,
+      "susceptibility_rmse_si": 0.04786739302061197,
+      "susceptibility_relative_l2": 572.5528457650619
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.05000000074505806,
+      "true_body_susceptibility_bias_si": 0.04819116077851504,
+      "predicted_to_true_body_mean_ratio": 27.642025646202423,
+      "background_susceptibility_mae_si": 0.02285868690656792,
+      "integrated_absolute_background_leakage_si_cells": 2242.3000334128737,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.49184767271834,
+      "tmi_rmse_nt": 306.7159265908482,
+      "tmi_relative_l2": 491.73889842679796,
+      "tmi_correlation": 0.049780618319217096,
+      "tmi_absolute_reference_mse": 9.407465962448258,
+      "tmi_floored_relative_mse": 241807.14422600067,
+      "observed_tmi_rms_nt": 0.6237373686973171,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 491.8057994492128
+    }
+  },
+  {
+    "sample_id": "sample_001072",
+    "geological_support": {
+      "iou": 0.0006157093851701996,
+      "dice": 0.0012306610407876231,
+      "precision": 0.0006214488636363636,
+      "recall": 0.0625,
+      "true_occupied_cells": 224,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 100.57142857142857
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0006157093851701996,
+      "dice": 0.0012306610407876231,
+      "precision": 0.0006214488636363636,
+      "recall": 0.0625,
+      "true_occupied_cells": 224,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 100.57142857142857
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022935921444400265,
+      "susceptibility_rmse_si": 0.04787070269333031,
+      "susceptibility_relative_l2": 103.84496934411429
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.014699946972541511,
+      "true_body_susceptibility_bias_si": -0.0034070820547640324,
+      "predicted_to_true_body_mean_ratio": 0.6471934273121789,
+      "background_susceptibility_mae_si": 0.022954731174026043,
+      "integrated_absolute_background_leakage_si_cells": 2251.4000335484743,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.3174304766293,
+      "tmi_rmse_nt": 306.5627489547367,
+      "tmi_relative_l2": 183.00782686145982,
+      "tmi_correlation": 0.08497198656898992,
+      "tmi_absolute_reference_mse": 9.398071904668493,
+      "tmi_floored_relative_mse": 33491.86469255406,
+      "observed_tmi_rms_nt": 1.6751346333772388,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 183.1241794816685
+    }
+  },
+  {
+    "sample_id": "sample_001073",
+    "geological_support": {
+      "iou": 0.003155680224403927,
+      "dice": 0.006291506466270535,
+      "precision": 0.0031960227272727275,
+      "recall": 0.2,
+      "true_occupied_cells": 360,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 62.577777777777776
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.003155680224403927,
+      "dice": 0.006291506466270535,
+      "precision": 0.0031960227272727275,
+      "recall": 0.2,
+      "true_occupied_cells": 360,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 62.577777777777776
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022942899297580272,
+      "susceptibility_rmse_si": 0.04785854027519677,
+      "susceptibility_relative_l2": 66.24302535276871
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.027163164131343363,
+      "true_body_susceptibility_bias_si": 0.008061393909156323,
+      "predicted_to_true_body_mean_ratio": 1.675237431118745,
+      "background_susceptibility_mae_si": 0.022927387419975166,
+      "integrated_absolute_background_leakage_si_cells": 2245.6000334620476,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.280626483429,
+      "tmi_rmse_nt": 306.45329497995226,
+      "tmi_relative_l2": 387.2689907939732,
+      "tmi_correlation": 0.30054078541757867,
+      "tmi_absolute_reference_mse": 9.391362200406967,
+      "tmi_floored_relative_mse": 149977.27123058258,
+      "observed_tmi_rms_nt": 0.7913189598569876,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 387.6536148128837
+    }
+  },
+  {
+    "sample_id": "sample_001074",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 240,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 93.86666666666666
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022916940321292618,
+      "susceptibility_rmse_si": 0.04787135642073249,
+      "susceptibility_relative_l2": 8654.365763205804
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.00011194906255695969,
+      "true_body_susceptibility_bias_si": -0.00011194906255695969,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022972752830491678,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.53813538577964,
+      "tmi_rmse_nt": 306.75470093456215,
+      "tmi_relative_l2": 17338.13533224147,
+      "tmi_correlation": 0.1310942390712198,
+      "tmi_absolute_reference_mse": 9.409844654545267,
+      "tmi_floored_relative_mse": 86578693.37847236,
+      "observed_tmi_rms_nt": 0.017692485094641663,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 17338.302314095883
+    }
+  },
+  {
+    "sample_id": "sample_001075",
+    "geological_support": {
+      "iou": 0.003830439223697651,
+      "dice": 0.007631645891630628,
+      "precision": 0.003935974809761217,
+      "recall": 0.125,
+      "true_occupied_cells": 720,
+      "predicted_occupied_cells": 22866,
+      "predicted_to_true_volume_ratio": 31.758333333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.003830439223697651,
+      "dice": 0.007631645891630628,
+      "precision": 0.003935974809761217,
+      "recall": 0.125,
+      "true_occupied_cells": 720,
+      "predicted_occupied_cells": 22866,
+      "predicted_to_true_volume_ratio": 31.758333333333333
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023514699156874607,
+      "susceptibility_rmse_si": 0.04830384027364397,
+      "susceptibility_relative_l2": 12.196823460369394
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.047206876799464226,
+      "true_body_susceptibility_bias_si": -0.033775835298001766,
+      "predicted_to_true_body_mean_ratio": 0.2701193842413606,
+      "background_susceptibility_mae_si": 0.023339892140328198,
+      "integrated_absolute_background_leakage_si_cells": 2277.600034621787,
+      "prediction_fraction_near_saturation": 0.23260498046875
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.29747957851333,
+      "tmi_rmse_nt": 309.9811016834132,
+      "tmi_relative_l2": 29.4256871509381,
+      "tmi_correlation": 0.2093466707243975,
+      "tmi_absolute_reference_mse": 9.608828340086255,
+      "tmi_floored_relative_mse": 865.8710643048839,
+      "observed_tmi_rms_nt": 10.53437087444637,
+      "predicted_tmi_rms_nt": 312.84067817880515,
+      "predicted_to_observed_tmi_rms_ratio": 29.697139193919483
+    }
+  },
+  {
+    "sample_id": "sample_001076",
+    "geological_support": {
+      "iou": 0.007646416267540543,
+      "dice": 0.015176784523015343,
+      "precision": 0.008078835227272728,
+      "recall": 0.125,
+      "true_occupied_cells": 1456,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 15.472527472527473
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.007646416267540543,
+      "dice": 0.015176784523015343,
+      "precision": 0.008078835227272728,
+      "recall": 0.125,
+      "true_occupied_cells": 1456,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 15.472527472527473
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022943836844594518,
+      "susceptibility_rmse_si": 0.04786282147313416,
+      "susceptibility_relative_l2": 160.79318147779927
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.0143344120006077,
+      "true_body_susceptibility_bias_si": 0.01005411776714027,
+      "predicted_to_true_body_mean_ratio": 5.110630048496024,
+      "background_susceptibility_mae_si": 0.023073269796982227,
+      "integrated_absolute_background_leakage_si_cells": 2234.600033298135,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.2429591896163,
+      "tmi_rmse_nt": 306.4534067717066,
+      "tmi_relative_l2": 333.13823289659314,
+      "tmi_correlation": 0.25445513745828097,
+      "tmi_absolute_reference_mse": 9.391369052198508,
+      "tmi_floored_relative_mse": 110981.08221746479,
+      "observed_tmi_rms_nt": 0.9198986381933243,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 333.4689742132924
+    }
+  },
+  {
+    "sample_id": "sample_001077",
+    "geological_support": {
+      "iou": 0.01043115438108484,
+      "dice": 0.02064693737095664,
+      "precision": 0.01065340909090909,
+      "recall": 0.3333333333333333,
+      "true_occupied_cells": 720,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 31.288888888888888
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291841819159875,
+      "susceptibility_rmse_si": 0.04786773721997416,
+      "susceptibility_relative_l2": 779.7774168246189
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.033572428743354976,
+      "true_body_susceptibility_bias_si": 0.032616049090089895,
+      "predicted_to_true_body_mean_ratio": 46.47155024156463,
+      "background_susceptibility_mae_si": 0.022839810145225733,
+      "integrated_absolute_background_leakage_si_cells": 2228.800033211708,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.4840133877571,
+      "tmi_rmse_nt": 306.70229679920595,
+      "tmi_relative_l2": 455.56523027863886,
+      "tmi_correlation": 0.05561622516573739,
+      "tmi_absolute_reference_mse": 9.406629886190824,
+      "tmi_floored_relative_mse": 207539.67903882923,
+      "observed_tmi_rms_nt": 0.6732346465765543,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 455.6474578639361
+    }
+  },
+  {
+    "sample_id": "sample_001078",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 330,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 68.26666666666667
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291823472927786,
+      "susceptibility_rmse_si": 0.047871363748120836,
+      "susceptibility_relative_l2": 1769.2058389099852
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.00046700987149961293,
+      "true_body_susceptibility_bias_si": -0.00046700987149961293,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022993855855322185,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5300845998628,
+      "tmi_rmse_nt": 306.7456369579058,
+      "tmi_relative_l2": 10001.308539141542,
+      "tmi_correlation": 0.3114094037087787,
+      "tmi_absolute_reference_mse": 9.409288579271132,
+      "tmi_floored_relative_mse": 86573577.00594738,
+      "observed_tmi_rms_nt": 0.03067055033423008,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 10001.700390624339
+    }
+  },
+  {
+    "sample_id": "sample_001079",
+    "geological_support": {
+      "iou": 0.004216444132115249,
+      "dice": 0.008397480755773267,
+      "precision": 0.004261363636363636,
+      "recall": 0.2857142857142857,
+      "true_occupied_cells": 336,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 67.04761904761905
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.004216444132115249,
+      "dice": 0.008397480755773267,
+      "precision": 0.004261363636363636,
+      "recall": 0.2857142857142857,
+      "true_occupied_cells": 336,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 67.04761904761905
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022922895303130037,
+      "susceptibility_rmse_si": 0.047863327155791974,
+      "susceptibility_relative_l2": 192.5488682399869
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03039365015657885,
+      "true_body_susceptibility_bias_si": 0.024319579625236138,
+      "predicted_to_true_body_mean_ratio": 6.719765094627607,
+      "background_susceptibility_mae_si": 0.02289727291999719,
+      "integrated_absolute_background_leakage_si_cells": 2243.200033426285,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.46116617712386,
+      "tmi_rmse_nt": 306.65357481645646,
+      "tmi_relative_l2": 1140.083348242561,
+      "tmi_correlation": 0.32092065415877785,
+      "tmi_absolute_reference_mse": 9.403641494771206,
+      "tmi_floored_relative_mse": 1299790.0409399692,
+      "observed_tmi_rms_nt": 0.2689746984631983,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 1140.4703007799958
+    }
+  },
+  {
+    "sample_id": "sample_001080",
+    "geological_support": {
+      "iou": 0.004433559937507917,
+      "dice": 0.008827980494366908,
+      "precision": 0.004660866477272727,
+      "recall": 0.08333333333333333,
+      "true_occupied_cells": 1260,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 17.87936507936508
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.004433559937507917,
+      "dice": 0.008827980494366908,
+      "precision": 0.004660866477272727,
+      "recall": 0.08333333333333333,
+      "true_occupied_cells": 1260,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 17.87936507936508
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023057525686472975,
+      "susceptibility_rmse_si": 0.04786521352168599,
+      "susceptibility_relative_l2": 32.059358145973555
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.019322993389020365,
+      "true_body_susceptibility_bias_si": -0.004854258460303147,
+      "predicted_to_true_body_mean_ratio": 0.6319071373639963,
+      "background_susceptibility_mae_si": 0.023106014111257508,
+      "integrated_absolute_background_leakage_si_cells": 2242.3000334128737,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.11041207627704,
+      "tmi_rmse_nt": 305.0958783348576,
+      "tmi_relative_l2": 45.271340941277906,
+      "tmi_correlation": 0.210007943261207,
+      "tmi_absolute_reference_mse": 9.308349497691824,
+      "tmi_floored_relative_mse": 2049.4943106214264,
+      "observed_tmi_rms_nt": 6.739271954206121,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 45.51792201635053
+    }
+  },
+  {
+    "sample_id": "sample_001081",
+    "geological_support": {
+      "iou": 0.006604572396274344,
+      "dice": 0.013122476446837146,
+      "precision": 0.006924715909090909,
+      "recall": 0.125,
+      "true_occupied_cells": 1248,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 18.05128205128205
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291770918072385,
+      "susceptibility_rmse_si": 0.04787099485045034,
+      "susceptibility_relative_l2": 3881.6446513275923
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.012582091318108723,
+      "true_body_susceptibility_bias_si": 0.01239054534380557,
+      "predicted_to_true_body_mean_ratio": 114.20234962151737,
+      "background_susceptibility_mae_si": 0.023050610300619,
+      "integrated_absolute_background_leakage_si_cells": 2237.200033336878,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5319823097553,
+      "tmi_rmse_nt": 306.74581440457814,
+      "tmi_relative_l2": 8585.747514403809,
+      "tmi_correlation": 0.2746406999065227,
+      "tmi_absolute_reference_mse": 9.409299465472788,
+      "tmi_floored_relative_mse": 73715060.3810912,
+      "observed_tmi_rms_nt": 0.03572732763105,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 8586.07893728762
+    }
+  },
+  {
+    "sample_id": "sample_001082",
+    "geological_support": {
+      "iou": 0.003958131761808426,
+      "dice": 0.007885053443140003,
+      "precision": 0.003995028409090909,
+      "recall": 0.3,
+      "true_occupied_cells": 300,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 75.09333333333333
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.003958131761808426,
+      "dice": 0.007885053443140003,
+      "precision": 0.003995028409090909,
+      "recall": 0.3,
+      "true_occupied_cells": 300,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 75.09333333333333
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022919740150105856,
+      "susceptibility_rmse_si": 0.04786674320849772,
+      "susceptibility_relative_l2": 344.18051643038984
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.031007007602602242,
+      "true_body_susceptibility_bias_si": 0.027482482558116316,
+      "predicted_to_true_body_mean_ratio": 11.91649941360389,
+      "background_susceptibility_mae_si": 0.022894984219370897,
+      "integrated_absolute_background_leakage_si_cells": 2243.8000334352255,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.4334257287969,
+      "tmi_rmse_nt": 306.6679919679991,
+      "tmi_relative_l2": 283.7463090864747,
+      "tmi_correlation": 0.06430843855766517,
+      "tmi_absolute_reference_mse": 9.404525729768478,
+      "tmi_floored_relative_mse": 80511.96792019723,
+      "observed_tmi_rms_nt": 1.080782312042476,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 283.82927055756306
+    }
+  },
+  {
+    "sample_id": "sample_001083",
+    "geological_support": {
+      "iou": 0.009712509712509712,
+      "dice": 0.019238168526356292,
+      "precision": 0.00987231802027116,
+      "recall": 0.375,
+      "true_occupied_cells": 600,
+      "predicted_occupied_cells": 22791,
+      "predicted_to_true_volume_ratio": 37.985
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.009712509712509712,
+      "dice": 0.019238168526356292,
+      "precision": 0.00987231802027116,
+      "recall": 0.375,
+      "true_occupied_cells": 600,
+      "predicted_occupied_cells": 22791,
+      "predicted_to_true_volume_ratio": 37.985
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.023245694093475322,
+      "susceptibility_rmse_si": 0.04806126494790426,
+      "susceptibility_relative_l2": 15.265929068407974
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.04757446423172951,
+      "true_body_susceptibility_bias_si": -0.002797854132950306,
+      "predicted_to_true_body_mean_ratio": 0.9305706431681703,
+      "background_susceptibility_mae_si": 0.023096291181793585,
+      "integrated_absolute_background_leakage_si_cells": 2256.6000336259604,
+      "prediction_fraction_near_saturation": 0.231842041015625
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 274.2882962169732,
+      "tmi_rmse_nt": 309.75544563912376,
+      "tmi_relative_l2": 13.166318939173234,
+      "tmi_correlation": 0.05662223772815071,
+      "tmi_absolute_reference_mse": 9.594843610309217,
+      "tmi_floored_relative_mse": 173.3519544080318,
+      "observed_tmi_rms_nt": 23.526351372024,
+      "predicted_tmi_rms_nt": 310.9546763172576,
+      "predicted_to_observed_tmi_rms_ratio": 13.21729287300472
+    }
+  },
+  {
+    "sample_id": "sample_001084",
+    "geological_support": {
+      "iou": 0.0006618717733751048,
+      "dice": 0.001322867977775818,
+      "precision": 0.0006658380681818181,
+      "recall": 0.1,
+      "true_occupied_cells": 150,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 150.18666666666667
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0006618717733751048,
+      "dice": 0.001322867977775818,
+      "precision": 0.0006658380681818181,
+      "recall": 0.1,
+      "true_occupied_cells": 150,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 150.18666666666667
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022943834042356077,
+      "susceptibility_rmse_si": 0.04787215599899204,
+      "susceptibility_relative_l2": 55.06691910898772
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.027804187685251235,
+      "true_body_susceptibility_bias_si": -0.012255234271287918,
+      "predicted_to_true_body_mean_ratio": 0.44933250129643093,
+      "background_susceptibility_mae_si": 0.022936406397568963,
+      "integrated_absolute_background_leakage_si_cells": 2251.300033546984,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.20181329719924,
+      "tmi_rmse_nt": 306.41020904222967,
+      "tmi_relative_l2": 231.89439637823102,
+      "tmi_correlation": 0.20903167642663134,
+      "tmi_absolute_reference_mse": 9.388721620530289,
+      "tmi_floored_relative_mse": 53775.01107162416,
+      "observed_tmi_rms_nt": 1.321335115586233,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 232.1573472467915
+    }
+  },
+  {
+    "sample_id": "sample_001085",
+    "geological_support": {
+      "iou": 0.0017599436818021823,
+      "dice": 0.0035137034434293743,
+      "precision": 0.0017755681818181818,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 240,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 93.86666666666666
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022917387679910917,
+      "susceptibility_rmse_si": 0.0478709847404929,
+      "susceptibility_relative_l2": 2188.082155935799
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.016961854067631066,
+      "true_body_susceptibility_bias_si": 0.016223886186101783,
+      "predicted_to_true_body_mean_ratio": 37.64090401080245,
+      "background_susceptibility_mae_si": 0.022931963141517082,
+      "integrated_absolute_background_leakage_si_cells": 2248.8000335097313,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5324484469594,
+      "tmi_rmse_nt": 306.74706298131224,
+      "tmi_relative_l2": 9379.915074567052,
+      "tmi_correlation": 0.27551787237704917,
+      "tmi_absolute_reference_mse": 9.409376064766116,
+      "tmi_floored_relative_mse": 86574381.94801848,
+      "observed_tmi_rms_nt": 0.032702541605417544,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 9380.238972242898
+    }
+  },
+  {
+    "sample_id": "sample_001086",
+    "geological_support": {
+      "iou": 0.00723589001447178,
+      "dice": 0.014367816091954023,
+      "precision": 0.00732421875,
+      "recall": 0.375,
+      "true_occupied_cells": 440,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 51.2
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022917582316413387,
+      "susceptibility_rmse_si": 0.047868519272257826,
+      "susceptibility_relative_l2": 874.7085330400196
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.037704497066442855,
+      "true_body_susceptibility_bias_si": 0.036682014528196305,
+      "predicted_to_true_body_mean_ratio": 45.84430437206061,
+      "background_susceptibility_mae_si": 0.02285109982550751,
+      "integrated_absolute_background_leakage_si_cells": 2236.300033323467,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.49831961958876,
+      "tmi_rmse_nt": 306.71672823269995,
+      "tmi_relative_l2": 789.1600321660846,
+      "tmi_correlation": 0.07628622397099681,
+      "tmi_absolute_reference_mse": 9.40751513777719,
+      "tmi_floored_relative_mse": 622773.5563683757,
+      "observed_tmi_rms_nt": 0.38866226840052276,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 789.2653344533402
+    }
+  },
+  {
+    "sample_id": "sample_001087",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 90,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 250.3111111111111
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 90,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 250.3111111111111
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022924397019342752,
+      "susceptibility_rmse_si": 0.047872037780457406,
+      "susceptibility_relative_l2": 187.38613422583242
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.00844323355704546,
+      "true_body_susceptibility_bias_si": -0.00844323355704546,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022937667069555624,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.4426278474947,
+      "tmi_rmse_nt": 306.6739895048989,
+      "tmi_relative_l2": 724.612386248678,
+      "tmi_correlation": 0.15417510077541427,
+      "tmi_absolute_reference_mse": 9.404893583885084,
+      "tmi_floored_relative_mse": 525063.1103050036,
+      "observed_tmi_rms_nt": 0.42322487901780376,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 724.810072532688
+    }
+  },
+  {
+    "sample_id": "sample_001088",
+    "geological_support": {
+      "iou": 0.00244926522043387,
+      "dice": 0.004886561954624782,
+      "precision": 0.0024857954545454545,
+      "recall": 0.14285714285714285,
+      "true_occupied_cells": 392,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 57.46938775510204
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022917800943420257,
+      "susceptibility_rmse_si": 0.047870888957206224,
+      "susceptibility_relative_l2": 1904.20031226244
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.01457007769412095,
+      "true_body_susceptibility_bias_si": 0.013887606024841912,
+      "predicted_to_true_body_mean_ratio": 35.88397494824173,
+      "background_susceptibility_mae_si": 0.02295122184702477,
+      "integrated_absolute_background_leakage_si_cells": 2247.2000334858894,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5231424541293,
+      "tmi_rmse_nt": 306.7431927213631,
+      "tmi_relative_l2": 5740.402546816334,
+      "tmi_correlation": 0.19756911930048177,
+      "tmi_absolute_reference_mse": 9.409138628089531,
+      "tmi_floored_relative_mse": 32952221.39949547,
+      "observed_tmi_rms_nt": 0.05343583315276119,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 5740.6731992290715
+    }
+  },
+  {
+    "sample_id": "sample_001089",
+    "geological_support": {
+      "iou": 0.0007933010136624063,
+      "dice": 0.0015853443720274794,
+      "precision": 0.0007990056818181819,
+      "recall": 0.1,
+      "true_occupied_cells": 180,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 125.15555555555555
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291691815899573,
+      "susceptibility_rmse_si": 0.047871291083675084,
+      "susceptibility_relative_l2": 6525.009420913382
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.010137161996681243,
+      "true_body_susceptibility_bias_si": 0.009828547839424573,
+      "predicted_to_true_body_mean_ratio": 58.32525775300237,
+      "background_susceptibility_mae_si": 0.02294036151749331,
+      "integrated_absolute_background_leakage_si_cells": 2251.000033542514,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5368187178066,
+      "tmi_rmse_nt": 306.75430843889364,
+      "tmi_relative_l2": 21992.71246462889,
+      "tmi_correlation": 0.1848490160839508,
+      "tmi_absolute_reference_mse": 9.409820574582392,
+      "tmi_floored_relative_mse": 86578471.8220281,
+      "observed_tmi_rms_nt": 0.013947997953060577,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 21992.952414451804
+    }
+  },
+  {
+    "sample_id": "sample_001090",
+    "geological_support": {
+      "iou": 0.012201195219123506,
+      "dice": 0.024108241082410824,
+      "precision": 0.012664771258723184,
+      "recall": 0.25,
+      "true_occupied_cells": 1176,
+      "predicted_occupied_cells": 23214,
+      "predicted_to_true_volume_ratio": 19.739795918367346
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.012201195219123506,
+      "dice": 0.024108241082410824,
+      "precision": 0.012664771258723184,
+      "recall": 0.25,
+      "true_occupied_cells": 1176,
+      "predicted_occupied_cells": 23214,
+      "predicted_to_true_volume_ratio": 19.739795918367346
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02373734444040565,
+      "susceptibility_rmse_si": 0.04852021969074425,
+      "susceptibility_relative_l2": 21.600483464073168
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03526860009878874,
+      "true_body_susceptibility_bias_si": 0.004462800920009613,
+      "predicted_to_true_body_mean_ratio": 1.2173032856951747,
+      "background_susceptibility_mae_si": 0.023597727062777588,
+      "integrated_absolute_background_leakage_si_cells": 2292.0000341534615,
+      "prediction_fraction_near_saturation": 0.23614501953125
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 277.66647765280806,
+      "tmi_rmse_nt": 317.25434347645756,
+      "tmi_relative_l2": 14.27544456040024,
+      "tmi_correlation": 0.07749884887963567,
+      "tmi_absolute_reference_mse": 10.065031845467812,
+      "tmi_floored_relative_mse": 203.78831739706087,
+      "observed_tmi_rms_nt": 22.223780291684495,
+      "predicted_tmi_rms_nt": 318.9091735174378,
+      "predicted_to_observed_tmi_rms_ratio": 14.349906691471592
+    }
+  },
+  {
+    "sample_id": "sample_001091",
+    "geological_support": {
+      "iou": 0.002912621359223301,
+      "dice": 0.005808325266214908,
+      "precision": 0.0029296875,
+      "recall": 0.3333333333333333,
+      "true_occupied_cells": 198,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 113.77777777777777
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.002912621359223301,
+      "dice": 0.005808325266214908,
+      "precision": 0.0029296875,
+      "recall": 0.3333333333333333,
+      "true_occupied_cells": 198,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 113.77777777777777
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02291867187685644,
+      "susceptibility_rmse_si": 0.047867355492002626,
+      "susceptibility_relative_l2": 357.173511648159
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.034328720765188336,
+      "true_body_susceptibility_bias_si": 0.030347173024589818,
+      "predicted_to_true_body_mean_ratio": 11.16260509789523,
+      "background_susceptibility_mae_si": 0.02289564382882788,
+      "integrated_absolute_background_leakage_si_cells": 2246.2000334709883,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.4348863449247,
+      "tmi_rmse_nt": 306.6608380028905,
+      "tmi_relative_l2": 225.19952380575057,
+      "tmi_correlation": 0.06036181412332797,
+      "tmi_absolute_reference_mse": 9.404086956463503,
+      "tmi_floored_relative_mse": 50714.82552233681,
+      "observed_tmi_rms_nt": 1.3617295135464216,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 225.2706225479595
+    }
+  },
+  {
+    "sample_id": "sample_001092",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 294,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 76.62585034013605
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 294,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 76.62585034013605
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02293229303397955,
+      "susceptibility_rmse_si": 0.0478722088307603,
+      "susceptibility_relative_l2": 167.54173129234155
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.00522483279928565,
+      "true_body_susceptibility_bias_si": -0.00522483279928565,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022985409994585614,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.3850679958747,
+      "tmi_rmse_nt": 306.60352999782793,
+      "tmi_relative_l2": 300.033338198744,
+      "tmi_correlation": 0.11110732953891343,
+      "tmi_absolute_reference_mse": 9.400572460712898,
+      "tmi_floored_relative_mse": 90020.0040306819,
+      "observed_tmi_rms_nt": 1.0218982058411514,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 300.18416071690046
+    }
+  },
+  {
+    "sample_id": "sample_001093",
+    "geological_support": {
+      "iou": 0.00044290902648595976,
+      "dice": 0.0008854258898530193,
+      "precision": 0.00044389204545454544,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 60,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 375.46666666666664
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.00044290902648595976,
+      "dice": 0.0008854258898530193,
+      "precision": 0.00044389204545454544,
+      "recall": 0.16666666666666666,
+      "true_occupied_cells": 60,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 375.46666666666664
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022927755066575628,
+      "susceptibility_rmse_si": 0.04787029931625902,
+      "susceptibility_relative_l2": 71.10651740729729
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.03483334183692932,
+      "true_body_susceptibility_bias_si": -0.010583345467845598,
+      "predicted_to_true_body_mean_ratio": 0.6116205262900908,
+      "background_susceptibility_mae_si": 0.022920484035202502,
+      "integrated_absolute_background_leakage_si_cells": 2251.800033554435,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.20079881491245,
+      "tmi_rmse_nt": 306.4865758818955,
+      "tmi_relative_l2": 151.0539780074696,
+      "tmi_correlation": 0.12005638642982541,
+      "tmi_absolute_reference_mse": 9.39340211958089,
+      "tmi_floored_relative_mse": 22817.30427188112,
+      "observed_tmi_rms_nt": 2.0289871205294556,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 151.187581308296
+    }
+  },
+  {
+    "sample_id": "sample_001094",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 216,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 104.29629629629629
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 216,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 104.29629629629629
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022934866487579104,
+      "susceptibility_rmse_si": 0.04787293052805935,
+      "susceptibility_relative_l2": 123.3026267285792
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.008282785303890705,
+      "true_body_susceptibility_bias_si": -0.008282785303890705,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022967131897574992,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.3807784868643,
+      "tmi_rmse_nt": 306.5223594026068,
+      "tmi_relative_l2": 242.21602842399133,
+      "tmi_correlation": 0.1542506252181819,
+      "tmi_absolute_reference_mse": 9.395595681374086,
+      "tmi_floored_relative_mse": 58668.6044254918,
+      "observed_tmi_rms_nt": 1.2654916414781983,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 242.40196079068076
+    }
+  },
+  {
+    "sample_id": "sample_001095",
+    "geological_support": {
+      "iou": 0.0035137034434293743,
+      "dice": 0.0070028011204481795,
+      "precision": 0.0035511363636363635,
+      "recall": 0.25,
+      "true_occupied_cells": 320,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 70.4
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0035137034434293743,
+      "dice": 0.0070028011204481795,
+      "precision": 0.0035511363636363635,
+      "recall": 0.25,
+      "true_occupied_cells": 320,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 70.4
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02292885664428468,
+      "susceptibility_rmse_si": 0.047860530244860956,
+      "susceptibility_relative_l2": 112.00725722680825
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.028744656592607498,
+      "true_body_susceptibility_bias_si": 0.017510687932372093,
+      "predicted_to_true_body_mean_ratio": 3.3380901881568663,
+      "background_susceptibility_mae_si": 0.02290986317613209,
+      "integrated_absolute_background_leakage_si_cells": 2244.8000334501266,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.36082492268275,
+      "tmi_rmse_nt": 306.5871792532343,
+      "tmi_relative_l2": 569.8758298523542,
+      "tmi_correlation": 0.21085116270320936,
+      "tmi_absolute_reference_mse": 9.39956984824548,
+      "tmi_floored_relative_mse": 324758.4614499094,
+      "observed_tmi_rms_nt": 0.5379894411957534,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 570.1927059696982
+    }
+  },
+  {
+    "sample_id": "sample_001096",
+    "geological_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 156,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 144.4102564102564
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0,
+      "dice": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_occupied_cells": 0,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": null
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022917151510051543,
+      "susceptibility_rmse_si": 0.04787135764616758,
+      "susceptibility_relative_l2": 3936.0169887488582
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.0003053107357118279,
+      "true_body_susceptibility_bias_si": -0.0003053107357118279,
+      "predicted_to_true_body_mean_ratio": 0.0,
+      "background_susceptibility_mae_si": 0.022953091591976768,
+      "integrated_absolute_background_leakage_si_cells": 2252.800033569336,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.5371301846166,
+      "tmi_rmse_nt": 306.7542436949833,
+      "tmi_relative_l2": 31965.58847454128,
+      "tmi_correlation": 0.23263728732924616,
+      "tmi_absolute_reference_mse": 9.409816602488121,
+      "tmi_floored_relative_mse": 86578435.27533211,
+      "observed_tmi_rms_nt": 0.009596389690723043,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 31965.943979440428
+    }
+  },
+  {
+    "sample_id": "sample_001097",
+    "geological_support": {
+      "iou": 0.006764034294084701,
+      "dice": 0.01343717904827114,
+      "precision": 0.006969105113636364,
+      "recall": 0.1869047619047619,
+      "true_occupied_cells": 840,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 26.81904761904762
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.006764034294084701,
+      "dice": 0.01343717904827114,
+      "precision": 0.006969105113636364,
+      "recall": 0.1869047619047619,
+      "true_occupied_cells": 840,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 26.81904761904762
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022927996655099037,
+      "susceptibility_rmse_si": 0.04786469170882538,
+      "susceptibility_relative_l2": 244.54534237447555
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.02001636886603332,
+      "true_body_susceptibility_bias_si": 0.016573081766476944,
+      "predicted_to_true_body_mean_ratio": 8.827110243941938,
+      "background_susceptibility_mae_si": 0.0229530907138573,
+      "integrated_absolute_background_leakage_si_cells": 2237.1000333353877,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.27739097628813,
+      "tmi_rmse_nt": 306.5506245050527,
+      "tmi_relative_l2": 224.86111119912954,
+      "tmi_correlation": 0.12068700552772164,
+      "tmi_absolute_reference_mse": 9.397328538443785,
+      "tmi_floored_relative_mse": 50562.51932970732,
+      "observed_tmi_rms_nt": 1.363288755758134,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 225.0129724630073
+    }
+  },
+  {
+    "sample_id": "sample_001098",
+    "geological_support": {
+      "iou": 0.004893893460372455,
+      "dice": 0.009740119812093264,
+      "precision": 0.005015980113636364,
+      "recall": 0.1674074074074074,
+      "true_occupied_cells": 675,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 33.37481481481481
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.004893893460372455,
+      "dice": 0.009740119812093264,
+      "precision": 0.005015980113636364,
+      "recall": 0.1674074074074074,
+      "true_occupied_cells": 675,
+      "predicted_occupied_cells": 22528,
+      "predicted_to_true_volume_ratio": 33.37481481481481
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.022935185003812347,
+      "susceptibility_rmse_si": 0.04786279887971254,
+      "susceptibility_relative_l2": 142.46657152335885
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.019437619576023683,
+      "true_body_susceptibility_bias_si": 0.012686413494801079,
+      "predicted_to_true_body_mean_ratio": 4.129104274187777,
+      "background_susceptibility_mae_si": 0.022959366923772165,
+      "integrated_absolute_background_leakage_si_cells": 2241.500033400953,
+      "prediction_fraction_near_saturation": 0.22916666666666666
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 275.28450254815806,
+      "tmi_rmse_nt": 306.53152686244636,
+      "tmi_relative_l2": 486.89865513767427,
+      "tmi_correlation": 0.2650528799136203,
+      "tmi_absolute_reference_mse": 9.396157696062268,
+      "tmi_floored_relative_mse": 237070.3003748759,
+      "observed_tmi_rms_nt": 0.6295591980548236,
+      "predicted_tmi_rms_nt": 306.75765525853245,
+      "predicted_to_observed_tmi_rms_ratio": 487.2578404164928
+    }
+  },
+  {
+    "sample_id": "sample_001099",
+    "geological_support": {
+      "iou": 0.0034235409194652757,
+      "dice": 0.006823720552396426,
+      "precision": 0.0036101083032490976,
+      "recall": 0.0621301775147929,
+      "true_occupied_cells": 1352,
+      "predicted_occupied_cells": 23268,
+      "predicted_to_true_volume_ratio": 17.21005917159763
+    },
+    "thresholded_susceptibility_support": {
+      "iou": 0.0034235409194652757,
+      "dice": 0.006823720552396426,
+      "precision": 0.0036101083032490976,
+      "recall": 0.0621301775147929,
+      "true_occupied_cells": 1352,
+      "predicted_occupied_cells": 23268,
+      "predicted_to_true_volume_ratio": 17.21005917159763
+    },
+    "susceptibility_errors": {
+      "susceptibility_mae_si": 0.02425372526128437,
+      "susceptibility_rmse_si": 0.04889805595458176,
+      "susceptibility_relative_l2": 8.594882109154264
+    },
+    "amplitude_diagnostics": {
+      "true_body_susceptibility_mae_si": 0.04869687391896925,
+      "true_body_susceptibility_bias_si": -0.042298952944179964,
+      "predicted_to_true_body_mean_ratio": 0.12807184996010382,
+      "background_susceptibility_mae_si": 0.023912864454027273,
+      "integrated_absolute_background_leakage_si_cells": 2318.400034546852,
+      "prediction_fraction_near_saturation": 0.2366943359375
+    },
+    "tmi_fit": {
+      "tmi_mae_nt": 273.04703479369476,
+      "tmi_rmse_nt": 315.4487409740503,
+      "tmi_relative_l2": 8.09322316084396,
+      "tmi_correlation": 0.12509841051762743,
+      "tmi_absolute_reference_mse": 9.950790818211345,
+      "tmi_floored_relative_mse": 65.50026113122115,
+      "observed_tmi_rms_nt": 38.97689890725257,
+      "predicted_tmi_rms_nt": 319.77632628298863,
+      "predicted_to_observed_tmi_rms_ratio": 8.204252653447675
+    }
+  }
+]

@@ -1,0 +1,1086 @@
+{
+  "overall": {
+    "sample_count": 100,
+    "susceptibility_si": {
+      "mean": 0.017693489567306243,
+      "median": 0.004872943299884579,
+      "finite_count": 100
+    },
+    "geological_iou": {
+      "mean": 0.0030979314984823153,
+      "median": 0.0025019405735714102,
+      "finite_count": 100
+    },
+    "geological_dice": {
+      "mean": 0.006159574747561946,
+      "median": 0.004991387470590662,
+      "finite_count": 100
+    },
+    "geological_precision": {
+      "mean": 0.003171253930634253,
+      "median": 0.002530184659090909,
+      "finite_count": 100
+    },
+    "geological_recall": {
+      "mean": 0.15560200996519957,
+      "median": 0.14285714285714285,
+      "finite_count": 100
+    },
+    "geological_true_occupied_cells": {
+      "mean": 471.64,
+      "median": 360.0,
+      "finite_count": 100
+    },
+    "geological_predicted_occupied_cells": {
+      "mean": 22585.21,
+      "median": 22528.0,
+      "finite_count": 100
+    },
+    "geological_predicted_to_true_volume_ratio": {
+      "mean": 79.64194147644487,
+      "median": 62.577777777777776,
+      "finite_count": 100
+    },
+    "thresholded_0p001_si_iou": {
+      "mean": 0.002436888682073865,
+      "median": 0.0015740226830371893,
+      "finite_count": 100
+    },
+    "thresholded_0p001_si_dice": {
+      "mean": 0.004846443767294278,
+      "median": 0.0031430337439766406,
+      "finite_count": 100
+    },
+    "thresholded_0p001_si_precision": {
+      "mean": 0.00249032353290698,
+      "median": 0.0015980113636363635,
+      "finite_count": 100
+    },
+    "thresholded_0p001_si_recall": {
+      "mean": 0.12556719755538714,
+      "median": 0.125,
+      "finite_count": 100
+    },
+    "thresholded_0p001_si_true_occupied_cells": {
+      "mean": 350.34,
+      "median": 279.0,
+      "finite_count": 100
+    },
+    "thresholded_0p001_si_predicted_occupied_cells": {
+      "mean": 22585.21,
+      "median": 22528.0,
+      "finite_count": 100
+    },
+    "susceptibility_mae_si": {
+      "mean": 0.023035177680492985,
+      "median": 0.02292883257772852,
+      "finite_count": 100
+    },
+    "susceptibility_rmse_si": {
+      "mean": 0.047952718317693606,
+      "median": 0.04787108656917402,
+      "finite_count": 100
+    },
+    "susceptibility_relative_l2": {
+      "mean": 1233.6278084586368,
+      "median": 178.7984773332243,
+      "finite_count": 100
+    },
+    "true_body_susceptibility_mae_si": {
+      "mean": 0.027181746630707684,
+      "median": 0.02637240608234328,
+      "finite_count": 100
+    },
+    "true_body_susceptibility_bias_si": {
+      "mean": -0.002133288353994679,
+      "median": 0.00136986809472243,
+      "finite_count": 100
+    },
+    "predicted_to_true_body_mean_ratio": {
+      "mean": 15.884323538434785,
+      "median": 1.0610996458671655,
+      "finite_count": 100
+    },
+    "background_susceptibility_mae_si": {
+      "mean": 0.023012571566044446,
+      "median": 0.02294948259267807,
+      "finite_count": 100
+    },
+    "integrated_absolute_background_leakage_si_cells": {
+      "mean": 2251.3465963039803,
+      "median": 2248.8000335097313,
+      "finite_count": 100
+    },
+    "prediction_fraction_near_saturation": {
+      "mean": 0.22974822998046876,
+      "median": 0.22916666666666666,
+      "finite_count": 100
+    },
+    "tmi_mae_nt": {
+      "mean": 275.05123984400916,
+      "median": 275.3889827780604,
+      "finite_count": 100
+    },
+    "tmi_rmse_nt": {
+      "mean": 307.0636812924485,
+      "median": 306.65720640967345,
+      "finite_count": 100
+    },
+    "tmi_relative_l2": {
+      "mean": 3502.6416031968524,
+      "median": 300.4142749901697,
+      "finite_count": 100
+    },
+    "tmi_correlation": {
+      "mean": 0.1728274707301668,
+      "median": 0.16928855580040222,
+      "finite_count": 100
+    },
+    "tmi_absolute_reference_mse": {
+      "mean": 9.429522426663784,
+      "median": 9.403864225617355,
+      "finite_count": 100
+    },
+    "tmi_floored_relative_mse": {
+      "mean": 14555023.032432387,
+      "median": 90248.88173070834,
+      "finite_count": 100
+    },
+    "observed_tmi_rms_nt": {
+      "mean": 5.031511504023917,
+      "median": 1.0204008130542128,
+      "finite_count": 100
+    },
+    "predicted_tmi_rms_nt": {
+      "mean": 307.73507003813995,
+      "median": 306.75765525853245,
+      "finite_count": 100
+    },
+    "predicted_to_observed_tmi_rms_ratio": {
+      "mean": 3502.8591863521474,
+      "median": 300.6253149892974,
+      "finite_count": 100
+    },
+    "zero_geological_iou": {
+      "mean": 0.0,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_geological_dice": {
+      "mean": 0.0,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_geological_precision": {
+      "mean": 0.0,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_geological_recall": {
+      "mean": 0.0,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_geological_true_occupied_cells": {
+      "mean": 471.64,
+      "median": 360.0,
+      "finite_count": 100
+    },
+    "zero_geological_predicted_occupied_cells": {
+      "mean": 0.0,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_geological_predicted_to_true_volume_ratio": {
+      "mean": 0.0,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_thresholded_0p001_si_iou": {
+      "mean": 0.26,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_thresholded_0p001_si_dice": {
+      "mean": 0.26,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_thresholded_0p001_si_precision": {
+      "mean": 0.26,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_thresholded_0p001_si_recall": {
+      "mean": 0.26,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_thresholded_0p001_si_true_occupied_cells": {
+      "mean": 350.34,
+      "median": 279.0,
+      "finite_count": 100
+    },
+    "zero_thresholded_0p001_si_predicted_occupied_cells": {
+      "mean": 0.0,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_thresholded_0p001_si_predicted_to_true_volume_ratio": {
+      "mean": 0.26,
+      "median": 0.0,
+      "finite_count": 100
+    },
+    "zero_susceptibility_mae_si": {
+      "mean": 9.07471690715352e-05,
+      "median": 1.7436140809697537e-05,
+      "finite_count": 100
+    },
+    "zero_susceptibility_rmse_si": {
+      "mean": 0.0012040432713222584,
+      "median": 0.0002677305436065053,
+      "finite_count": 100
+    },
+    "zero_susceptibility_relative_l2": {
+      "mean": 1.0,
+      "median": 1.0,
+      "finite_count": 100
+    },
+    "zero_tmi_mae_nt": {
+      "mean": 1.7092436912984235,
+      "median": 0.30799884431550906,
+      "finite_count": 100
+    },
+    "zero_tmi_rmse_nt": {
+      "mean": 5.031511504023917,
+      "median": 1.0204008130542128,
+      "finite_count": 100
+    },
+    "zero_tmi_relative_l2": {
+      "mean": 1.0,
+      "median": 1.0,
+      "finite_count": 100
+    },
+    "zero_tmi_correlation": {
+      "mean": null,
+      "median": null,
+      "finite_count": 0
+    }
+  },
+  "by_susceptibility_decade": {
+    "0.0001_to_below_0.001_si": {
+      "sample_count": 26,
+      "susceptibility_si": {
+        "mean": 0.00030276413594378907,
+        "median": 0.00019610973630989942,
+        "finite_count": 26
+      },
+      "geological_iou": {
+        "mean": 0.002542472370801732,
+        "median": 0.0015214480938592026,
+        "finite_count": 26
+      },
+      "geological_dice": {
+        "mean": 0.005050503770260264,
+        "median": 0.003038263442045029,
+        "finite_count": 26
+      },
+      "geological_precision": {
+        "mean": 0.002618963068181818,
+        "median": 0.001531427556818182,
+        "finite_count": 26
+      },
+      "geological_recall": {
+        "mean": 0.11551850926850928,
+        "median": 0.12386363636363637,
+        "finite_count": 26
+      },
+      "geological_true_occupied_cells": {
+        "mean": 466.53846153846155,
+        "median": 345.0,
+        "finite_count": 26
+      },
+      "geological_predicted_occupied_cells": {
+        "mean": 22528.0,
+        "median": 22528.0,
+        "finite_count": 26
+      },
+      "geological_predicted_to_true_volume_ratio": {
+        "mean": 79.7040124873092,
+        "median": 65.42222222222222,
+        "finite_count": 26
+      },
+      "thresholded_0p001_si_iou": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "thresholded_0p001_si_dice": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "thresholded_0p001_si_precision": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "thresholded_0p001_si_recall": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "thresholded_0p001_si_true_occupied_cells": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "thresholded_0p001_si_predicted_occupied_cells": {
+        "mean": 22528.0,
+        "median": 22528.0,
+        "finite_count": 26
+      },
+      "susceptibility_mae_si": {
+        "mean": 0.022917769438566774,
+        "median": 0.022917383399538117,
+        "finite_count": 26
+      },
+      "susceptibility_rmse_si": {
+        "mean": 0.04787081393614599,
+        "median": 0.04787123204851297,
+        "finite_count": 26
+      },
+      "susceptibility_relative_l2": {
+        "mean": 4342.773501071994,
+        "median": 3884.2743057611974,
+        "finite_count": 26
+      },
+      "true_body_susceptibility_mae_si": {
+        "mean": 0.011768276785152834,
+        "median": 0.012582031861711584,
+        "finite_count": 26
+      },
+      "true_body_susceptibility_bias_si": {
+        "mean": 0.011249086961033059,
+        "median": 0.012084035456593319,
+        "finite_count": 26
+      },
+      "predicted_to_true_body_mean_ratio": {
+        "mean": 51.73498723909716,
+        "median": 36.76243947952209,
+        "finite_count": 26
+      },
+      "background_susceptibility_mae_si": {
+        "mean": 0.022965717111890473,
+        "median": 0.022966949183456715,
+        "finite_count": 26
+      },
+      "integrated_absolute_background_leakage_si_cells": {
+        "mean": 2246.900033481419,
+        "median": 2249.350033517927,
+        "finite_count": 26
+      },
+      "prediction_fraction_near_saturation": {
+        "mean": 0.22916666666666669,
+        "median": 0.22916666666666666,
+        "finite_count": 26
+      },
+      "tmi_mae_nt": {
+        "mean": 275.5232280156629,
+        "median": 275.53282970192754,
+        "finite_count": 26
+      },
+      "tmi_rmse_nt": {
+        "mean": 306.74171077392907,
+        "median": 306.74961073332554,
+        "finite_count": 26
+      },
+      "tmi_relative_l2": {
+        "mean": 12297.410801704538,
+        "median": 8317.385484356872,
+        "finite_count": 26
+      },
+      "tmi_correlation": {
+        "mean": 0.15040915935339919,
+        "median": 0.14685902404743972,
+        "finite_count": 26
+      },
+      "tmi_absolute_reference_mse": {
+        "mean": 9.409047763354705,
+        "median": 9.409532368513263,
+        "finite_count": 26
+      },
+      "tmi_floored_relative_mse": {
+        "mean": 54494403.81981746,
+        "median": 69250919.47456133,
+        "finite_count": 26
+      },
+      "observed_tmi_rms_nt": {
+        "mean": 0.1251924043782648,
+        "median": 0.0369187907781864,
+        "finite_count": 26
+      },
+      "predicted_tmi_rms_nt": {
+        "mean": 306.75765525853245,
+        "median": 306.75765525853245,
+        "finite_count": 26
+      },
+      "predicted_to_observed_tmi_rms_ratio": {
+        "mean": 12297.611117316494,
+        "median": 8317.647332181343,
+        "finite_count": 26
+      },
+      "zero_geological_iou": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "zero_geological_dice": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "zero_geological_precision": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "zero_geological_recall": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "zero_geological_true_occupied_cells": {
+        "mean": 466.53846153846155,
+        "median": 345.0,
+        "finite_count": 26
+      },
+      "zero_geological_predicted_occupied_cells": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "zero_geological_predicted_to_true_volume_ratio": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "zero_thresholded_0p001_si_iou": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 26
+      },
+      "zero_thresholded_0p001_si_dice": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 26
+      },
+      "zero_thresholded_0p001_si_precision": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 26
+      },
+      "zero_thresholded_0p001_si_recall": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 26
+      },
+      "zero_thresholded_0p001_si_true_occupied_cells": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "zero_thresholded_0p001_si_predicted_occupied_cells": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 26
+      },
+      "zero_thresholded_0p001_si_predicted_to_true_volume_ratio": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 26
+      },
+      "zero_susceptibility_mae_si": {
+        "mean": 1.6300241130651489e-06,
+        "median": 9.128103624078676e-07,
+        "finite_count": 26
+      },
+      "zero_susceptibility_rmse_si": {
+        "mean": 2.0946199617798788e-05,
+        "median": 1.2324326971930543e-05,
+        "finite_count": 26
+      },
+      "zero_susceptibility_relative_l2": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 26
+      },
+      "zero_tmi_mae_nt": {
+        "mean": 0.041749865799712065,
+        "median": 0.013565735431838338,
+        "finite_count": 26
+      },
+      "zero_tmi_rmse_nt": {
+        "mean": 0.1251924043782648,
+        "median": 0.0369187907781864,
+        "finite_count": 26
+      },
+      "zero_tmi_relative_l2": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 26
+      },
+      "zero_tmi_correlation": {
+        "mean": null,
+        "median": null,
+        "finite_count": 0
+      }
+    },
+    "0.001_to_below_0.01_si": {
+      "sample_count": 35,
+      "susceptibility_si": {
+        "mean": 0.004209053885090408,
+        "median": 0.0035069289056500123,
+        "finite_count": 35
+      },
+      "geological_iou": {
+        "mean": 0.0031513880960164983,
+        "median": 0.0028011204481792717,
+        "finite_count": 35
+      },
+      "geological_dice": {
+        "mean": 0.006269809591515757,
+        "median": 0.00558659217877095,
+        "finite_count": 35
+      },
+      "geological_precision": {
+        "mean": 0.0032112418831168835,
+        "median": 0.002840909090909091,
+        "finite_count": 35
+      },
+      "geological_recall": {
+        "mean": 0.18544159135717578,
+        "median": 0.1674074074074074,
+        "finite_count": 35
+      },
+      "geological_true_occupied_cells": {
+        "mean": 431.48571428571427,
+        "median": 320.0,
+        "finite_count": 35
+      },
+      "geological_predicted_occupied_cells": {
+        "mean": 22528.0,
+        "median": 22528.0,
+        "finite_count": 35
+      },
+      "geological_predicted_to_true_volume_ratio": {
+        "mean": 77.38017458681404,
+        "median": 70.4,
+        "finite_count": 35
+      },
+      "thresholded_0p001_si_iou": {
+        "mean": 0.0031513880960164983,
+        "median": 0.0028011204481792717,
+        "finite_count": 35
+      },
+      "thresholded_0p001_si_dice": {
+        "mean": 0.006269809591515757,
+        "median": 0.00558659217877095,
+        "finite_count": 35
+      },
+      "thresholded_0p001_si_precision": {
+        "mean": 0.0032112418831168835,
+        "median": 0.002840909090909091,
+        "finite_count": 35
+      },
+      "thresholded_0p001_si_recall": {
+        "mean": 0.18544159135717578,
+        "median": 0.1674074074074074,
+        "finite_count": 35
+      },
+      "thresholded_0p001_si_true_occupied_cells": {
+        "mean": 431.48571428571427,
+        "median": 320.0,
+        "finite_count": 35
+      },
+      "thresholded_0p001_si_predicted_occupied_cells": {
+        "mean": 22528.0,
+        "median": 22528.0,
+        "finite_count": 35
+      },
+      "thresholded_0p001_si_predicted_to_true_volume_ratio": {
+        "mean": 77.38017458681404,
+        "median": 70.4,
+        "finite_count": 35
+      },
+      "susceptibility_mae_si": {
+        "mean": 0.02292740949465793,
+        "median": 0.022924259429610554,
+        "finite_count": 35
+      },
+      "susceptibility_rmse_si": {
+        "mean": 0.047866497006842056,
+        "median": 0.047867355492002626,
+        "finite_count": 35
+      },
+      "susceptibility_relative_l2": {
+        "mean": 264.5076080412345,
+        "median": 204.32657158268358,
+        "finite_count": 35
+      },
+      "true_body_susceptibility_mae_si": {
+        "mean": 0.021287538083453572,
+        "median": 0.02001636886603332,
+        "finite_count": 35
+      },
+      "true_body_susceptibility_bias_si": {
+        "mean": 0.01433510548986859,
+        "median": 0.014177650290851792,
+        "finite_count": 35
+      },
+      "predicted_to_true_body_mean_ratio": {
+        "mean": 6.359253807633413,
+        "median": 5.227110818926175,
+        "finite_count": 35
+      },
+      "background_susceptibility_mae_si": {
+        "mean": 0.022943947646899873,
+        "median": 0.022935415095360883,
+        "finite_count": 35
+      },
+      "integrated_absolute_background_leakage_si_cells": {
+        "mean": 2245.565747747251,
+        "median": 2246.4000334739685,
+        "finite_count": 35
+      },
+      "prediction_fraction_near_saturation": {
+        "mean": 0.22916666666666669,
+        "median": 0.22916666666666666,
+        "finite_count": 35
+      },
+      "tmi_mae_nt": {
+        "mean": 275.38434472230125,
+        "median": 275.4040707528724,
+        "finite_count": 35
+      },
+      "tmi_rmse_nt": {
+        "mean": 306.6047005139539,
+        "median": 306.64152408521204,
+        "finite_count": 35
+      },
+      "tmi_relative_l2": {
+        "mean": 755.6022969746749,
+        "median": 458.0315929758719,
+        "finite_count": 35
+      },
+      "tmi_correlation": {
+        "mean": 0.1844930841062955,
+        "median": 0.18868130625147117,
+        "finite_count": 35
+      },
+      "tmi_absolute_reference_mse": {
+        "mean": 9.40064544564348,
+        "median": 9.402902429330167,
+        "finite_count": 35
+      },
+      "tmi_floored_relative_mse": {
+        "mean": 1072650.2245895881,
+        "median": 209792.94016401493,
+        "finite_count": 35
+      },
+      "observed_tmi_rms_nt": {
+        "mean": 0.8085452532036449,
+        "median": 0.6694714479523179,
+        "finite_count": 35
+      },
+      "predicted_tmi_rms_nt": {
+        "mean": 306.75765525853245,
+        "median": 306.75765525853245,
+        "finite_count": 35
+      },
+      "predicted_to_observed_tmi_rms_ratio": {
+        "mean": 755.8396673105384,
+        "median": 458.20872002353235,
+        "finite_count": 35
+      },
+      "zero_geological_iou": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_geological_dice": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_geological_precision": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_geological_recall": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_geological_true_occupied_cells": {
+        "mean": 431.48571428571427,
+        "median": 320.0,
+        "finite_count": 35
+      },
+      "zero_geological_predicted_occupied_cells": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_geological_predicted_to_true_volume_ratio": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_thresholded_0p001_si_iou": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_thresholded_0p001_si_dice": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_thresholded_0p001_si_precision": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_thresholded_0p001_si_recall": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_thresholded_0p001_si_true_occupied_cells": {
+        "mean": 431.48571428571427,
+        "median": 320.0,
+        "finite_count": 35
+      },
+      "zero_thresholded_0p001_si_predicted_occupied_cells": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_thresholded_0p001_si_predicted_to_true_volume_ratio": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 35
+      },
+      "zero_susceptibility_mae_si": {
+        "mean": 1.6222196442429646e-05,
+        "median": 1.3254086634143883e-05,
+        "finite_count": 35
+      },
+      "zero_susceptibility_rmse_si": {
+        "mean": 0.0002488549382362322,
+        "median": 0.0002342912576629434,
+        "finite_count": 35
+      },
+      "zero_susceptibility_relative_l2": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 35
+      },
+      "zero_tmi_mae_nt": {
+        "mean": 0.27270701714961526,
+        "median": 0.24435710819802067,
+        "finite_count": 35
+      },
+      "zero_tmi_rmse_nt": {
+        "mean": 0.8085452532036449,
+        "median": 0.6694714479523179,
+        "finite_count": 35
+      },
+      "zero_tmi_relative_l2": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 35
+      },
+      "zero_tmi_correlation": {
+        "mean": null,
+        "median": null,
+        "finite_count": 0
+      }
+    },
+    "0.01_to_0.1_si": {
+      "sample_count": 39,
+      "susceptibility_si": {
+        "mean": 0.041388723159433885,
+        "median": 0.02967236842343965,
+        "finite_count": 39
+      },
+      "geological_iou": {
+        "mean": 0.003420263714020746,
+        "median": 0.0033436102305788354,
+        "finite_count": 39
+      },
+      "geological_dice": {
+        "mean": 0.006800026692984007,
+        "median": 0.0066649355145849565,
+        "finite_count": 39
+      },
+      "geological_precision": {
+        "mean": 0.0035035612149130037,
+        "median": 0.003412061860238401,
+        "finite_count": 39
+      },
+      "geological_recall": {
+        "mean": 0.15554523225737338,
+        "median": 0.1619047619047619,
+        "finite_count": 39
+      },
+      "geological_true_occupied_cells": {
+        "mean": 511.0769230769231,
+        "median": 480.0,
+        "finite_count": 39
+      },
+      "geological_predicted_occupied_cells": {
+        "mean": 22674.69230769231,
+        "median": 22530.0,
+        "finite_count": 39
+      },
+      "geological_predicted_to_true_volume_ratio": {
+        "mean": 81.63035160092193,
+        "median": 46.95,
+        "finite_count": 39
+      },
+      "thresholded_0p001_si_iou": {
+        "mean": 0.003420263714020746,
+        "median": 0.0033436102305788354,
+        "finite_count": 39
+      },
+      "thresholded_0p001_si_dice": {
+        "mean": 0.006800026692984007,
+        "median": 0.0066649355145849565,
+        "finite_count": 39
+      },
+      "thresholded_0p001_si_precision": {
+        "mean": 0.0035035612149130037,
+        "median": 0.003412061860238401,
+        "finite_count": 39
+      },
+      "thresholded_0p001_si_recall": {
+        "mean": 0.15554523225737338,
+        "median": 0.1619047619047619,
+        "finite_count": 39
+      },
+      "thresholded_0p001_si_true_occupied_cells": {
+        "mean": 511.0769230769231,
+        "median": 480.0,
+        "finite_count": 39
+      },
+      "thresholded_0p001_si_predicted_occupied_cells": {
+        "mean": 22674.69230769231,
+        "median": 22530.0,
+        "finite_count": 39
+      },
+      "thresholded_0p001_si_predicted_to_true_volume_ratio": {
+        "mean": 81.63035160092193,
+        "median": 46.95,
+        "finite_count": 39
+      },
+      "susceptibility_mae_si": {
+        "mean": 0.02321016488034705,
+        "median": 0.023065761082269393,
+        "finite_count": 39
+      },
+      "susceptibility_rmse_si": {
+        "mean": 0.048084699338207505,
+        "median": 0.04793391295287806,
+        "finite_count": 39
+      },
+      "susceptibility_relative_l2": {
+        "mean": 30.587270167912937,
+        "median": 23.016313692017448,
+        "finite_count": 39
+      },
+      "true_body_susceptibility_mae_si": {
+        "mean": 0.042747067531690254,
+        "median": 0.03608121071010828,
+        "finite_count": 39
+      },
+      "true_body_susceptibility_bias_si": {
+        "mean": -0.02583419970594175,
+        "median": -0.01706187380477786,
+        "finite_count": 39
+      },
+      "predicted_to_true_body_mean_ratio": {
+        "mean": 0.5320205733277675,
+        "median": 0.4359861066789186,
+        "finite_count": 39
+      },
+      "background_susceptibility_mae_si": {
+        "mean": 0.023105393437276866,
+        "median": 0.02298604343752363,
+        "finite_count": 39
+      },
+      "integrated_absolute_background_leakage_si_cells": {
+        "mean": 2259.498912531471,
+        "median": 2251.300033546984,
+        "finite_count": 39
+      },
+      "prediction_fraction_near_saturation": {
+        "mean": 0.23065785465077454,
+        "median": 0.22918701171875,
+        "finite_count": 39
+      },
+      "tmi_mae_nt": {
+        "mean": 274.43764078751633,
+        "median": 274.9001054334574,
+        "finite_count": 39
+      },
+      "tmi_rmse_nt": {
+        "mean": 307.6902341316489,
+        "median": 306.41020904222967,
+        "finite_count": 39
+      },
+      "tmi_relative_l2": {
+        "mean": 104.75382259624634,
+        "median": 41.3759224404375,
+        "finite_count": 39
+      },
+      "tmi_correlation": {
+        "mean": 0.17730387143866555,
+        "median": 0.17835930484155824,
+        "finite_count": 39
+      },
+      "tmi_absolute_reference_mse": {
+        "mean": 9.469087441580367,
+        "median": 9.388721620530289,
+        "finite_count": 39
+      },
+      "tmi_floored_relative_mse": {
+        "mean": 28334.514547418075,
+        "median": 1711.9669577971003,
+        "finite_count": 39
+      },
+      "observed_tmi_rms_nt": {
+        "mean": 12.092232410934082,
+        "median": 7.556463364478925,
+        "finite_count": 39
+      },
+      "predicted_tmi_rms_nt": {
+        "mean": 309.2638470011156,
+        "median": 306.76314130249284,
+        "finite_count": 39
+      },
+      "predicted_to_observed_tmi_rms_ratio": {
+        "mean": 104.96515972094971,
+        "median": 41.541439689198704,
+        "finite_count": 39
+      },
+      "zero_geological_iou": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_geological_dice": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_geological_precision": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_geological_recall": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_geological_true_occupied_cells": {
+        "mean": 511.0769230769231,
+        "median": 480.0,
+        "finite_count": 39
+      },
+      "zero_geological_predicted_occupied_cells": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_geological_predicted_to_true_volume_ratio": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_thresholded_0p001_si_iou": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_thresholded_0p001_si_dice": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_thresholded_0p001_si_precision": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_thresholded_0p001_si_recall": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_thresholded_0p001_si_true_occupied_cells": {
+        "mean": 511.0769230769231,
+        "median": 480.0,
+        "finite_count": 39
+      },
+      "zero_thresholded_0p001_si_predicted_occupied_cells": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_thresholded_0p001_si_predicted_to_true_volume_ratio": {
+        "mean": 0.0,
+        "median": 0.0,
+        "finite_count": 39
+      },
+      "zero_susceptibility_mae_si": {
+        "mean": 0.0002170399847366356,
+        "median": 0.00015373440934733176,
+        "finite_count": 39
+      },
+      "zero_susceptibility_rmse_si": {
+        "mean": 0.0028499949513819214,
+        "median": 0.002102986979730159,
+        "finite_count": 39
+      },
+      "zero_susceptibility_relative_l2": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 39
+      },
+      "zero_tmi_mae_nt": {
+        "mean": 4.110105820995214,
+        "median": 2.68996286437025,
+        "finite_count": 39
+      },
+      "zero_tmi_rmse_nt": {
+        "mean": 12.092232410934082,
+        "median": 7.556463364478925,
+        "finite_count": 39
+      },
+      "zero_tmi_relative_l2": {
+        "mean": 1.0,
+        "median": 1.0,
+        "finite_count": 39
+      },
+      "zero_tmi_correlation": {
+        "mean": null,
+        "median": null,
+        "finite_count": 0
+      }
+    }
+  }
+}

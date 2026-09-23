@@ -1,0 +1,49 @@
+{
+  "experiment": {
+    "name": "E03_combined",
+    "lambda_susceptibility_relative": 1e-06,
+    "lambda_tmi_absolute": 0.0001,
+    "lambda_tmi_relative": 1e-09,
+    "susceptibility_floor_si": 0.0001,
+    "tmi_rms_floor_nt": 0.03296747710542477,
+    "tmi_floor_derivation": "10th percentile of positive RMS(TMI) over 1000 E02 training samples",
+    "tmi_reference_nt": 100.0,
+    "occupancy_mode": "geological_exponential",
+    "occupancy_tau_si": 2.171472409516259e-05,
+    "learning_rate": 0.001,
+    "seed": 20260727,
+    "batch_size": 2,
+    "epochs": 50,
+    "early_stopping_patience": 10,
+    "early_stopping_min_delta": 1e-05,
+    "base_filters": 8,
+    "tmi_scale_nt": 100.0,
+    "evaluation_prediction_threshold_si": 5e-05
+  },
+  "dataset": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/datasets/E02",
+  "counts": {
+    "train": 1000,
+    "validation": 100,
+    "test": 100
+  },
+  "initialization_seed": 20260727,
+  "data_order_seed": 20260727,
+  "forward_operator": "DifferentiableTMIForward; physical nT; no susceptibility threshold",
+  "gradient_clipping": false,
+  "git": {
+    "commit": "6c016b61292a8eba2a2779a0d71bd58dbcff92fd",
+    "dirty_tracked_files": false,
+    "untracked_files_checked": false
+  },
+  "timestamp_utc": "2026-09-23T17:24:27.112009+00:00",
+  "dataset_metadata.json_sha256": "0950dd2cf66ada941c565583ef6826414c0f1a21e8898810932c358c17a54f97",
+  "dataset_train_manifest.csv_sha256": "4c3d8695467b9dcdd56248af3789cfc93a14bb0bf0491ceabdb6344ea3ff235c",
+  "dataset_validation_manifest.csv_sha256": "e83e7f39d08efcc95ed810128ee6cd0161aea1432a3090cbe45ec2120adcc44f",
+  "dataset_test_manifest.csv_sha256": "32c850ff9228cbd91e8d370d509a1c603699e03b4545da0255f28e58d3ba0671",
+  "best_epoch": 2,
+  "best_validation_loss": 0.1871744990348816,
+  "checkpoint_path": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/outputs/E03_combined/best.weights.h5",
+  "checkpoint_sha256": "661c8ef71e08dc10a7f8a21cbc1d100827b8a7e1db96951255a2976352eb268d",
+  "export_reloaded_from_best_checkpoint": true,
+  "warning": "Relative terms couple geometry/amplitude and can create large gradients for overestimated weak samples."
+}
