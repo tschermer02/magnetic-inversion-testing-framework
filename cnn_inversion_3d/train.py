@@ -126,7 +126,8 @@ def main() -> None:
         if path.is_file(): initial_metadata[f"dataset_{filename}_sha256"]=_sha256(path)
     (args.output/"run_config.json").write_text(
         json.dumps(initial_metadata,indent=2,default=str),encoding="utf-8")
-    history=model.fit(train,validation_data=validation,epochs=args.epochs,callbacks=callbacks)
+    history=model.fit(train,validation_data=validation,epochs=args.epochs,
+        callbacks=callbacks,shuffle=False)
     checkpoint=args.output/checkpoint_filename
     model.load_weights(checkpoint)
     model.inversion_model.save(args.output/"e01.keras")

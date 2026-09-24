@@ -51,7 +51,10 @@ def main() -> None:
     prediction_rows=[]; tmi_rows=[]; combined=[]
     for sample_path in paths:
         sample_id=sample_path.stem; tmi,true=load_magnetic_sample(sample_path)
-        predicted=np.asarray(model.predict(tmi[None]/args.tmi_scale,verbose=0)[0],np.float32)
+        # Direct eager inference avoids Keras' compiled predict function and its
+        # unnecessary XLA/PTX toolchain dependency for single-sample evaluation.
+        normalized=tf.convert_to_tensor(tmi[None]/args.tmi_scale,dtype=tf.float32)
+        predicted=np.asarray(model(normalized,training=False)[0],np.float32)
         true3=true[...,0]; predicted3=predicted[...,0]
         prediction_file=args.output/f"{sample_id}_prediction.npz"
         np.savez_compressed(prediction_file,tmi=tmi[...,0],true_susceptibility=true3,recovered_susceptibility=predicted3)

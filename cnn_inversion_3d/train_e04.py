@@ -48,7 +48,11 @@ def main():
     (args.output/"run_config.json").write_text(json.dumps(metadata,indent=2),encoding="utf-8")
     callbacks=build_training_callbacks(args.output,patience=cfg.early_stopping_patience,
         min_delta=cfg.early_stopping_min_delta,checkpoint_filename="best.weights.h5")
-    history=model.fit(train,validation_data=validation,epochs=cfg.epochs,callbacks=callbacks)
+    # Shuffling is already deterministic in build_training_datasets. Explicitly
+    # disable Keras' array-level shuffle flag, which is ignored for tf.data and
+    # otherwise emits a misleading warning.
+    history=model.fit(train,validation_data=validation,epochs=cfg.epochs,
+        callbacks=callbacks,shuffle=False)
     checkpoint=args.output/"best.weights.h5"; model.load_weights(checkpoint)
     model.inversion_model.save(args.output/"e04.keras")
     best=int(np.argmin(history.history["val_loss"]))

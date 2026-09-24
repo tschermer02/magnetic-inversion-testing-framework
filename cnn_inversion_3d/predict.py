@@ -11,7 +11,8 @@ def main() -> None:
     parser.add_argument("--sample",type=Path,required=True); parser.add_argument("--output",type=Path,required=True)
     parser.add_argument("--tmi-scale",type=float,default=100.0); args=parser.parse_args()
     tmi,true=load_magnetic_sample(args.sample); model=tf.keras.models.load_model(args.model,compile=False)
-    recovered=np.asarray(model.predict(tmi[None]/args.tmi_scale,verbose=0)[0],np.float32)
+    normalized=tf.convert_to_tensor(tmi[None]/args.tmi_scale,dtype=tf.float32)
+    recovered=np.asarray(model(normalized,training=False)[0],np.float32)
     np.savez_compressed(args.output,tmi=tmi[...,0],true_susceptibility=true[...,0],recovered_susceptibility=recovered[...,0])
 
 if __name__=="__main__": main()

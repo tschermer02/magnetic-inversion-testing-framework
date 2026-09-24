@@ -49,7 +49,8 @@ def main():
     (args.output/"run_config.json").write_text(json.dumps(run_config,indent=2),encoding="utf-8")
     callbacks=build_training_callbacks(args.output,patience=cfg.early_stopping_patience,
         min_delta=cfg.early_stopping_min_delta,checkpoint_filename="best.weights.h5")
-    history=model.fit(train,validation_data=validation,epochs=cfg.epochs,callbacks=callbacks)
+    history=model.fit(train,validation_data=validation,epochs=cfg.epochs,
+        callbacks=callbacks,shuffle=False)
     checkpoint=args.output/"best.weights.h5"; model.load_weights(checkpoint)
     model.inversion_model.save(args.output/"e03.keras")
     values=history.history["val_loss"]; index=int(np.argmin(values))
