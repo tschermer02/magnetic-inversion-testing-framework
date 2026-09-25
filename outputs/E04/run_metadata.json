@@ -1,0 +1,40 @@
+{
+  "experiment": {
+    "experiment_name": "E04",
+    "dataset_directory": "datasets/E01_soft_tversky_full",
+    "seed": 20260727,
+    "batch_size": 2,
+    "epochs": 50,
+    "early_stopping_patience": 10,
+    "early_stopping_min_delta": 1e-05,
+    "base_filters": 8,
+    "learning_rate": 0.001,
+    "tmi_scale_nt": 100.0,
+    "susceptibility_scale_si": 1.0,
+    "lambda_tmi": 0.001
+  },
+  "dataset": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/datasets/E01_soft_tversky_full",
+  "counts": {
+    "train": 1000,
+    "validation": 100,
+    "test": 100
+  },
+  "baseline": "E01 exact active objective; only addition is lambda_tmi * normalized absolute TMI MSE",
+  "forward_operator": "E04TMIForward; physical nT; unthresholded susceptibility",
+  "gradient_clipping": false,
+  "git": {
+    "commit": "055c87c487a6f9ca5ce7158a8343bef13e28cb44",
+    "dirty_tracked_files": false,
+    "untracked_files_checked": false
+  },
+  "timestamp_utc": "2026-09-23T21:31:12.362472+00:00",
+  "dataset_metadata.json_sha256": "53a9fe4602578f5b5b2bc04cf26f498660c4db1af972ba47bcd760f70705da42",
+  "dataset_train_manifest.csv_sha256": "c4367a24bf416b5bf2c7351a2da0d007899f6f06d866cd2f016f7582ab5f85a1",
+  "dataset_validation_manifest.csv_sha256": "b0504b0fed600dfae894ab7fd344eb347b1ae5550808a110116472258b5c0ab7",
+  "dataset_test_manifest.csv_sha256": "abe5fe8282e9a69d1b32ce5d4e95a3ee847aee1044b791f318df6afd33078e7e",
+  "best_epoch": 12,
+  "best_validation_loss": 0.07813011854887009,
+  "checkpoint_path": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/outputs/E04/best.weights.h5",
+  "checkpoint_sha256": "5c0f78f74a1ec654f6f8261e3c1752fb72e4414ffb8feb11a443e12552b6e934",
+  "export_reloaded_from_best_checkpoint": true
+}

@@ -1,0 +1,7 @@
+{
+  "sample_id": "sample_001123",
+  "tmi_mae_nt": 510.1513569600907,
+  "tmi_rmse_nt": 560.3090990199736,
+  "tmi_relative_l2": 33.19570253423884,
+  "tmi_correlation": 0.20959642326125938
+}
