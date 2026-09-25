@@ -1,0 +1,24 @@
+#!/bin/bash
+# E05 CHPC template. Replace the three allocation directives below with values
+# verified for your CHPC account; this repository contains no authoritative ones.
+#SBATCH --job-name=e05-suite
+#SBATCH --account=REPLACE_WITH_VERIFIED_ACCOUNT
+#SBATCH --partition=REPLACE_WITH_VERIFIED_GPU_PARTITION
+#SBATCH --gres=REPLACE_WITH_VERIFIED_GPU_RESOURCE
+#SBATCH --time=REPLACE_WITH_APPROVED_WALLTIME
+#SBATCH --output=logs/e05-%j.out
+#SBATCH --error=logs/e05-%j.err
+
+set -euo pipefail
+cd "$SLURM_SUBMIT_DIR"
+source ~/.bashrc
+module purge
+module load cuda/12.5.0
+conda activate gravity-tf
+
+python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+python -u -m cnn_inversion_3d.run_e05_suite \
+  --variants all \
+  --seed 20260727 \
+  --resume \
+  --plots all

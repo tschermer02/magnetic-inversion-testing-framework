@@ -1,0 +1,40 @@
+{
+  "sample_count": 100,
+  "threshold_si": 0.001,
+  "E01": {
+    "susceptibility_mae_si": 0.0003375153907621982,
+    "susceptibility_rmse_si": 0.004956452332385138,
+    "susceptibility_relative_l2": 4.018200056987792,
+    "support_iou": 0.3101246856686727,
+    "tmi_mae_nt": 4.171772296234265,
+    "tmi_rmse_nt": 14.660030961760771,
+    "tmi_relative_l2": 4.394736297141521,
+    "tmi_correlation": 0.9569075670118004
+  },
+  "E04": {
+    "susceptibility_mae_si": 0.00042512538059120584,
+    "susceptibility_rmse_si": 0.005655260544122359,
+    "susceptibility_relative_l2": 3.678155671818443,
+    "support_iou": 0.25839341333711885,
+    "tmi_mae_nt": 4.676170279834929,
+    "tmi_rmse_nt": 15.31049172642156,
+    "tmi_relative_l2": 3.860268610757293,
+    "tmi_correlation": 0.9548501568236116
+  },
+  "E04_minus_E01": {
+    "susceptibility_mae_si": 8.760998982900765e-05,
+    "susceptibility_rmse_si": 0.000698808211737221,
+    "susceptibility_relative_l2": -0.34004438516934865,
+    "support_iou": -0.051731272331553835,
+    "tmi_mae_nt": 0.504397983600664,
+    "tmi_rmse_nt": 0.6504607646607887,
+    "tmi_relative_l2": -0.5344676863842279,
+    "tmi_correlation": -0.002057410188188724
+  },
+  "representative_e04_samples_by_support_iou": {
+    "best": "sample_001183",
+    "median": "sample_001163",
+    "worst": "sample_001173"
+  },
+  "representative_files_note": "Each prediction directory contains susceptibility comparison PNGs and per-sample tmi_consistency magnetic maps."
+}
