@@ -1,0 +1,33 @@
+{
+  "sample_count": 1,
+  "passed_count": 1,
+  "all_passed": true,
+  "atol_nt": 1e-05,
+  "rtol": 1e-06,
+  "metrics": {
+    "mae_nt": {
+      "mean": 1.3962289807955013e-16,
+      "maximum": 1.3962289807955013e-16
+    },
+    "rmse_nt": {
+      "mean": 7.14261363094949e-16,
+      "maximum": 7.14261363094949e-16
+    },
+    "max_abs_error_nt": {
+      "mean": 1.4210854715202004e-14,
+      "maximum": 1.4210854715202004e-14
+    },
+    "relative_l2": {
+      "mean": 1.2204478212060843e-16,
+      "maximum": 1.2204478212060843e-16
+    },
+    "correlation": {
+      "mean": 1.0,
+      "maximum": 1.0
+    },
+    "python_vs_stored_rmse_nt": {
+      "mean": 1.4817125166769886e-07,
+      "maximum": 1.4817125166769886e-07
+    }
+  }
+}

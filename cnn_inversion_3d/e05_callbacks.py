@@ -75,7 +75,8 @@ class GradientDiagnostics(tf.keras.callbacks.Callback):
             components={"susceptibility":cfg.lambda_susceptibility*terms[1],
                 "depth":cfg.lambda_depth*terms[4],"sensitivity":cfg.lambda_sensitivity*terms[5],
                 "amplitude":cfg.lambda_amplitude*terms[6],"body_susceptibility":cfg.lambda_body_susceptibility*terms[7],
-                "tmi":terms[9],"tversky":terms[11],"vertical_gradient":terms[13]}
+                "tmi":terms[9],"tversky":terms[11],
+                "vertical_gradient":terms[13] if len(terms)>14 else tf.zeros_like(terms[-1])}
         vectors={};items={}
         for name,value in components.items():
             vector,missing=_gradient_vector(tape.gradient(value,variables),variables);vectors[name]=vector
@@ -91,7 +92,9 @@ class GradientDiagnostics(tf.keras.callbacks.Callback):
             if not array.size:return {"count":0}
             return {"count":int(array.size),"mean":float(array.mean()),"min":float(array.min()),"max":float(array.max()),
                 "p01":float(np.quantile(array,.01)),"p50":float(np.quantile(array,.5)),"p99":float(np.quantile(array,.99)),
-                "fraction_below_0p0001":float(np.mean(array<1e-4)),"fraction_above_0p099":float(np.mean(array>.099))}
+                "fraction_below_0p0001":float(np.mean(array<1e-4)),
+                "fraction_above_0p001":float(np.mean(array>=.001)),
+                "fraction_above_0p099":float(np.mean(array>.099))}
         residual=tf.boolean_mask(prediction-self.truth,body)
         diagnostics={"epoch":epoch+1,"components":items,"prediction_inside_true_support":stats(body),
             "prediction_outside_true_support":stats(background),"true_body_signed_bias_si":float(tf.reduce_mean(residual)),

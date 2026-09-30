@@ -50,6 +50,12 @@ def _plot(sample_id,label,truth,prediction,observed,recovered,output):
         axis.set_title(title);axis.set_xlabel("Easting (m)");axis.set_ylabel("Northing (m)");fig.colorbar(image,ax=axis,label="nT")
     fig.suptitle(f"{label} | {sample_id} | TMI; common observed/predicted scale")
     fig.savefig(output/"tmi_comparison.png",dpi=160);plt.close(fig)
+    observed_limit=max(float(np.abs(observed).max()),1e-12)
+    fig,axis=plt.subplots(figsize=(6,5),constrained_layout=True)
+    image=axis.imshow(observed,origin="lower",extent=(0,800,0,800),cmap="RdBu_r",
+        vmin=-observed_limit,vmax=observed_limit)
+    axis.set_title("Observed TMI detail (independent scale)");axis.set_xlabel("Easting (m)");axis.set_ylabel("Northing (m)")
+    fig.colorbar(image,ax=axis,label="nT");fig.savefig(output/"observed_tmi_detail.png",dpi=160);plt.close(fig)
 
 def _aggregate(rows):
     result={"sample_count":len(rows)}
@@ -61,10 +67,10 @@ def _aggregate(rows):
     return result
 
 def evaluate_variant(config,variant,training_output:Path,evaluation_output:Path,*,split="test",plots="all",limit=None,
-                     manifest_name=None):
-    checkpoint=training_output/"selected.weights.h5"
+                     manifest_name=None,checkpoint_name="selected.weights.h5",checkpoint_label="primary",model_builder=None):
+    checkpoint=training_output/checkpoint_name
     if not checkpoint.is_file():raise FileNotFoundError(checkpoint)
-    model=build_model(config,variant);model(tf.zeros((1,81,81,1),tf.float32),training=False);model.load_weights(checkpoint)
+    model=(model_builder or build_model)(config,variant);model(tf.zeros((1,81,81,1),tf.float32),training=False);model.load_weights(checkpoint)
     manifest_name=manifest_name or f"{split}_manifest.csv"
     paths=read_manifest_paths(dataset_directory=config.dataset.resolve(),manifest_name=manifest_name)
     if limit is not None:paths=paths[:limit]
@@ -88,8 +94,12 @@ def evaluate_variant(config,variant,training_output:Path,evaluation_output:Path,
         observed_peak=float(np.max(np.abs(observed)));predicted_peak=float(np.max(np.abs(recovered)))
         row={"sample_id":sample_id,**{key:sus[key] for key in ("susceptibility_mae_si","susceptibility_rmse_si","susceptibility_relative_l2")},
             **support,"true_body_susceptibility_mae_si":float(np.mean(np.abs(body_error))) if body.any() else 0.,
+            "true_body_susceptibility_rmse_si":float(np.sqrt(np.mean(body_error**2))) if body.any() else 0.,
             "true_body_signed_bias_si":float(np.mean(body_error)) if body.any() else 0.,
+            "true_mean_susceptibility_si":float(np.mean(truth[body])) if body.any() else None,
+            "predicted_mean_susceptibility_on_true_body_si":float(np.mean(prediction[body])) if body.any() else None,
             "background_mae_si":float(np.mean(np.abs(prediction[background]))) if background.any() else 0.,
+            "mean_predicted_background_susceptibility_si":float(np.mean(prediction[background])) if background.any() else None,
             "total_background_susceptibility_si_cells":float(np.sum(prediction[background])),**_depth_metrics(truth,prediction,config.support_threshold_si),
             **tmi,"observed_tmi_rms_nt":observed_rms,"predicted_tmi_rms_nt":predicted_rms,
             "predicted_to_observed_tmi_rms_ratio":_safe_ratio(predicted_rms,observed_rms),
@@ -102,6 +112,7 @@ def evaluate_variant(config,variant,training_output:Path,evaluation_output:Path,
     with (evaluation_output/"per_sample_metrics.csv").open("w",newline="",encoding="utf-8") as stream:
         writer=csv.DictWriter(stream,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
     summary={"experiment":variant.to_dict(),"split":split,"evaluation_manifest":str(manifest_name),
+        "checkpoint":{"label":checkpoint_label,"filename":checkpoint_name},
         "support_threshold_si":config.support_threshold_si,
         "sample_ids":[row["sample_id"] for row in rows],"aggregate":_aggregate(rows),
         "empty_support_policy":"true-body MAE/bias=0 for empty truth; both-empty support=1; one-empty support=0; undefined ratios=null",

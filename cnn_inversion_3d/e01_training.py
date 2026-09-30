@@ -38,7 +38,7 @@ class E01LossConfig(E01PhysicsLossConfig):
             raise ValueError("occupancy_threshold must be between zero and one.")
         if self.occupancy_sharpness <= 0.0:
             raise ValueError("occupancy_sharpness must be positive.")
-        if self.occupancy_mode not in {"legacy_threshold_sigmoid", "geological_exponential"}:
+        if self.occupancy_mode not in {"legacy_threshold_sigmoid", "geological_exponential", "rational"}:
             raise ValueError("Unknown occupancy_mode.")
         if self.occupancy_tau_si <= 0.0 or not np.isfinite(self.occupancy_tau_si):
             raise ValueError("occupancy_tau_si must be positive and finite.")
@@ -60,6 +60,14 @@ def exponential_soft_occupancy(prediction: tf.Tensor, *, tau_si: float) -> tf.Te
     nonnegative = tf.maximum(values, tf.cast(0.0, values.dtype))
     occupied = -tf.math.expm1(-nonnegative / tf.cast(tau_si, values.dtype))
     return tf.clip_by_value(occupied, 0.0, 1.0)
+
+
+def rational_soft_occupancy(prediction: tf.Tensor, *, tau_si: float) -> tf.Tensor:
+    """Return p=chi/(chi+tau) for nonnegative susceptibility predictions."""
+    values = tf.convert_to_tensor(prediction)
+    nonnegative = tf.maximum(values, tf.cast(0.0, values.dtype))
+    tau = tf.cast(tau_si, values.dtype)
+    return tf.math.divide_no_nan(nonnegative, nonnegative + tau)
 
 
 def soft_tversky_loss_per_sample(
@@ -93,6 +101,11 @@ def soft_tversky_loss_per_sample(
     elif occupancy_mode == "geological_exponential":
         target = geological_support_mask(truth, body_mask)
         occupied = exponential_soft_occupancy(values, tau_si=occupancy_tau_si)
+    elif occupancy_mode == "rational":
+        # E06 deliberately preserves the E05 target definition while changing
+        # only the differentiable prediction-side occupancy mapping.
+        target = tf.cast(truth >= tf.cast(threshold, truth.dtype), values.dtype)
+        occupied = rational_soft_occupancy(values, tau_si=occupancy_tau_si)
     else:
         raise ValueError(f"Unknown occupancy_mode: {occupancy_mode}")
     axes = (1, 2, 3, 4)

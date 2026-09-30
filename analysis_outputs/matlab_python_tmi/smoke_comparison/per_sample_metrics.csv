@@ -1,0 +1,2 @@
+sample_id,mae_nt,rmse_nt,max_abs_error_nt,relative_l2,correlation,python_vs_stored_rmse_nt,passed
+sample_001100,1.3962289807955013e-16,7.14261363094949e-16,1.4210854715202004e-14,1.2204478212060843e-16,1.0,1.4817125166769886e-07,True
