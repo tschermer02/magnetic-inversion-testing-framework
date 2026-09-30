@@ -1,0 +1,7 @@
+{
+  "stage": "complete",
+  "completed_utc": "2026-09-25T18:26:48.446708+00:00",
+  "best_epoch": 34,
+  "selected_checkpoint": "/uufs/chpc.utah.edu/common/home/u1623542/magnetic-inversion-testing-framework/outputs/E05/seed_20260727/e05d/selected.weights.h5",
+  "resume_note": "fresh initialization"
+}

@@ -1,0 +1,108 @@
+{
+  "selection_rule": "minimum validation true-body susceptibility MAE; tie-break higher support IoU",
+  "best_mae": 0.030366339191095902,
+  "best_iou": 0.005339534326867329,
+  "best_epoch": 1,
+  "wait": 10,
+  "history": [
+    {
+      "epoch": 1,
+      "true_body_susceptibility_mae_si": 0.030366339191095902,
+      "support_iou": 0.005339534326867329,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": true,
+      "timestamp_utc": "2026-09-25T18:00:39.004578+00:00"
+    },
+    {
+      "epoch": 2,
+      "true_body_susceptibility_mae_si": 0.03471851115813479,
+      "support_iou": 0.005695768875296737,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": false,
+      "timestamp_utc": "2026-09-25T18:00:56.174189+00:00"
+    },
+    {
+      "epoch": 3,
+      "true_body_susceptibility_mae_si": 0.03635205359314568,
+      "support_iou": 0.005939366734219398,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": false,
+      "timestamp_utc": "2026-09-25T18:01:12.399371+00:00"
+    },
+    {
+      "epoch": 4,
+      "true_body_susceptibility_mae_si": 0.03511242517532082,
+      "support_iou": 0.005330694309726769,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": false,
+      "timestamp_utc": "2026-09-25T18:01:28.554307+00:00"
+    },
+    {
+      "epoch": 5,
+      "true_body_susceptibility_mae_si": 0.03986150355660357,
+      "support_iou": 0.005494879108245366,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": false,
+      "timestamp_utc": "2026-09-25T18:01:44.798886+00:00"
+    },
+    {
+      "epoch": 6,
+      "true_body_susceptibility_mae_si": 0.042066566008143125,
+      "support_iou": 0.0060093591753105,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": false,
+      "timestamp_utc": "2026-09-25T18:02:01.494460+00:00"
+    },
+    {
+      "epoch": 7,
+      "true_body_susceptibility_mae_si": 0.03837175209540874,
+      "support_iou": 0.008224362001765127,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": false,
+      "timestamp_utc": "2026-09-25T18:02:17.777129+00:00"
+    },
+    {
+      "epoch": 8,
+      "true_body_susceptibility_mae_si": 0.03790373422205448,
+      "support_iou": 0.008731506385924633,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": false,
+      "timestamp_utc": "2026-09-25T18:02:34.127381+00:00"
+    },
+    {
+      "epoch": 9,
+      "true_body_susceptibility_mae_si": 0.0368930143257603,
+      "support_iou": 0.012136106929105057,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": false,
+      "timestamp_utc": "2026-09-25T18:02:50.564956+00:00"
+    },
+    {
+      "epoch": 10,
+      "true_body_susceptibility_mae_si": 0.04832307441858575,
+      "support_iou": 0.12045134271376506,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": false,
+      "timestamp_utc": "2026-09-25T18:03:06.982652+00:00"
+    },
+    {
+      "epoch": 11,
+      "true_body_susceptibility_mae_si": 0.047619713780004534,
+      "support_iou": 0.3128276653045105,
+      "sample_count": 100,
+      "empty_true_support_policy": "body MAE=0; both-empty IoU=1; one-empty IoU=0",
+      "selected": false,
+      "timestamp_utc": "2026-09-25T18:03:23.726485+00:00"
+    }
+  ]
+}

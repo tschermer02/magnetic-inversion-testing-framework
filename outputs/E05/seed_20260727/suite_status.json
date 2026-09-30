@@ -1,0 +1,25 @@
+{
+  "requested_variants": [
+    "e05a",
+    "e05b",
+    "e05c",
+    "e05d",
+    "e05e",
+    "e05f"
+  ],
+  "seed": 20260727,
+  "stage": "all",
+  "split": "test",
+  "resume": true,
+  "evaluation_manifest": "test_manifest.csv",
+  "parent": {
+    "identifier": "e05c",
+    "label": "E05c",
+    "susceptibility_multiplier": 100,
+    "vertical_gradient_coefficient": 0,
+    "tmi_coefficient": 0,
+    "parent_identifier": null
+  },
+  "failures": [],
+  "completed_utc": "2026-09-30T17:01:13.731950+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "frozen": true,
+  "selection_split": "validation",
+  "rule": "lowest MAE-rank + IoU-rank; ties lower MAE then multiplier",
+  "candidates": [
+    {
+      "identifier": "e05a",
+      "susceptibility_multiplier": 1,
+      "validation_true_body_mae_si": 0.030366339191095902,
+      "validation_support_iou": 0.005339534326867329,
+      "selected_epoch": 1,
+      "mae_rank": 3,
+      "iou_rank": 3,
+      "rank_sum": 6
+    },
+    {
+      "identifier": "e05b",
+      "susceptibility_multiplier": 10,
+      "validation_true_body_mae_si": 0.028817306006676518,
+      "validation_support_iou": 0.0057594578862145565,
+      "selected_epoch": 2,
+      "mae_rank": 2,
+      "iou_rank": 2,
+      "rank_sum": 4
+    },
+    {
+      "identifier": "e05c",
+      "susceptibility_multiplier": 100,
+      "validation_true_body_mae_si": 0.016223975808825345,
+      "validation_support_iou": 0.21765073148551997,
+      "selected_epoch": 18,
+      "mae_rank": 1,
+      "iou_rank": 1,
+      "rank_sum": 2
+    }
+  ],
+  "selected_parent": {
+    "identifier": "e05c",
+    "susceptibility_multiplier": 100,
+    "validation_true_body_mae_si": 0.016223975808825345,
+    "validation_support_iou": 0.21765073148551997,
+    "selected_epoch": 18,
+    "mae_rank": 1,
+    "iou_rank": 1,
+    "rank_sum": 2
+  },
+  "timestamp_utc": "2026-09-25T18:14:36.009786+00:00"
+}

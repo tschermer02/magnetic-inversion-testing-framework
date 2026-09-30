@@ -1,0 +1,46 @@
+{
+  "suite": {
+    "dataset": "datasets/E01_soft_tversky_full",
+    "seed": 20260727,
+    "batch_size": 2,
+    "epochs": 50,
+    "learning_rate": 0.001,
+    "base_filters": 8,
+    "tmi_scale_nt": 100,
+    "susceptibility_scale_si": 1,
+    "output_maximum_si": 0.1,
+    "support_threshold_si": 0.001,
+    "early_stopping_patience": 10,
+    "diagnostic_interval": 5,
+    "diagnostic_samples": 1
+  },
+  "variant": {
+    "identifier": "e05b",
+    "label": "E05b",
+    "susceptibility_multiplier": 10,
+    "vertical_gradient_coefficient": 0,
+    "tmi_coefficient": 0,
+    "parent_identifier": null
+  },
+  "dataset_hashes": {
+    "metadata.json": "53a9fe4602578f5b5b2bc04cf26f498660c4db1af972ba47bcd760f70705da42",
+    "train_manifest.csv": "c4367a24bf416b5bf2c7351a2da0d007899f6f06d866cd2f016f7582ab5f85a1",
+    "validation_manifest.csv": "b0504b0fed600dfae894ab7fd344eb347b1ae5550808a110116472258b5c0ab7",
+    "test_manifest.csv": "abe5fe8282e9a69d1b32ce5d4e95a3ee847aee1044b791f318df6afd33078e7e"
+  },
+  "selection_rule": "minimum per-sample validation true-body MAE; tie-break higher support IoU",
+  "git": {
+    "commit": "d75a2e87242553fb2f30b1267d2bbef28511781d",
+    "dirty_tracked_files": false,
+    "untracked_files_checked": false
+  },
+  "compatibility_hash": "1d24db1a2a93d3eea55c8f02314668e3326c0309969579a9b0a93ee5c43ef06e",
+  "environment": {
+    "python": "3.11.16",
+    "tensorflow": "2.20.0",
+    "gpus": [
+      "/physical_device:GPU:0"
+    ]
+  },
+  "created_utc": "2026-09-25T18:03:24.808932+00:00"
+}
