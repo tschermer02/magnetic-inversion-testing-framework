@@ -1,11 +1,16 @@
 #!/bin/bash
+#!/bin/bash
 #SBATCH --job-name=e06_suite
+#SBATCH --account=notchpeak-gpu
 #SBATCH --partition=notchpeak-gpu
+#SBATCH --qos=notchpeak-gpu
 #SBATCH --gres=gpu:3090:1
 #SBATCH --mem=64G
 #SBATCH --time=04:00:00
 #SBATCH --output=e06_%j.out
 #SBATCH --error=e06_%j.err
+
+set -e
 
 # Activate environment
 nvidia-smi
