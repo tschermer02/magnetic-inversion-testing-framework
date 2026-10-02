@@ -6,7 +6,7 @@
 #SBATCH --qos=notchpeak-gpu
 #SBATCH --gres=gpu:3090:1
 #SBATCH --mem=64G
-#SBATCH --time=04:00:00
+#SBATCH --time=24:00:00
 #SBATCH --output=e06_%j.out
 #SBATCH --error=e06_%j.err
 
