@@ -26,7 +26,7 @@ python -u -m cnn_inversion_3d.run_e06_suite \
     --seed 42 \
     --resume \
     --plots all
-
+&& \
 echo "========================================"
 echo "Training/prediction finished: $(date)"
 echo "Starting analysis"
